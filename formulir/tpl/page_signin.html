@@ -1,0 +1,123 @@
+<div ng-controller="siteCtrl">
+    <div class="container img-rounded"  style='border: 2px solid #ddd;padding:20px;width:280px;margin-top: 50px;background-color: white' ng-show="is_login">
+        <div class="m-b-lg" >
+            <div class="wrapper text-center" style="margin-bottom: 20px">
+                <!--<h1>LOGO</h1>-->
+                <img src="img/logo.png" class="img-logo" style="padding:0px 20px"/>
+                <br class="clearfix"/>
+            </div>
+            <form name="form" class="form-validation">
+                <div class="text-danger wrapper text-center" ng-show="authError">
+                    {{authError}}
+                </div>
+                <div class="list-group list-group-sm">
+                    <div class="list-group-item">
+                        <input type="text" placeholder="Nomor Ujian" class="form-control no-border" ng-model="form.no_ujian" required>
+                    </div>
+                    <div class="list-group-item">
+                        <input type="password" placeholder="PIN Sesi" class="form-control no-border" ng-model="form.pin_sesi" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" ng-click="cek_biodata(form)" ng-disabled='form.$invalid'>Log in</button>
+                <div class="text-center" style="margin-top: 5px">
+                    <small class="text-muted"><a href="#" target="_blank">Computer Based Test</a> ver 1 © 2017</small>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container" ng-show="is_cek">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default" style="margin-top: 20px">
+<!--                    <div class="panel-heading">
+                        <span>Cek Data Peserta</span>
+                    </div>-->
+                    <div class="panel-body" style='border: 2px solid #ddd;background-color: white'>
+                        <div class="wrapper text-center">
+                            <img src="img/logo.png" class="img-logo" style="max-width: 250px;margin-bottom: 20px;"/>
+                        </div>
+                        <form name="form" class="form-validation">
+                            <table class="table table-striped table-bordered">
+                                <tr>
+                                    <td style="width: 150px">
+                                        Nama Ujian
+                                    </td>
+                                    <td>
+                                        {{valueCek.nama_ujian}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Kode Ujian
+                                    </td>
+                                    <td>
+                                        <input type="text"  ng-model="form.pin_sesi" value="{{valueCek.pin_sesi}}" required hidden="true">
+                                        <input type="text"  ng-model="form.no_ujian" value="{{valueCek.no_ujian}}" required hidden="true">
+                                        {{valueCek.kode_ujian}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Lokasi
+                                    </td>
+                                    <td>
+                                        {{valueCek.lokasi_ujian}}
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4 style="font-family: sans-serif;font-style: italic">Informasi Peserta</h4>
+                            <table class="table table-striped table-bordered">
+                                <tr>
+                                    <td style="width: 150px">
+                                        Nama Lengkap
+                                    </td>
+                                    <td>
+                                        <!--<input type="text" class="form-control" ng-model="form.no_ujian" value="hahahah" required >-->
+                                        {{valueCek.nama}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Nomor Ujian
+                                    </td>
+                                    <td>
+                                        {{valueCek.no_ujian}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Jenis Kelamin
+                                    </td>
+                                    <td>
+                                        {{valueCek.j_kelamin}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tempat Lahir
+                                    </td>
+                                    <td>
+                                        {{valueCek.tempat_lahir}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tanggal Lahir
+                                    </td>
+                                    <td>
+                                        <!--{{row.created_at * 1000| date:'medium'}}</td>-->
+                                        {{valueCek.tanggal_lahir| date:'fullDate'}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        <div class="pull-right">
+                            <button class="btn btn-warning" ng-click="batal()">Batal</button>
+                            <button class="btn btn-primary" ng-click="login(form)">Mulai Ujian</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

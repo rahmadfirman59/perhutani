@@ -1,0 +1,72 @@
+<div class="modal-header">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <div class="modal-title">
+                <h3><b>Mohon Maaf Pendaftaran {{formmodal[0].nama}} Belum di Buka</b></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Nama Sekolah</label>
+        </div>
+        <div class="col-sm-1 hidden-xs">
+            :
+        </div>
+        <div class="col-xs-8">
+            {{formmodal[0].nama}}
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3">
+            <label>No. Telepon</label>
+        </div>
+        <div class="col-sm-1 hidden-xs">
+            :
+        </div>
+        <div class="col-xs-8">
+            {{formmodal[0].telepon}}
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Alamat</label>
+        </div>
+        <div class="col-sm-1 hidden-xs">
+            :
+        </div>
+        <div class="col-xs-8">
+            {{formmodal[0].alamat}}
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Daftar Gelombang</label>
+        </div>
+        <div class="col-sm-1 hidden-xs">
+            :
+        </div>
+        <div class="col-xs-8">
+            <ol style="padding-left: 10px;list-style-type: square">
+                <li ng-repeat="val in formmodal"><b>{{val.gelombang}} </b>
+                    <ol style="list-style-type: none;padding-left: 0px;">
+                        <li>
+                            {{val.tanggal_mulai| date:'longDate'}} - {{val.tanggal_akhir| date:'longDate'}}
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <a class="btn btn-primary" href="http://psb.sunsal.or.id">Kembali ke Halaman Utama</a>
+        </div>
+    </div>
+</div>

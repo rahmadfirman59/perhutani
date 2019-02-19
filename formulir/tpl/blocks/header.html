@@ -1,0 +1,50 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="sr-only">
+                    Toggle navigation
+                </span>
+                <span class="icon-bar">
+                </span>
+                <span class="icon-bar">
+                </span>
+                <span class="icon-bar">
+                </span>
+            </button>
+            <a class="navbar-brand" ui-sref="site.index">
+                PPDB SUNNIYAH LOGO
+            </a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav">
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ui-sref="site.pendaftar">
+                        <i class="fa fa-user-o icon text-info-lter"></i>
+                        Data Pendaftar
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="site.hasil">
+                        <i class="fa fa-bell-o icon text-info-lter"></i>
+                        Hasil Seleksi
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="site.informasi">
+                        <i class="fa fa-calendar-o icon text-info-lter"></i>
+                        Informasi Pendaftaran
+                    </a>
+                </li>
+                <li class="hidden-xs">
+                    <form ng-submit="pencarian()">
+                        <input type="search" placeholder="Masukkan Nomor Pendaftaran">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

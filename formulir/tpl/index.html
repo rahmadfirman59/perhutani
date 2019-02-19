@@ -1,0 +1,623 @@
+<div ng-controller="frontendCtrl">
+    <nav class="navbar navbar-default" style="background-color: #fff">
+        <div class="container-fluid text-center">
+            <img src="img/logo/logo_ppdb.png" width="300px" style="padding: 10px 0px;">
+        </div>
+    </nav>
+
+    <div id="formDaftar" ng-show="is_formDaftar">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 20px;">
+
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="panel panel-primary">
+
+                          <div class="panel-footer text-right">
+                            <a href="http://psb.sunsal.or.id" class="btn btn-default">
+                               <i class="fa fa-fw fa-mail-forward m-r-xs"></i> Kembali ke Halaman Utama
+                            </a>
+                          </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Informasi Pendaftaran
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label>Nama sekolah</label>
+                                </div>
+                                <div class="col-xs-7">
+                                    <span class="hidden-xs">:</span> {{getSekolah.nama}}
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label>Gelombang</label>
+                                </div>
+                                <div class="col-xs-7">
+                                    <span class="hidden-xs">:</span> {{getGelombang.gelombang}}
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label>Waktu Pendaftaran</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <span class="hidden-xs">:</span>
+                                    <span class="label label-info">{{getGelombang.tanggal_mulai| date : 'mediumDate'}}</span> <i style="font-size: 80%">Sampai</i>
+                                    <span class="label label-danger">{{getGelombang.tanggal_akhir| date : 'mediumDate'}}</span>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label>Tanggal Tes</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <span class="hidden-xs">:</span>
+                                    <span class="label label-warning">{{getGelombang.tanggal_tes| date : 'mediumDate'}}</span>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label>Lokasi Tes</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <span class="hidden-xs">:</span>
+                                    {{getGelombang.lokasi_tes}}
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label>Uang Pendaftaran</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <span class="hidden-xs">:</span>
+                                    {{getGelombang.uang_daftar| currency:undefined:0}}
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label>Uang Pangkal</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <span class="hidden-xs">:</span>
+                                    {{getGelombang.uang_pangkal| currency:undefined:0}}
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label>Info Uang Pangkal</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <span class="hidden-xs">:</span>
+                                    {{getGelombang.info_uang_pangkal}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2" style="margin-top: 10px;">
+                    <form name="landaform" class="form-horizontal">
+                        <div class="panel panel-success">
+                            <div class="panel-heading" style="background-color: #009f61;color: #fff">
+                                Form Pendaftaran <b>{{getSekolah.nama}}</b>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Pilihan</label>
+                                    <div class="col-sm-9">
+                                        <div class="btn-group m-r" >
+                                            <label btn-radio="'Full Day'" class="btn btn-default" ng-model="form.pilihan" required="" >
+                                                Full Day
+                                            </label>
+                                            <label btn-radio="'Boarding'" class="btn btn-default" ng-model="form.pilihan" required="">
+                                                Boarding
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Jenis Kelamin</label>
+                                    <div class="col-sm-9">
+                                        <div class="btn-group m-r" >
+                                            <label btn-radio="'Laki - Laki'" class="btn btn-default" ng-model="form.jenis_kelamin" required="" >
+                                                Laki - Laki
+                                            </label>
+                                            <label btn-radio="'Perempuan'" class="btn btn-default" ng-model="form.jenis_kelamin" required="">
+                                                Perempuan
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" ng-class="{ 'has-error' : landaform.nama.$invalid && !landaform.nama.$pristine }">
+                                    <label class="col-sm-3 control-label">Nama</label>
+                                    <div class="col-md-9">
+                                        <input type="text" name="nama" class="form-control" ng-model="form.nama" ng-minlength="2" ng-maxlength="100">
+                                        <p ng-show="landaform.nama.$error.minlength" class="help-block">Nama Terlalu Pendek.</p>
+                                        <p ng-show="landaform.nama.$error.maxlength" class="help-block">Nama Terlalu Panjang.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error' : landaform.telepon.$invalid && !landaform.telepon.$pristine }">
+                                    <label class="col-sm-3 control-label">No. Hp</label>
+                                    <div class="col-md-9">
+                                        <input type="text" name="telepon" class="form-control angka" ng-model="form.telepon" ng-minlength="10" ng-maxlength="14" style="width: 150px;" required="">
+                                        <p ng-show="landaform.telepon.$error.minlength" class="help-block">No. Hp Terlalu Pendek.</p>
+                                        <p ng-show="landaform.telepon.$error.maxlength" class="help-block">No. Hp Terlalu Panjang.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Kewarganegaraan</label>
+                                    <div class="col-sm-9">
+                                        <div class="btn-group m-r" >
+                                            <label btn-radio="'Warga Negara Indonesia'" ng-change="cekWarga(1)" class="btn btn-default" ng-model="form.kewarganegaraan" required="" >
+                                                Warga Negara Indonesia
+                                            </label>
+                                            <label btn-radio="'Warga Negara Asing'" ng-change="cekWarga(0)" class="btn btn-default" ng-model="form.kewarganegaraan" required="" >
+                                                Warga Negara Asing
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error' : landaform.kota_lahir.$invalid && !landaform.kota_lahir.$pristine }">
+                                    <label class="col-sm-3 control-label">Tempat, Tanggal Lahir</label>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="col-sm-6" ng-if="form.kewarganegaraan == 'Warga Negara Indonesia'">
+                                                <ui-select ng-disabled="is_view" ng-change="kotaLahir(form.kota_lahirr)" ng-model="form.kota_lahirr" theme="bootstrap">
+                                                    <ui-select-match placeholder="Cari Kota">
+                                                        {{$select.selected.nama}}
+                                                    </ui-select-match>
+                                                    <ui-select-choices refresh="cariKota($select.search,$select)" repeat="val in listKotaLahir">
+                                                        {{val.nama}}
+                                                    </ui-select-choices>
+                                                </ui-select>
+                                            </div>
+                                            <div class="col-sm-6" ng-if="form.kewarganegaraan != 'Warga Negara Indonesia'">
+                                                <input type="text" name="kota_lahir" class="form-control" ng-change="kotaLahir(form.kota_lahirrr)" ng-model="form.kota_lahirrr" ng-minlength="2" ng-maxlength="50" required="">
+                                                <p ng-show="landaform.kota_lahir.$error.minlength" class="help-block">Nama Kota Terlalu Pendek.</p>
+                                                <p ng-show="landaform.kota_lahir.$error.maxlength" class="help-block">Nama Kota Terlalu Panjang.</p>
+                                            </div>
+                                            <div class="visible-xs" style="margin-top: 5px;"></div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group" >
+                                                    <input type="text"  style="height: 30px;" class="form-control" datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_lahir" is-open="opened1" ng-click="open1($event);" required=""/>
+                                                    <span class="input-group-addon">
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error' : landaform.alamat.$invalid && !landaform.alamat.$pristine }">
+                                    <label class="col-sm-3 control-label">Alamat</label>
+                                    <div class="col-sm-9 ">
+                                        <div class="row">
+                                            <div class="col-sm-6" ng-show="form.kewarganegaraan == 'Warga Negara Indonesia'">
+                                                <ui-select  ng-disabled="is_view" ng-change="getKecamatan(form.kota.id)" ng-model="form.kota" theme="bootstrap" position="down">
+                                                    <ui-select-match placeholder="- Pilih Kota / Kabupaten -">{{$select.selected.kota}}</ui-select-match>
+                                                    <ui-select-choices repeat="val in getProvinsi | filter : $select.search" position='down'>
+                                                        {{val.kota}} - {{val.provinsi}}
+                                                    </ui-select-choices>
+                                                </ui-select>
+                                            </div>
+                                            <div class="visible-xs" style="margin-top: 5px;"></div>
+                                            <div class="col-sm-6" ng-show="form.kewarganegaraan == 'Warga Negara Indonesia'">
+                                                <ui-select ng-change="alamat()"  ng-disabled="form.kota == undefined"  ng-model="form.kecamatan" theme="bootstrap" >
+                                                    <ui-select-match placeholder="- Pilih Kecamatan">{{$select.selected.nama}}</ui-select-match>
+                                                    <ui-select-choices repeat="val2 in kecamatan | filter : $select.search" >
+                                                        {{val2.nama}}
+                                                    </ui-select-choices>
+                                                </ui-select>
+                                            </div>
+                                            <div class="col-sm-12" style="padding-top: 5px;">
+                                                <textarea name="alamat" ng-change="alamat()" ng-model="form.alamatt" class="form-control" rows="2" required="" ng-maxlength="225" ng-minlength="2" ></textarea>
+                                                <textarea ng-hide="true" ng-model="form.alamat" class="form-control" rows="2" ng-disabled="form.kecamatan == undefined" required=""></textarea>
+                                                <p ng-show="landaform.alamat.$error.minlength" class="help-block">Alamat Terlalu Pendek.</p>
+                                                <p ng-show="landaform.alamat.$error.maxlength" class="help-block">Alamat Terlalu Panjang.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Asal Sekolah</label>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="btn-group m-r" ng-if="is_asalSekolah">
+                                                    <label btn-radio="'SMP Al Azhar'" ng-change="cekSekolah(1)" class="btn btn-default" ng-model="form.statusSekolah" required="" >
+                                                        SMP Al Azhar
+                                                    </label>
+                                                    <label btn-radio="'Lainnya'" class="btn btn-default" ng-change="cekSekolah(0)" ng-model="form.statusSekolah" required="" >
+                                                        Lainnya
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12" style="margin-top: 5px;">
+                                                <input type="text" class="form-control" ng-model="form.asal_sekolah1" ng-change="sekolah(form.asal_sekolah1)" placeholder="Asal Sekolah" ng-if="form.statusSekolah == 'Lainnya'">
+                                                <input type="text" class="form-control" ng-model="form.asal_sekolah1" ng-change="sekolah(form.asal_sekolah1)" placeholder="Asal Sekolah" ng-show="!is_asalSekolah">
+                                                <input ng-hide="true" type="text" class="form-control" ng-model="form.asal_sekolah">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class="col-sm-3 control-label">Gelombang</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" ng-model="form.gelombang" disabled="" ng-maxlength="50" ng-minlength="2">
+                                    </div>
+                                </div>
+                                <div style="padding: 5px 0px;">
+                                    <hr style="border-top: 1px solid #dff0d8;"/>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error' : landaform.nama_orang_tua.$invalid && !landaform.nama_orang_tua.$pristine }">
+                                    <label class="col-sm-3 control-label">Nama Orang Tua</label>
+                                    <div class="col-sm-9">
+                                        <input name="nama_orang_tua" ng-change="wali(form.nama_orang_tua)" ng-model="form.nama_orang_tua" type="text" class="form-control" placeholder="Nama Lengkap Orang Tua" ng-maxlength="100" ng-minlength="2">
+                                        <p ng-show="landaform.nama_orang_tua.$error.minlength" class="help-block">Alamat Terlalu Pendek.</p>
+                                        <p ng-show="landaform.nama_orang_tua.$error.maxlength" class="help-block">Alamat Terlalu Panjang.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Nama Wali</label>
+                                    <div class="col-sm-9">
+                                        <div class=" form-inline">
+                                            <div class="radio radio-success" style="padding-top: 0px;">
+                                                <input type="radio" id="radio1" value="1" ng-change="cekWali(form.cekWali)" ng-model="form.cekWali">
+                                                <label for="radio1">
+                                                    Sama Dengan Orang Tua
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-success" style="padding-top: 0px;">
+                                                <input type="radio" id="radio2" value="0" ng-change="cekWali(form.cekWali)" ng-model="form.cekWali">
+                                                <label for="radio2">
+                                                    Lainnya
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" class="form-control" ng-model="form.nama_wali" ng-disabled="form.cekWali == 1">
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-if="form.cekWali == '0'">
+                                    <label class="col-sm-3 control-label">Status Wali</label>
+                                    <div class="col-sm-4">
+                                        <select class="form-control" required="" ng-model="form.status_wali">
+                                            <option value="">- Pilih Status Wali -</option>
+                                            <option value="Ibu">Ibu</option>
+                                            <option value="Paman">Paman</option>
+                                            <option value="Kakek">Kakek</option>
+                                            <option value="Saudara">Saudara</option>
+                                            <option value="Asuh">Asuh</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Alamat Wali</label>
+                                    <div class="col-sm-9 ">
+                                        <div class=" form-inline">
+                                            <div class="radio radio-success" style="padding-top: 0px;">
+                                                <input type="radio" id="radio3" value="1" ng-change="cekAlamat(form.cekAlamat)" ng-model="form.cekAlamat">
+                                                <label for="radio3">
+                                                    Sama Dengan Siswa
+                                                </label>
+                                            </div>
+                                            <div class="radio radio-success" style="padding-top: 0px;">
+                                                <input type="radio" id="radio4" value="0" ng-change="cekAlamat(form.cekAlamat)" ng-model="form.cekAlamat">
+                                                <label for="radio4">
+                                                    Lainnya
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row" >
+                                            <div class="col-sm-6" ng-show="form.cekAlamat == '0'">
+                                                <ui-select  ng-disabled="is_view" ng-change="getKecamatan2(form.kotaOrangTua.id)" ng-model="form.kotaOrangTua" theme="bootstrap">
+                                                    <ui-select-match placeholder="- Pilih Kota / Kabupaten -">{{$select.selected.kota}}</ui-select-match>
+                                                    <ui-select-choices repeat="val in getProvinsi | filter : $select.search" >
+                                                        {{val.kota}}
+                                                    </ui-select-choices>
+                                                </ui-select>
+                                            </div>
+                                            <div class="visible-xs" style="margin-top: 5px;"></div>
+                                            <div class="col-sm-6" ng-show="form.cekAlamat == '0'">
+                                                <ui-select ng-change="alamatOrangTua()"  ng-disabled="form.kotaOrangTua == undefined"  ng-model="form.kecamatanOrangTua" theme="bootstrap">
+                                                    <ui-select-match placeholder="- Pilih Kecamatan">{{$select.selected.nama}}</ui-select-match>
+                                                    <ui-select-choices repeat="val2 in kecamatan2 | filter : $select.search" >
+                                                        {{val2.nama}}
+                                                    </ui-select-choices>
+                                                </ui-select>
+                                            </div>
+                                            <div class="col-sm-12" style="padding-top: 5px;" >
+                                                <textarea ng-show="form.cekAlamat == '0'" class="form-control" ng-model="form.alamat_orang_tua2" ng-change="alamatOrangTua()" rows="2" ng-disabled="form.kecamatanOrangTua == undefined" ng-maxlength="225" ng-minlength="2" ></textarea>
+                                                <textarea class="form-control" ng-model="form.alamat_orang_tua" disabled=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+
+                                <div class="table-responsive">
+                                    <table class="col-md-12 table-bordered table-striped table-condensed cf">
+                                        <thead class="cf">
+                                            <tr>
+                                                <th class="text-center" style="min-width: 150px;">Nilai Raport</th>
+                                                <th class="text-center">Pendidikan Agama</th>
+                                                <th class="text-center">Bahasa Indonesia</th>
+                                                <th class="text-center">Bahasa Inggris</th>
+                                                <th class="text-center">Matematika</th>
+                                                <th class="text-center">IPA</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Nilai Raport">
+                                                    <span ng-if="!is_asalSekolah">Kelas 5 semester 1</span>
+                                                    <span ng-if="is_asalSekolah">Kelas 8 Semester 1</span>
+                                                </td>
+                                                <td data-title="Pendidikan Agama" ><input ng-model="form.nilai1_1" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="Bahasa Indonesia"><input ng-model="form.nilai1_2" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="Bahasa Inggris"><input ng-model="form.nilai1_3" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="Matematika"><input ng-model="form.nilai1_4" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="IPA"><input ng-model="form.nilai1_5" class="form-control angka" maxlength="3" max="100  "></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span ng-show="!is_asalSekolah">Kelas 5 semester 2</span>
+                                                    <span ng-show="is_asalSekolah">Kelas 8 Semester 2</span>
+                                                </td>
+                                                <td data-title="Pendidikan Agama"><input ng-model="form.nilai2_1" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="Bahasa Indonesia"><input ng-model="form.nilai2_2" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="Bahasa Inggris"><input ng-model="form.nilai2_3" class="form-control angka" maxlength="3"></td>
+                                                <td data-title="Matematika"><input ng-model="form.nilai2_4" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="IPA"><input ng-model="form.nilai2_5" class="form-control angka" maxlength="3" max="100"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span ng-show="!is_asalSekolah">Kelas 6 semester 1</span>
+                                                    <span ng-show="is_asalSekolah">Kelas 9 Semester 1</span>
+                                                </td>
+                                                <td data-title="Pendidikan Agama"><input ng-model="form.nilai3_1" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="Bahasa Indonesia"><input ng-model="form.nilai3_2" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="Bahasa Inggris"><input ng-model="form.nilai3_3" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="Matematika"><input ng-model="form.nilai3_4" class="form-control angka" maxlength="3" max="100"></td>
+                                                <td data-title="IPA"><input ng-model="form.nilai3_5" class="form-control angka" maxlength="3" max="100"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!--                                <div class="alert alert-success" style="margin-bottom: 0px;" ng-if="is_nilai">
+                                                                    <span class="text-capitalize">
+                                                                        * Silahkan pilih masukan nilai atau upload raport
+                                                                    </span>
+                                                                </div>-->
+                                <!--<br/>-->
+                                <!--                                <div class="row" ng-if="is_nilai">
+                                                                    <div class="col-xs-12">
+                                                                        <tabset class="tab-container">
+                                                                            <tab>
+                                                                                <tab-heading ng-click="cekRaport(1)">
+                                                                                    <i class="fa fa-book"></i> Nilai Raport
+                                                                                </tab-heading>
+                                                                                <div id="no-more-tables">
+
+                                                                                </div>
+                                                                            </tab>
+                                                                            <tab>
+                                                                                <tab-heading ng-click="cekRaport(0)">
+                                                                                    <i class="fa fa-upload"></i> Upload Raport
+                                                                                </tab-heading>
+                                                                                <div class="col-md-12">
+                                                                                    <div class="hbox hbox-auto-xs hbox-auto-sm"nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter">
+                                                                                        <div class="row" >
+                                                                                            <div class="col-md-12">
+                                                                                                                                                                <div class="wrapper-md dker b-b">
+                                                                                                                                                                    <h3 class="m-n font-thin">Select files</h3>
+                                                                                                                                                                </div>
+                                                                                                <div class="wrapper-md">
+                                                                                                                                                                        <div ng-show="uploader.isHTML5" class="m-b-md" style="background-color: #ddd">
+                                                                                                                                                                            <div class="b-a b-2x b-dashed wrapper-lg bg-white text-center m-b" nv-file-over="" over-class="b-info" uploader="uploader">
+                                                                                                                                                                                Drop Gambar
+                                                                                                                                                                            </div>
+                                                                                                                                                                        </div>
+
+                                                                                                    <p>Pilih Gambar</p>
+                                                                                                    <input type="file" nv-file-select="" uploader="uploader" multiple  />
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-md-12 col-xs-12 col-sm-12">
+                                                                                                <div class="wrapper-md">
+                                                                                                    <div class="table-responsive">
+                                                                                                        <table class="table table-striped" style="width: 100%">
+                                                                                                            <thead>
+                                                                                                                <tr>
+                                                                                                                    <th class="text-left">Name</th>
+                                                                                                                    <th class="text-left" ng-show="uploader.isHTML5">Size</th>
+                                                                                                                </tr>
+                                                                                                            </thead>
+                                                                                                            <tbody>
+                                                                                                                <tr ng-repeat="item in uploader.queue">
+                                                                                                                    <td><strong>{{ item.file.name}}</strong></td>
+                                                                                                                    <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size / 1024 / 1024|number:2 }} MB</td>
+                                                                                                                    <td nowrap>
+                                                                                                                        <button type="button" class="btn btn-default btn-xs" ng-click="item.remove()">
+                                                                                                                            Remove
+                                                                                                                        </button>
+                                                                                                                    </td>
+                                                                                                                </tr>
+                                                                                                            </tbody>
+                                                                                                        </table>
+                                                                                                    </div>
+                                                                                                    <div>
+                                                                                                                                                                                <div>
+                                                                                                                                                                                    <p>Proses Upload:</p>
+                                                                                                                                                                                    <div class="progress bg-light dker" style="">
+                                                                                                                                                                                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" ng-style="{
+                                                                                                                                                                                        'width'
+                                                                                                                                                                                                : uploader.progress + '%' }"></div>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                                <div>
+                                                                                                                                                                                    <button type="button" class="btn btn-addon btn-success" ng-click="uploadGambar(form.nik)" ng-disabled="!uploader.getNotUploadedItems().length">
+                                                                                                                                                                                        <i class="fa fa-arrow-circle-o-up"></i> Upload all
+                                                                                                                                                                                    </button>
+                                                                                                                                                                                    <button type="button" class="btn btn-addon btn-warning" ng-click="uploader.cancelAll()" ng-disabled="!uploader.isUploading">
+                                                                                                                                                                                        <i class="fa fa-ban"></i> Cancel all
+                                                                                                                                                                                    </button>
+                                                                                                                                                                                    <button type="button" class="btn btn-addon btn-danger" ng-click="uploader.clearQueue()" ng-disabled="!uploader.queue.length">
+                                                                                                                                                                                        <i class="fa fa-trash-o"></i> Remove all
+                                                                                                                                                                                    </button>
+                                                                                                                                                                                </div>
+                                                                                                                                                                                <br>
+                                                                                                                                                                                <div class="alert alert-info" ng-show="is_create">
+                                                                                                                                                                                    <i>
+                                                                                                                                                                                        " Gambar yang di upload pertama akan otomatis di jadikan sebagai gambar produk. "
+                                                                                                                                                                                    </i>
+                                                                                                                                                                                </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                                                                                <div class="row">
+                                                                                                                                                    <div class="col-md-12">
+                                                                                                                                                        <div class="wrapper-md dker b-b" style="margin-bottom: 25px;">
+                                                                                                                                                            <h3 class="page-header">Detail Foto</h3>
+                                                                                                                                                        </div>
+                                                                                                                                                        <div ng-repeat="slide in gambar" class="col-md-2 m-b repeat-animation hide-fade">
+                                                                                                                                                            <a href="" ng-click="gambarzoom(slide.id, slide.img)"><img ng-src="img/product/{{slide.id}}-150x150-{{slide.img}}" class="img-thumbnail"></a>
+                                                                                                                                                            <p alin="center" style="padding:10px;" ng-show="!is_view">
+                                                                                                                                                                <input type="radio" ng-model="form.primary_photo_id" value="{{slide.id}}">
+                                                                                                                                                                <a href="" ng-click="removeFoto($index, slide.img, form.id)"><i class="btn btn-danger glyphicon glyphicon-trash" title="Hapus"></i></a>
+                                                                                                                                                            </p>
+                                                                                                                                                        </div>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </tab>
+                                                                        </tabset>
+                                                                    </div>
+                                                                </div>-->
+                            </div>
+                            <div class="panel-footer text-right">
+                                <a href="http://psb.sunsal.or.id" class="btn btn-default">
+                                    <i class="fa fa-fw fa-mail-forward m-r-xs"></i> Kembali ke Halaman Utama
+                                </a>
+                                <button type="submit" class="btn btn-success" ng-disabled="landaform.$invalid" ng-click="selesai(form)">Daftar Sekarang</button>
+                                <!--<button type="button" class="btn btn-success" ng-click="selesai(form)">Daftar Sekarang</button>-->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" ng-show="is_success">
+        <div class="row" >
+            <div class="col-md-6 col-md-offset-3" style="margin-top: 20px;">
+                <div class="alert alert-success">
+                    Selamat pendaftaran telah berhasil di simpan. CATAT atau DOWNLOAD formulir nomor pendafataran ini, untuk di gunakan Nomor ujian pada saat tes!
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Formulir Pendaftaran
+                        <div class="pull-right">
+                            <a class="btn btn-warning btn-sm" style="margin-top: -5px" ng-click="printDiv('kartu')"><i class="glyphicon glyphicon-download-alt"></i> Download PDF</a>
+                        </div>
+                    </div>
+                    <div class="panel-body" id="kartu">
+                        <div class="row">
+                            <div class="col-sm-12" style="font-size: 50px;font-weight: bold;letter-spacing: 15px;text-align: center;">
+                                {{isiData.no}}
+                            </div>
+                        </div>
+                        <hr/>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Nama</label>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="hidden-xs">:</span>
+                                {{isiData.nama}}
+                            </div>
+                        </div>
+                        <hr/>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Tanggal Lahir</label>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="hidden-xs">:</span>
+                                {{isiData.kota_lahir}}, {{isiData.tanggal_lahir| date:'longDate'}}
+                            </div>
+                        </div>
+                        <hr/>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Gelombang</label>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="hidden-xs">:</span>
+                                {{getGelombang.gelombang}}
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Tanggal Tes</label>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="hidden-xs">:</span>
+                                {{getGelombang.tanggal_tes| date : 'mediumDate'}}
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Lokasi Tes</label>
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="hidden-xs">:</span>
+                                {{getGelombang.lokasi_tes}}
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label >Kelengkapan Pendaftaran</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ol>
+                                    <li ng-repeat="vals in getDokumen">
+                                        {{vals.nama}}
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,205 @@
+<div class="modal-header">
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="modal-title">
+                <h3><b>Apakah Data yang Anda Masukkan Sudah Benar ?</b></h3>
+            </div>
+        </div>
+        <div class="col-xs-3" align="right">
+            <button ng-click="close()" title="Cancel"  class="btn btn-rounded btn btn-icon btn-default"><i class="glyphicon glyphicon-remove"></i></button>
+        </div>
+    </div>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Sekolah</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.sekolah_tujuan}}
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Type Pendaftaran</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.type}}
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Nama Lengkap</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.nama}}
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label>No. Hp</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.telepon}}
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Tempat, Tanggal Lahir</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.kota_lahir}}, {{formmodal.tanggal_lahir| date:'longDate'}}
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Kewarganegaraan</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.kewarganegaraan}}
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Alamat</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.alamat}}
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Asal Sekolah</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.asal_sekolah}}
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Gelombang</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.gelombang}}
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Nama Orang Tua</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.nama_orang_tua}}
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Nama Wali</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.nama_wali}}
+        </div>
+    </div>
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Alamat Wali</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            {{formmodal.alamat_wali}}
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3">
+            <label>Status Wali</label>
+        </div>
+        <div class="col-xs-8">
+            <span class="hidden-xs">:</span> 
+            <!--<span ng-if="formmodal.status_wali == undefined">Orang Tua</span>-->
+            {{formmodal.status_wali}}
+        </div>
+    </div>
+    <hr/>
+
+    <div id="no-more-tables" ng-if="formmodal.nilai">
+        <div class="table-responsive">
+            <table class="col-md-12 table-bordered table-striped table-condensed cf">
+                <thead class="cf">
+                    <tr>
+                        <th class="text-center" style="min-width: 150px;">Nilai Raport</th>
+                        <th class="text-center" style="width: 90px">Pendidikan Agama</th>
+                        <th class="text-center" style="width: 90px">Bahasa Indonesia</th>
+                        <th class="text-center" style="width: 90px">Bahasa Inggris</th>
+                        <th class="text-center" style="width: 90px">Matematika</th>
+                        <th class="text-center" style="width: 90px">IPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-title="Nilai Raport">Kelas 8 Semester 1</td>
+                        <td class="text-center" data-title="Pendidikan Agama" >{{formmodal.nilai1.pendidikan_agama}}</td>
+                        <td class="text-center" data-title="Bahasa Indonesia">{{formmodal.nilai1.bahasa_indonesia}}</td>
+                        <td class="text-center" data-title="Bahasa Inggris">{{formmodal.nilai1.bahasa_inggris}}</td>
+                        <td class="text-center" data-title="Matematika">{{formmodal.nilai1.matematika}}</td>
+                        <td class="text-center" data-title="IPA">{{formmodal.nilai1.ipa}}</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas 8 Semester 2</td>
+                        <td class="text-center" data-title="Pendidikan Agama" >{{formmodal.nilai2.pendidikan_agama}}</td>
+                        <td class="text-center" data-title="Bahasa Indonesia">{{formmodal.nilai2.bahasa_indonesia}}</td>
+                        <td class="text-center" data-title="Bahasa Inggris">{{formmodal.nilai2.bahasa_inggris}}</td>
+                        <td class="text-center" data-title="Matematika">{{formmodal.nilai2.matematika}}</td>
+                        <td class="text-center" data-title="IPA">{{formmodal.nilai2.ipa}}</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas 9 Semester 1</td>
+                        <td class="text-center" data-title="Pendidikan Agama" >{{formmodal.nilai3.pendidikan_agama}}</td>
+                        <td class="text-center" data-title="Bahasa Indonesia">{{formmodal.nilai3.bahasa_indonesia}}</td>
+                        <td class="text-center" data-title="Bahasa Inggris">{{formmodal.nilai3.bahasa_inggris}}</td>
+                        <td class="text-center" data-title="Matematika">{{formmodal.nilai3.matematika}}</td>
+                        <td class="text-center" data-title="IPA">{{formmodal.nilai3.ipa}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-xs-12 text-right">
+            <a class="btn btn-success btn-md" ng-click="save(formmodal)">AMBIL NOMOR PENDAFTARAN</a>
+        </div>
+    </div>
+</div>
+<!--<div class="modal-footer">                  
+    <button class="btn btn-danger" ng-click="selesai_ujian()" >AKHIRI UJIAN</button>
+</div>-->

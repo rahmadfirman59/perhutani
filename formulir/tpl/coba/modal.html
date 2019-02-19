@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <div class="row">
+        <div class="col-md-9">
+            <h3 class="modal-title"> <b>Apakah Anda yakin akan mengakhiri ujian ini ?</b></h3>
+        </div>
+        <div class="col-md-3" align="right">
+            <button ng-click="close()" title="Cancel"  class="btn btn-rounded btn btn-icon btn-default"><i class="glyphicon glyphicon-remove"></i></button>
+
+        </div>
+    </div>
+</div>
+<div class="modal-body">
+    <form name="modalform" class="form-horizontal form-validation">
+        <input ng-model="formmodal.nama"/>
+    </form>
+</div>
+<div class="modal-footer">                  
+    <button class="btn btn-danger" ng-click="selesai_ujian()" >AKHIRI UJIAN</button>
+</div>

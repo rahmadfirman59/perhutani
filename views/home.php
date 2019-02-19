@@ -1,0 +1,534 @@
+<section class="no-padding">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <?php
+            $directory = "app/img/slider";
+            $images = glob($directory . "/*.{jpg,png}", GLOB_BRACE);
+            $first = true;
+            foreach ($images as $key => $img) {
+                $active = '';
+                if ($first == true) {
+                    $active = 'active';
+                }
+
+                echo '<li data-target="#carousel-example-generic" data-slide-to="' . $key . '" class="' . $active . '"></li>';
+                $first = false;
+            }
+            ?>
+        </ol>
+        <div class="carousel-inner">
+            <?php
+            $first = true;
+            foreach ($images as $image) {
+                ?>
+                <div class="item <?= ($first == true) ? "active" : ""; ?>">
+                    <img src="<?= site_url() . '' . $image ?>" alt="Glintung Go Green">
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+
+                        </div>
+                    </div>
+                </div>
+                <?php
+                $first = false;
+            }
+            ?>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</section>
+<section class="iconbox">
+    <div class="container">
+        <div class="row" style="margin-top: 15px">
+            <div class="col-md-12 text-center des-text">
+                <h3 class="text-cap text-center"><?= $welcome->title ?></h3>
+                <p><?= str_replace("mendukung ", "mendukung <br>", $welcome->content) ?></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="iconbox-set-1-warp" style="margin-top: 10px">
+                <div class="col-md-12 text-center des-text">
+                    <h3 class="text-cap text-center page-header">Visi Misi Glintung Go Green</h3>
+                </div>
+                <?php
+                foreach ($visimisi as $vals) {
+                    ?>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 visi">
+                        <div class="icon-image">
+
+                            <?php
+                            $a = str_replace("http://", "https://", get_first_image($vals->content, 'medium'));
+                            echo $a;
+                            ?>
+                        </div>
+                        <div class="iconbox iconbox-set-1">
+                            <h4 class="text-up"><?= $vals->title ?>
+                            </h4>
+                            <i class="color-theme"><?= cuplikanvisi($vals->content, 600) ?></i>
+                        </div>
+                    </div>
+
+                <?php } ?>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-us " id="aboutus" style="margin-top: 50px">
+    <div class="container"> <!-- SECTION HEADER -->
+        <div class="section-header" style="padding-bottom: 30px"><h2 class="white-text">Glintung Go Green</h2>
+            <div class="white-text section-legend">Profil Singkat Desa</div>
+        </div><!-- / END SECTION HEADER --> <!-- 3 COLUMNS OF ABOUT US-->
+        <div class="row"> <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
+            <div class="col-lg-12 col-md-12 column zerif_about_us_center text_and_skills"
+                 data-scrollreveal="enter bottom after 0s over 1s" data-sr-init="true" data-sr-complete="true"
+                 style="margin-bottom: 0px">
+                <p style="text-align: justify">
+                    <?= cuplikan($sejarah->content, 1253) ?>
+                </p>
+            </div>
+            <div class="col-lg-8 col-md-8 column zerif_about_us_center text_and_skills"
+                 data-scrollreveal="enter bottom after 0s over 1s" data-sr-init="true" data-sr-complete="true"
+                 style="margin-bottom: 50px">
+                <iframe width="100%" height="400px" src="<?= $setting->iframe_youtube ?>" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            </div>
+            <div class="col-lg-4 col-md-4 column zerif-rtl-skills " style="margin-bottom: 0px">
+                <ul class="skills" data-scrollreveal="enter right after 0s over 1s" data-sr-init="true"
+                    data-sr-complete="true"> <!-- SKILL ONE -->
+                    <li class="skill skill_1">
+                        <div class="skill-count">
+                            <div style="display: inline; width: 64px; height: 200px;">
+                                <img src="<?= site_url() ?>/app/img/icon/user.png" style="width: 32px">
+                            </div>
+                        </div>
+                        <div class="section-legend"><label for="jumlah-penduduk">Jumlah Penduduk </label></div>
+                        <p><?= $setting->warga ?></p></li> <!-- SKILL TWO -->
+                    <li class="skill skill_2">
+                        <div class="skill-count">
+                            <div style="display: inline; width: 64px; height: 200px;">
+                                <img src="<?= site_url() ?>/app/img/icon/users.png" style="width: 32px">
+                            </div>
+                        </div>
+                        <div class="section-legend"><label for="jumlah-kepala-keluarga">Jumlah kepala keluarga</label>
+                        </div>
+                        <p><?= $setting->kepala_keluarga ?></p></li> <!-- SKILL THREE -->
+                    <li class="skill skill_3">
+                        <div class="skill-count">
+                            <div style="display: inline; width: 64px; height: 200px;">
+                                <img src="<?= site_url() ?>/app/img/icon/man.png" style="width: 32px">
+                            </div>
+                        </div>
+                        <div class="section-legend"><label for="penduduk-laki-laki">Penduduk Laki-Laki</label></div>
+                        <p><?= $setting->warga_laki ?></p></li> <!-- SKILL FOUR -->
+                    <li class="skill skill_4">
+                        <div class="skill-count">
+                            <div style="display: inline; width: 64px; height: 200px;">
+                                <img src="<?= site_url() ?>/app/img/icon/women.png" style="width: 32px">
+                            </div>
+                        </div>
+                        <div class="section-legend"><label for="penduduk-perempuan">Penduduk Perempuan</label></div>
+                        <p><?= $setting->warga_perempuan ?></p></li>
+                </ul>
+            </div> <!-- / END SKILLS COLUMN-->
+        </div> <!-- / END 3 COLUMNS OF ABOUT US--> <!-- CLIENTS -->
+    </div> <!-- / END CONTAINER -->
+</section>
+<div class="main-wraper padd-60">
+    <div class="container">
+        <div class="rowfasilitas">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <div class="second-title">
+                    <h3 class="subtitle color-red-3 underline">FASILITAS</h3>
+                    <!--                    <h2>Akomodasi dan Servis</h2>-->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="<?= url('d/' . $fasilitas[0]->alias) ?>">
+                    <?php
+
+                    $g1 = get_first_image($fasilitas[0]->content, 'big');
+                    $ga1 = get_images($g1);
+                    $gab1 = $ga1[0];
+                    ?>
+                    <div class="tour-block tour-block-s-6 radius-5 underline-block hover-blue overlay background-block"
+                         style="background-image:url(<?= $gab1 ?>);">
+                        <div class="tour-layer delay-1"></div>
+<!--                        <img class="center-image" alt="10 edited3" style="display: none;">-->
+
+
+                        <div class="tour-caption">
+                            <div class="vertical-align">
+                                <h4></h4>
+                                <h3 class="underline hover-it"><?= $fasilitas[0]->title ?></h3>
+                                <p class="color-white-light"><?= $fasilitas[0]->description ?></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="<?= url('d/' . $fasilitas[1]->alias) ?>">
+                    <?php
+                    $g2 = get_first_image($fasilitas[1]->content, 'big');
+                    $ga2 = get_images($g2);
+                    $gab2 = $ga2[0];
+                    ?>
+                    <div class="tour-block tour-block-s-7 radius-5 underline-block hover-blue overlay background-block"
+                         style="background-image:url(<?= $gab2 ?>);">
+                        <div class="tour-layer delay-1"></div>
+<!--                        <img class="center-image" src="assets/Uploads/Restaurant/thumb-restaurant.jpg"-->
+<!--                             alt="thumb restaurant" style="display: none;">-->
+
+                        <div class="tour-caption">
+                            <div class="vertical-align">
+                                <!--                                                        <h4><span class="color-blue">Dine with us</span></h4>-->
+                                <h3 class="underline hover-it"><?= $fasilitas[1]->title ?></h3>
+                                <p class="color-white-light"><?= $fasilitas[1]->description ?></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="<?= url('d/' . $fasilitas[2]->alias) ?>">
+                    <?php
+                    $g3 = get_first_image($fasilitas[2]->content, 'big');
+                    $ga3 = get_images($g3);
+                    $gab3 = $ga3[0];
+                    ?>
+                    <div class="tour-block tour-block-s-8 radius-5 underline-block hover-blue overlay background-block"
+                         style="background-image:url(<?= $gab3 ?>);">
+                        <div class="tour-layer delay-1"></div>
+<!--                        <img class="center-image" src="assets/Uploads/MG-1428-big.jpg" alt="MG 1428 big"-->
+<!--                             style="display: none;">-->
+                        <div class="tour-caption">
+                            <div class="vertical-align">
+                                <h4><span class="color-blue"></span></h4>
+                                <h3 class="underline hover-it"><?= $fasilitas[2]->description ?></h3>
+                                <p class="color-white-light"></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <?php
+                $g4 = get_first_image($fasilitas[3]->content, 'big');
+                $ga4 = get_images($g4);
+                $gab4 = $ga4[0];
+                ?>
+                <a href="<?= url('d/' . $fasilitas[3]->alias) ?>">
+                    <div class="tour-block tour-block-s-7 radius-5 underline-block hover-blue overlay background-block"
+                         style="background-image:url(<?= $gab4 ?>);">
+                        <div class="tour-layer delay-1"></div>
+<!--                        <img class="center-image" src="assets/Uploads/BNDCC-highres-thumb2.jpg"-->
+<!--                             alt="BNDCC highres thumb2" style="display: none;">-->
+                        <div class="tour-caption">
+                            <div class="vertical-align">
+                                <!--                                <h4><span class="color-blue">Meeting and Conference</span></h4>-->
+                                <h3 class="underline hover-it"><?= $fasilitas[3]->description ?></h3>
+                                <!--                                <p class="color-white-light">Meeting and Conference Facilities in the Nusa Dua</p>-->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <?php
+                        $g5 = get_first_image($fasilitas[4]->content, 'big');
+                        $ga5 = get_images($g5);
+                        $gab5 = $ga5[0];
+                        ?>
+                        <a href="<?= url('d/' . $fasilitas[4]->alias) ?>">
+                            <div class="tour-block tour-block-s-2 radius-5 underline-block hover-blue overlay background-block"
+                                 style="background-image:url(<?= str_replace('http://','https://', $gab5) ?>);">
+                                <div class="tour-layer delay-1"></div>
+<!--                                <img class="center-image" src="assets/Uploads/Lagoon.png" alt="Lagoon"-->
+<!--                                     style="display: none;">-->
+                                <div class="tour-caption">
+                                    <div class="vertical-align">
+                                        <h3 class="underline hover-it"><?= $fasilitas[4]->description ?></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <?php
+                        $g6 = get_first_image($fasilitas[5]->content, 'big');
+                        $ga6 = get_images($g6);
+                        $gab6 = $ga6[0];
+                        ?>
+                        <a href="<?= url('d/' . $fasilitas[5]->alias) ?>">
+                            <div class="tour-block tour-block-s-2 radius-5 underline-block hover-blue overlay background-block"
+                                 style="background-image:url(<?= $gab6 ?>">
+                                <div class=" tour-layer delay-1"></div>
+<!--                                <img class="center-image" src="assets/Uploads/wayan-sumardiana2-Resize.jpg"-->
+<!--                                     alt="wayan sumardiana2 Resize" style="display: none;">-->
+                                <div class="tour-caption">
+                                    <div class="vertical-align">
+                                        <h3 class="underline hover-it">
+                                            <?= $fasilitas[5]->description ?></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="iconbox no-padding-bottom">
+    <div class="container">
+        <div class="row" style="margin-top: 50px">
+            <div class='col-md-8 col-sm-8 col-xs-12' style="margin-bottom: 20px;">
+                <h3 class="text-cap title-header hr">Berita Terbaru</h3>
+                <div id="list-blog" class="list-blog-warp">
+                    <div class="row">
+                        <?php
+                        foreach ($terbaru as $val) {
+                            ?>
+
+                            <div class='col-md-6 col-sm-12 col-xs-12 terbaru'>
+                                <div class="item-blog blog-single-feature-img">
+                                    <div class="blog-feature-warp">
+                                        <a href="<?= url('d/' . $val->alias) ?>">
+                                            <?php
+                                            $a = str_replace("http", "https", get_first_image($val->content, 'medium'));
+                                            echo $a;
+                                            ?>
+                                        </a>
+                                    </div>
+                                    <div class="blog-feature-content">
+                                        <div class="blog-feature-content-inner">
+                                            <div class="blog-data">
+                                                <div class="date-time bg-theme">
+                                                    <span class="date"><?= date("d", strtotime($val->date)) ?></span>
+                                                    <span class="month"><?= date("M", strtotime($val->date)) ?></span>
+                                                </div>
+                                            </div>
+                                            <div class='blog-text'>
+                                                <a href='<?= url('d/' . $val->alias) ?>'>
+                                                    <h4 style="font-weight: bold"><?= $val->title ?></h4>
+                                                </a>
+                                                <p><?= cuplikan($val->content, 150) ?></p>
+                                            </div>
+                                        </div>
+                                        <div class='blog-footer-2 border-color-theme'>
+                                            <ul>
+                                                <li><i class="glyphicon glyphicon-user"></i> <a
+                                                            href="<?= url('d/' . $val->alias) ?>"
+                                                            class="hover-text-theme text-capitalize"><?= $val->user ?></a>
+                                                </li>
+                                                <li><i class="glyphicon glyphicon-tag"></i> On <a
+                                                            href="<?= url('d/' . $val->alias) ?>"
+                                                            class="hover-text-theme text-capitalize"><?= $val->kategori ?></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+                <!--<a href='#' class='btn btn-success' style="width: calc(100% - 15px)">Selengkapnya</a>-->
+            </div>
+            <div class='col-md-4 col-sm-4 col-xs-12'>
+                <h3 class="text-cap title-header hr">Berita Populer</h3>
+                <div id="home-sidebar">
+                    <div id='list-blog'>
+                        <?php
+                        foreach ($populer as $val) {
+                            ?>
+                            <div class="mobile_thumbnail" style="padding-top: 15px">
+                                <div class="mobile_img">
+                                    <a href="<?= url($val->alias) ?>">
+                                        <?= str_replace("http://", "https://", get_first_image($val->content, 'small')) ?>
+                                    </a>
+                                </div>
+                                <div class="mobile_detail">
+                                    <a href="<?= url('d/' . $val->alias) ?>">
+                                        <h2><?= $val->title ?></h2>
+                                    </a>
+                                    <div class="post-labels">
+                                        <span class="glyphicon glyphicon-calendar"
+                                              style="margin:0"></span> <?= date("d-m-Y", strtotime($val->date)) ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="main-wraper padd-60 background-block"
+     style="background-color: #006332;margin-top: -30px;padding-bottom: 70px">
+<!--    <img class="center-image" src="themes/simple/images/component/event-bg.jpg" alt="background" style="display: none;">-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <div class="second-title">
+                    <h3 class="subtitle color-red-3 underline" style="color: #fff">BENTUK PELATIHAN</h3>
+                    <!--                    <h2>What is happening now</h2>-->
+                    <!--<p class="color-grey">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id tor.</p>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <?php
+            foreach ($pelatihan as $val) {
+                $g = get_first_image($val->content, 'big');
+                ?>
+                <div class="col-md-4">
+                    <div class="hotel-item style-6">
+                        <div class="radius-top" style="background-color: #808080;height: 226px;overflow: hidden;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                            <?= $g ?>
+                        </div>
+                        <div class="title" style="text-align: center;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                            <h4><b><?= $val->title ?></b></h4>
+<!--                            <div class="tour-info">-->
+                                <!--                                <img alt="calender" src="themes/simple/images/component/calendar_icon_grey.png">-->
+                                <!--                                <span class="font-style-2 color-grey-3">Jun <b>11th</b> 2018 TO Jul <b>15th</b> 2018</span>-->
+<!--                            </div>-->
+
+                            <!--                            <p></p>-->
+<!--                            <div class="clearfix">-->
+                                <a href="<?= url('d/' . $val->alias) ?>"
+                                   class="c-button b-40 bg-red-3 hv-red-3-o">Lihat Selengkapnya</a>
+<!--                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
+        </div>
+    </div>
+</div>
+<section class="iconbox" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                        <div class="second-title">
+                            <h3 class="subtitle color-red-3 underline">PENGHARGAAN YANG DIRAIH</h3>
+                            <!--                    <h2>What is happening now</h2>-->
+                            <!--<p class="color-grey">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id tor.</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-warp">
+                    <div class="owl-carousel owl-carousel2 owl-theme owl-partner" style="margin: 5px">
+
+                        <?php
+                        $directory = "app/img/penghargaan";
+                        $images = glob($directory . "/*.{jpg,png}", GLOB_BRACE);
+
+
+                        foreach ($images as $key => $val) {
+
+
+                            $name = str_replace("app/img/penghargaan/", "", $val);
+                            $name = str_replace(".png", "", $name);
+                            $name = str_replace(".jpg", "", $name);
+//                            $name = urlParsing($name);
+//                            print_r($name);
+                            $name = str_replace("-", " ", $name);
+
+
+                            echo '
+                                <div class="mitra" >
+                                        <div class=" " style="height: max-content;padding-top: 0px">
+                                            <div  style="margin: 5px;padding: 0px;height: 135px;overflow: hidden">
+                                                 <a href="' . site_url() . '' . $val . '" data-toggle="lightbox">
+                                                    <img src="' . site_url() . '' . $val . '" class="img-fluid" alt="mitra 3g">
+                                                </a>
+                                            </div>
+                                       </div>
+                                    <h4 style="padding: 0px 15px">' . $name . '</h4>
+                                </div>';
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="iconbox" style="margin-bottom: 50px;background-color: #fff">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                        <div class="second-title">
+                            <h3 class="subtitle color-red-3 underline">MITRA GLINTUNG GO GREEN</h3>
+                            <!--                    <h2>What is happening now</h2>-->
+                            <!--<p class="color-grey">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id tor.</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-warp" ng-click="">
+                    <div class="owl-carousel owl-carousel2 owl-theme owl-partner" style="margin: 5px">
+
+                        <?php
+                        $directory = "app/img/mitra";
+                        $images = glob($directory . "/*.{jpg,png}", GLOB_BRACE);
+
+
+                        foreach ($images as $key => $val) {
+
+
+                            $name = str_replace("app/img/mitra/", "", $val);
+                            $name = str_replace(".png", "", $name);
+                            $name = str_replace(".jpg", "", $name);
+//                            $name = urlParsing($name);
+//                            print_r($name);
+                            $name = str_replace("-", " ", $name);
+
+
+                            echo '
+                                <div class="mitra" >
+                                        <div class="square-box ">
+                                            <div class="square-content thumbnail" style="margin: 5px">
+                                                <img src="' . site_url() . '' . $val . '"   alt="mitra 3g">
+                                            </div>
+                                       </div>
+                                    <h4>' . $name . '</h4>
+                                </div>';
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

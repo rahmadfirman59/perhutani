@@ -1,0 +1,100 @@
+<div ng-controller="hasilCtrl">
+    <nav class="navbar navbar-default" style="background-color: #fff">
+        <div class="container-fluid text-center">
+            <img src="img/logo/logo_ppdb.png" width="300px" style="padding: 10px 0px;">
+        </div>
+    </nav>
+    <div class="container">
+        <!--        <ul id="breadcrumb">
+                    <li><a ui-sref="site.index"><span class="icon fa fa-home"> </span></a></li>
+                    <li><a href="#"><span class="icon fa fa-bell-o"> </span>&nbsp; Hasil Seleksi</a></li>
+                </ul>-->
+        <br/>
+        <div class="form-inline text-center"> 
+            <div class="form-group">
+                <select class="form-control input-sm" ng-model="form.sekolah_id" required="" > 
+                    <option value="" >- Pilih Lembaga -</option>
+                    <option ng-repeat="val in getSekolah" value="{{val.id}}">{{val.nama}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control input-sm" ng-change="gelombang(form)" ng-model="form.tahun" required="">
+                    <option value="">- Pilih Tahun -</option>
+                    <option ng-repeat="val in getTahun" value="{{val}}">{{val}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control input-sm" ng-model="form.gelombang" required ng-disabled="form.sekolah_id == undefined || form.tahun == undefined">
+                    <option value="">- Pilih Gelombang -</option>
+                    <option ng-repeat="val2 in getGelombang" value="{{val2.id}}">{{val2.gelombang}}</option>
+                </select>                
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-sm" ng-click="view(form)" ng-disabled="form.sekolah_id == undefined || form.gelombang == undefined || form.tahun == undefined">Lihat Hasil</button>
+            </div>
+        </div>
+        <div class="row" ng-show="is_view" style="padding-top: 10px;">
+            <div class="col-md-12">
+                <div class="panel panel-success" st-pipe="callServer" st-table="displayed">
+                    <div class="panel-heading">
+                        Data Hasil Kelulusan {{displayed[0].namaSekolah}} - {{displayed[0].gelombang}}
+                    </div>
+                    <div class="panel-body ">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">Nomor</label>
+                                <div class="col-sm-2">
+                                    <input st-search="m_pendaftar.no" class="form-control input-sm angka"/>
+                                </div>
+                                <label class="col-sm-2 control-label">Nama Lengkap</label>
+                                <div class="col-sm-6">
+                                    <input st-search="m_pendaftar.nama" class="form-control input-sm"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" >
+                            <thead>
+                                <tr>
+                                    <th >No.</th>
+                                    <th style="text-align: left;">No. Pendaftaran</th>
+                                    <th style="text-align: left;">Nama Lengkap</th>
+                                    <th style="text-align: left;">Asal Sekolah</th>
+                                    <!--<th style="text-align: left;">Tempat, Tanggal Lahir</th>-->
+                                    <th style="text-align: center;">Nilai</th>
+                                    <th style="text-align: center;">Passing Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody ng-show="!isLoading">
+                                <tr ng-repeat="row in displayed">
+                                    <td class="text-center">{{$index + 1}}</td>
+                                    <td>{{row.no}}</td>
+                                    <td>{{row.namaSiswa}}</td>
+                                    <td>{{row.asalSekolah}}</td>
+                                    <!--<td>{{row.kota_lahir}}, {{row.tanggal_lahir | date:'longDate'}}</td>-->
+                                    <td class="text-center">{{row.nilai_total}}</td>
+                                    <td class="text-center">
+                                        <span class="label label-success" ng-if="row.passing_grade == 'Lulus / Diterima'">{{row.passing_grade}}</span>
+                                        <span class="label label-danger" ng-if="row.passing_grade == 'Tidak Lulus'">{{row.passing_grade}}</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody ng-show="isLoading">
+                                <tr>
+                                    <td colspan="6" class="text-center">Loading ... </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6" class="text-center" st-pagination="" st-items-by-page="10" st-template="tpl/blocks/pagination.custom.html">
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>		
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
