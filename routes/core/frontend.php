@@ -10,8 +10,7 @@ get('/index', function () {
     $populer = $sql->findAll("select * from artikel where m_kategori_id in (4,5,7,8,9) and publish = 1 order by hits DESC limit 8");
     $fasilitas = $sql->findAll("select * from artikel where m_kategori_id = 12");
     $pelatihan = $sql->findAll("select * from artikel where m_kategori_id = 13 limit 3");
-//    echo json_encode(getSetting());
-//    exit();
+
 
     render('home', ['welcome' => $welcome,
         'sejarah'                 => $sejarah,

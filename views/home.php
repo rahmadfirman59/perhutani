@@ -44,16 +44,11 @@
 </section>
 <section class="iconbox">
     <div class="container">
-        <div class="row" style="margin-top: 15px">
-            <div class="col-md-12 text-center des-text">
-                <h3 class="text-cap text-center"><?= $welcome->title ?></h3>
-                <p><?= str_replace("mendukung ", "mendukung <br>", $welcome->content) ?></p>
-            </div>
-        </div>
+
         <div class="row">
             <div class="iconbox-set-1-warp" style="margin-top: 10px">
                 <div class="col-md-12 text-center des-text">
-                    <h3 class="text-cap text-center page-header">Visi Misi Glintung Go Green</h3>
+                    <h3 class="text-cap text-center page-header">Visi Misi Pendakian Arjuno</h3>
                 </div>
                 <?php
                 foreach ($visimisi as $vals) {
@@ -79,220 +74,8 @@
         </div>
     </div>
 </section>
-<section class="about-us " id="aboutus" style="margin-top: 50px">
-    <div class="container"> <!-- SECTION HEADER -->
-        <div class="section-header" style="padding-bottom: 30px"><h2 class="white-text">Glintung Go Green</h2>
-            <div class="white-text section-legend">Profil Singkat Desa</div>
-        </div><!-- / END SECTION HEADER --> <!-- 3 COLUMNS OF ABOUT US-->
-        <div class="row"> <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
-            <div class="col-lg-12 col-md-12 column zerif_about_us_center text_and_skills"
-                 data-scrollreveal="enter bottom after 0s over 1s" data-sr-init="true" data-sr-complete="true"
-                 style="margin-bottom: 0px">
-                <p style="text-align: justify">
-                    <?= cuplikan($sejarah->content, 1253) ?>
-                </p>
-            </div>
-            <div class="col-lg-8 col-md-8 column zerif_about_us_center text_and_skills"
-                 data-scrollreveal="enter bottom after 0s over 1s" data-sr-init="true" data-sr-complete="true"
-                 style="margin-bottom: 50px">
-                <iframe width="100%" height="400px" src="<?= $setting->iframe_youtube ?>" frameborder="0"
-                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-            </div>
-            <div class="col-lg-4 col-md-4 column zerif-rtl-skills " style="margin-bottom: 0px">
-                <ul class="skills" data-scrollreveal="enter right after 0s over 1s" data-sr-init="true"
-                    data-sr-complete="true"> <!-- SKILL ONE -->
-                    <li class="skill skill_1">
-                        <div class="skill-count">
-                            <div style="display: inline; width: 64px; height: 200px;">
-                                <img src="<?= site_url() ?>/app/img/icon/user.png" style="width: 32px">
-                            </div>
-                        </div>
-                        <div class="section-legend"><label for="jumlah-penduduk">Jumlah Penduduk </label></div>
-                        <p><?= $setting->warga ?></p></li> <!-- SKILL TWO -->
-                    <li class="skill skill_2">
-                        <div class="skill-count">
-                            <div style="display: inline; width: 64px; height: 200px;">
-                                <img src="<?= site_url() ?>/app/img/icon/users.png" style="width: 32px">
-                            </div>
-                        </div>
-                        <div class="section-legend"><label for="jumlah-kepala-keluarga">Jumlah kepala keluarga</label>
-                        </div>
-                        <p><?= $setting->kepala_keluarga ?></p></li> <!-- SKILL THREE -->
-                    <li class="skill skill_3">
-                        <div class="skill-count">
-                            <div style="display: inline; width: 64px; height: 200px;">
-                                <img src="<?= site_url() ?>/app/img/icon/man.png" style="width: 32px">
-                            </div>
-                        </div>
-                        <div class="section-legend"><label for="penduduk-laki-laki">Penduduk Laki-Laki</label></div>
-                        <p><?= $setting->warga_laki ?></p></li> <!-- SKILL FOUR -->
-                    <li class="skill skill_4">
-                        <div class="skill-count">
-                            <div style="display: inline; width: 64px; height: 200px;">
-                                <img src="<?= site_url() ?>/app/img/icon/women.png" style="width: 32px">
-                            </div>
-                        </div>
-                        <div class="section-legend"><label for="penduduk-perempuan">Penduduk Perempuan</label></div>
-                        <p><?= $setting->warga_perempuan ?></p></li>
-                </ul>
-            </div> <!-- / END SKILLS COLUMN-->
-        </div> <!-- / END 3 COLUMNS OF ABOUT US--> <!-- CLIENTS -->
-    </div> <!-- / END CONTAINER -->
-</section>
-<div class="main-wraper padd-60">
-    <div class="container">
-        <div class="rowfasilitas">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                <div class="second-title">
-                    <h3 class="subtitle color-red-3 underline">FASILITAS</h3>
-                    <!--                    <h2>Akomodasi dan Servis</h2>-->
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <a href="<?= url('d/' . $fasilitas[0]->alias) ?>">
-                    <?php
-
-                    $g1 = get_first_image($fasilitas[0]->content, 'big');
-                    $ga1 = get_images($g1);
-                    $gab1 = $ga1[0];
-                    ?>
-                    <div class="tour-block tour-block-s-6 radius-5 underline-block hover-blue overlay background-block"
-                         style="background-image:url(<?= $gab1 ?>);">
-                        <div class="tour-layer delay-1"></div>
-<!--                        <img class="center-image" alt="10 edited3" style="display: none;">-->
 
 
-                        <div class="tour-caption">
-                            <div class="vertical-align">
-                                <h4></h4>
-                                <h3 class="underline hover-it"><?= $fasilitas[0]->title ?></h3>
-                                <p class="color-white-light"><?= $fasilitas[0]->description ?></p>
-
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="<?= url('d/' . $fasilitas[1]->alias) ?>">
-                    <?php
-                    $g2 = get_first_image($fasilitas[1]->content, 'big');
-                    $ga2 = get_images($g2);
-                    $gab2 = $ga2[0];
-                    ?>
-                    <div class="tour-block tour-block-s-7 radius-5 underline-block hover-blue overlay background-block"
-                         style="background-image:url(<?= $gab2 ?>);">
-                        <div class="tour-layer delay-1"></div>
-<!--                        <img class="center-image" src="assets/Uploads/Restaurant/thumb-restaurant.jpg"-->
-<!--                             alt="thumb restaurant" style="display: none;">-->
-
-                        <div class="tour-caption">
-                            <div class="vertical-align">
-                                <!--                                                        <h4><span class="color-blue">Dine with us</span></h4>-->
-                                <h3 class="underline hover-it"><?= $fasilitas[1]->title ?></h3>
-                                <p class="color-white-light"><?= $fasilitas[1]->description ?></p>
-
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="<?= url('d/' . $fasilitas[2]->alias) ?>">
-                    <?php
-                    $g3 = get_first_image($fasilitas[2]->content, 'big');
-                    $ga3 = get_images($g3);
-                    $gab3 = $ga3[0];
-                    ?>
-                    <div class="tour-block tour-block-s-8 radius-5 underline-block hover-blue overlay background-block"
-                         style="background-image:url(<?= $gab3 ?>);">
-                        <div class="tour-layer delay-1"></div>
-<!--                        <img class="center-image" src="assets/Uploads/MG-1428-big.jpg" alt="MG 1428 big"-->
-<!--                             style="display: none;">-->
-                        <div class="tour-caption">
-                            <div class="vertical-align">
-                                <h4><span class="color-blue"></span></h4>
-                                <h3 class="underline hover-it"><?= $fasilitas[2]->description ?></h3>
-                                <p class="color-white-light"></p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <?php
-                $g4 = get_first_image($fasilitas[3]->content, 'big');
-                $ga4 = get_images($g4);
-                $gab4 = $ga4[0];
-                ?>
-                <a href="<?= url('d/' . $fasilitas[3]->alias) ?>">
-                    <div class="tour-block tour-block-s-7 radius-5 underline-block hover-blue overlay background-block"
-                         style="background-image:url(<?= $gab4 ?>);">
-                        <div class="tour-layer delay-1"></div>
-<!--                        <img class="center-image" src="assets/Uploads/BNDCC-highres-thumb2.jpg"-->
-<!--                             alt="BNDCC highres thumb2" style="display: none;">-->
-                        <div class="tour-caption">
-                            <div class="vertical-align">
-                                <!--                                <h4><span class="color-blue">Meeting and Conference</span></h4>-->
-                                <h3 class="underline hover-it"><?= $fasilitas[3]->description ?></h3>
-                                <!--                                <p class="color-white-light">Meeting and Conference Facilities in the Nusa Dua</p>-->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-6">
-                        <?php
-                        $g5 = get_first_image($fasilitas[4]->content, 'big');
-                        $ga5 = get_images($g5);
-                        $gab5 = $ga5[0];
-                        ?>
-                        <a href="<?= url('d/' . $fasilitas[4]->alias) ?>">
-                            <div class="tour-block tour-block-s-2 radius-5 underline-block hover-blue overlay background-block"
-                                 style="background-image:url(<?= str_replace('http://','https://', $gab5) ?>);">
-                                <div class="tour-layer delay-1"></div>
-<!--                                <img class="center-image" src="assets/Uploads/Lagoon.png" alt="Lagoon"-->
-<!--                                     style="display: none;">-->
-                                <div class="tour-caption">
-                                    <div class="vertical-align">
-                                        <h3 class="underline hover-it"><?= $fasilitas[4]->description ?></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <?php
-                        $g6 = get_first_image($fasilitas[5]->content, 'big');
-                        $ga6 = get_images($g6);
-                        $gab6 = $ga6[0];
-                        ?>
-                        <a href="<?= url('d/' . $fasilitas[5]->alias) ?>">
-                            <div class="tour-block tour-block-s-2 radius-5 underline-block hover-blue overlay background-block"
-                                 style="background-image:url(<?= $gab6 ?>">
-                                <div class=" tour-layer delay-1"></div>
-<!--                                <img class="center-image" src="assets/Uploads/wayan-sumardiana2-Resize.jpg"-->
-<!--                                     alt="wayan sumardiana2 Resize" style="display: none;">-->
-                                <div class="tour-caption">
-                                    <div class="vertical-align">
-                                        <h3 class="underline hover-it">
-                                            <?= $fasilitas[5]->description ?></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <section class="iconbox no-padding-bottom">
     <div class="container">
         <div class="row" style="margin-top: 50px">
@@ -392,7 +175,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <div class="second-title">
-                    <h3 class="subtitle color-red-3 underline" style="color: #fff">BENTUK PELATIHAN</h3>
+                    <h3 class="subtitle color-red-3 underline" style="color: #fff">BENTUK KUNJUNGAN</h3>
                     <!--                    <h2>What is happening now</h2>-->
                     <!--<p class="color-grey">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id tor.</p>-->
                 </div>

@@ -31,30 +31,23 @@
                     <a href="<?= url('profil') ?>" class="dark-text">Profil</a>
                 </li>
                 <li>
-                    <a href="#" class="dark-text has-sub">Berita</a>
-<!--                    <ul class="navi-level-2">-->
-<!--                        <li>-->
-<!--                            <a href="--><?//= url('c/agenda') ?><!--">Agenda</a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="--><?//= url('c/kegiatan') ?><!--">Kegiatan</a>-->
-<!--                        </li>-->
-<!--                        <li>-->
-<!--                            <a href="--><?//= url('c/teknologi') ?><!--">Teknologi</a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
+                    <a href="<?= url('c/berita') ?>" class="dark-text">Berita</a>
                 </li>
                 <li>
-                    <a href="#" class="dark-text has-sub">Pengumuman</a>
+                    <a href="<?= url('c/pengumuman') ?>" class="dark-text">Pengumuman</a>
+                </li>
+
+<!--                <li>-->
+<!--                    <a href="#" class="dark-text has-sub">Pengumuman</a>-->
 <!--                    <ul class="navi-level-2">-->
 <!--                        <li>-->
-<!--                            <a href="--><?//= url('c/jasa') ?><!--">Jasa</a>-->
+<!--                            <a href="--><?//= url('c/pengumuman') ?><!--">Pengumuman</a>-->
 <!--                        </li>-->
 <!--                        <li>-->
 <!--                            <a href="--><?//= url('c/barang') ?><!--">Barang</a>-->
 <!--                        </li>-->
 <!--                    </ul>-->
-                </li>
+<!--                </li>-->
                 <li>
                     <a href="<?= site_url().'formulir' ?>" class="dark-text">KUNJUNGAN</a>
                 </li>

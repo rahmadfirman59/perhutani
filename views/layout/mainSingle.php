@@ -7,7 +7,7 @@
     <meta name="description" content="<?= isset($_description) ? $_description : config("blog.description") ?>">
     <meta name="keyword" content="<?= isset($_keyword) ? $_keyword : config("blog.title") ?>">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href='<?= site_url() . 'app/img/glintunggogreen.png' ?>'>
+    <link rel="icon" type="image/png" href='<?=site_url().'app/img/system/logo.png'?>'>
     <link href='<?= site_url() . 'css/bootstrap.min.css' ?>' rel='stylesheet' type='text/css'>
     <link href='<?= site_url() . 'css/3g.css' ?>' rel='stylesheet' type='text/css'>
     <link href='<?= site_url() . 'css/custom.css' ?>' rel='stylesheet' type='text/css'>

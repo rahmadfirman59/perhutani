@@ -4,7 +4,442 @@
     <bookmark url="file://$PROJECT_DIR$/routes/core/backend.php" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30dccc2e-dca5-433f-935b-79b1be26a6d9" name="Default Changelist" comment="" />
+    <list default="true" id="30dccc2e-dca5-433f-935b-79b1be26a6d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slider/Gunung-Arjuno-Cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slider/Gunung-Arjuno-Cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slider/b2ef7f0cbe9325d95e0c9021a4650bd4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slider/b2ef7f0cbe9325d95e0c9021a4650bd4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slider/enam-pendaki-gunung-guntur-tersambar-petir-83hFGYpzZZ.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slider/enam-pendaki-gunung-guntur-tersambar-petir-83hFGYpzZZ.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slider/puncak-gunung-arjuno_20161213_220006.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slider/puncak-gunung-arjuno_20161213_220006.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/system/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/system/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/css/hover-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/css/hover-min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/css/loading-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/css/loading-bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/css/select.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/css/select.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/css/toaster.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/css/toaster.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/assets/search-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/assets/search-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/bg-top.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/bg-top.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/Azzahro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/logo/Azzahro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/logo_ppdb.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/logo/logo_ppdb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/logopondok.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/logo/logopondok.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/sma.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/logo/sma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/smp.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/logo/smp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/smpp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/logo/smpp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/500px-airportsymbol.svg.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/500px-airportsymbol.svg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/form1.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/form1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/form2.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/form2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding1.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/koding1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding2.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/koding2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding3.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/koding3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding4.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/koding4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding5.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/koding5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-13-110728.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-13-110728.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-13-115142.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-13-115142.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-15-184451.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-15-184451.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-15-185056.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-15-185056.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/config.lazyload.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/config.lazyload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/config.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/config.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/directives.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/directives.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/FileSaver.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/FileSaver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/angular-file-upload.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/angular-file-upload.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/angular-locale_id-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/angular-locale_id-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/angular-sanitize.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/angular-sanitize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/angular-ui-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/angular-ui-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/angular.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/angular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/CHANGES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/adapters/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/build-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/build-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/ckeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/contents.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/contents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/about/dialogs/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/about/dialogs/logo_ckeditor.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/clipboard/dialogs/paste.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/colordialog/dialogs/colordialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/colordialog/dialogs/colordialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/dialogs/div.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/dialogs/div.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/icons/creatediv.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/icons/creatediv.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/icons/hidpi/creatediv.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/icons/hidpi/creatediv.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/bn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/de-ch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/en-au.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/en-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/gu.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/gu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ka.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/mn.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/mn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/si.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sr-latn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/tt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/ug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/div/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/find/dialogs/find.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/find/dialogs/find.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/flash/dialogs/flash.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/flash/dialogs/flash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/flash/images/placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/flash/images/placeholder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/hiddenfield.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/hiddenfield.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/radio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/textarea.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/textarea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/textfield.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/dialogs/textfield.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/images/hiddenfield.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/forms/images/hiddenfield.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/icons_hidpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/iframe/dialogs/iframe.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/iframe/dialogs/iframe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/iframe/images/placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/iframe/images/placeholder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/image/dialogs/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/image/images/noimage.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/image/images/noimage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/link/dialogs/anchor.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/link/dialogs/link.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/link/images/anchor.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/link/images/hidpi/anchor.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/liststyle/dialogs/liststyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/liststyle/dialogs/liststyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/magicline/images/hidpi/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/magicline/images/icon-rtl.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/magicline/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/pagebreak/images/pagebreak.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/pagebreak/images/pagebreak.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/pastefromword/filter/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/preview/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/dialogs/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_address.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_address.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_blockquote.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_blockquote.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_div.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_div.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h1.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h2.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h3.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h4.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h5.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h6.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_h6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_p.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_pre.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/showblocks/images/block_pre.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/dialogs/smiley.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/dialogs/smiley.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/angel_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/angel_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/angel_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/angel_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/angry_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/angry_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/angry_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/angry_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/broken_heart.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/broken_heart.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/broken_heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/broken_heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/confused_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/confused_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/confused_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/confused_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/cry_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/cry_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/cry_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/cry_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/devil_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/devil_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/devil_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/devil_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/embaressed_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/embaressed_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/embarrassed_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/embarrassed_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/embarrassed_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/embarrassed_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/envelope.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/envelope.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/envelope.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/envelope.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/heart.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/heart.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/heart.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/heart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/kiss.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/kiss.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/kiss.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/kiss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/lightbulb.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/lightbulb.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/lightbulb.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/lightbulb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/omg_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/omg_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/omg_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/omg_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/regular_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/regular_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/regular_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/regular_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/sad_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/sad_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/sad_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/sad_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/shades_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/shades_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/shades_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/shades_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/teeth_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/teeth_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/teeth_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/teeth_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/thumbs_down.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/thumbs_down.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/thumbs_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/thumbs_down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/thumbs_up.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/thumbs_up.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/thumbs_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/thumbs_up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/tongue_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/tongue_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/tongue_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/tongue_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/tounge_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/tounge_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/wink_smile.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/wink_smile.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/wink_smile.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/smiley/images/wink_smile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/table/dialogs/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/dialogs/templates.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/dialogs/templates.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/dialogs/templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/dialogs/templates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/templates/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/templates/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/templates/images/template1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/templates/images/template1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/templates/images/template2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/templates/images/template2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/templates/images/template3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/templates/templates/images/template3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/wsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/wsc_ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/icons_hidpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/icons_hidpi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/hidpi/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/hidpi/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/hidpi/lock-open.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/hidpi/lock-open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/hidpi/lock.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/hidpi/lock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/hidpi/refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/hidpi/refresh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/lock-open.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/lock-open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/lock.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/lock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/refresh.png" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/skins/office2013/images/refresh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ckeditor/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/daterangepicker/angular-daterangepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/daterangepicker/angular-daterangepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/daterangepicker/daterangepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/daterangepicker/daterangepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/daterangepicker/daterangepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/daterangepicker/daterangepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/daterangepicker/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/daterangepicker/moment.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/exporting.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/exporting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/highcharts-ng.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/highcharts-ng.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/highcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/highcharts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/html2canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/html2canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/loading-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/loading-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/moment.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ng-file-upload-shim.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ng-file-upload-shim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ng-file-upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ng-file-upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ocLazyLoad.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ocLazyLoad.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/pdfmake.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/pdfmake.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/select.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/select.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/smart-table.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/smart-table.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/toaster.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/toaster.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ui-bootstrap-tpls.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ui-bootstrap-tpls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/ui-bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/ui-bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/lib/vfs_fonts.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/lib/vfs_fonts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/blocks/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/blocks/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/blocks/pagination.custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/blocks/pagination.custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/coba/coba.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/coba/coba.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/coba/coba.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/coba/coba.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/coba/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/coba/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/detail/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/detail/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/detail/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/hasil/hasil.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/hasil/hasil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/hasil/hasil.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/hasil/hasil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/informasi/informasi.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/informasi/informasi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/informasi/informasi.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/informasi/informasi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/page_404.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/page_404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/page_forbidden.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/page_forbidden.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/page_signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/page_signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/pencarian/pencarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/pencarian/pencarian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/pencarian/pencarian.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/pencarian/pencarian.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/pendaftar/pendaftar.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/pendaftar/pendaftar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/pendaftar/pendaftar.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/pendaftar/pendaftar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/site/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/site/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/site/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/site/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/site/modalBackdrop.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/site/modalBackdrop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/site/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/site/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/core/frontend.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/core/frontend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout/_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout/_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout/mainSingle.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout/mainSingle.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,32 +546,47 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-107505514">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="Ini" value="1" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PHP" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Ini" value="25" />
+          <entry key="PHP" value="187" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/appartikel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout/_header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/layout/mainSingle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="87" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="-1134">
+              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -144,8 +594,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="153">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -161,7 +611,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.carousel-inner{position:r</find>
       <find>a:visited{color:#e96656;}</find>
       <find>hover</find>
       <find>.about-us{padding-top:</find>
@@ -191,6 +640,7 @@
       <find>fonts</find>
       <find>glyphicon-chevron-up</find>
       <find>/app</find>
+      <find>PROF</find>
     </findStrings>
     <replaceStrings>
       <replace>container</replace>
@@ -226,14 +676,14 @@
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/views/layout/_footer.php" />
         <option value="$PROJECT_DIR$/views/detail.php" />
-        <option value="$PROJECT_DIR$/routes/core/frontend.php" />
-        <option value="$PROJECT_DIR$/views/layout/mainSingle.php" />
-        <option value="$PROJECT_DIR$/views/layout/main.php" />
-        <option value="$PROJECT_DIR$/views/home.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/tpl/blocks/header.html" />
+        <option value="$PROJECT_DIR$/routes/core/frontend.php" />
         <option value="$PROJECT_DIR$/views/layout/_header.php" />
+        <option value="$PROJECT_DIR$/views/home.php" />
         <option value="$PROJECT_DIR$/config.ini" />
+        <option value="$PROJECT_DIR$/views/layout/main.php" />
+        <option value="$PROJECT_DIR$/views/layout/mainSingle.php" />
       </list>
     </option>
   </component>
@@ -253,57 +703,69 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="glintunggogreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="glintunggogreen" type="462c0819:PsiDirectoryNode" />
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="glintunggogreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="glintunggogreen" type="462c0819:PsiDirectoryNode" />
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="glintunggogreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="glintunggogreen" type="462c0819:PsiDirectoryNode" />
-              <item name="formulir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="glintunggogreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="glintunggogreen" type="462c0819:PsiDirectoryNode" />
-              <item name="formulir" type="462c0819:PsiDirectoryNode" />
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="tpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="glintunggogreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="glintunggogreen" type="462c0819:PsiDirectoryNode" />
-              <item name="formulir" type="462c0819:PsiDirectoryNode" />
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="m_artikel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="tpl" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="glintunggogreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="glintunggogreen" type="462c0819:PsiDirectoryNode" />
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="glintunggogreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="glintunggogreen" type="462c0819:PsiDirectoryNode" />
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="glintunggogreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="glintunggogreen" type="462c0819:PsiDirectoryNode" />
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,6 +826,8 @@
       <workItem from="1550160317960" duration="79000" />
       <workItem from="1550415747295" duration="2687000" />
       <workItem from="1550453896448" duration="12000" />
+      <workItem from="1550574667104" duration="6023000" />
+      <workItem from="1550583863486" duration="3935000" />
     </task>
     <task id="LOCAL-00001" summary="after clean">
       <created>1535790208089</created>
@@ -397,7 +861,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46750000" />
+    <option name="totallyTimeSpent" value="56708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +875,7 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="769" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26136363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27045456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -473,9 +937,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="last day before slep" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/glintunggogreen.ico" />
-    <entry file="file://$PROJECT_DIR$/views/layout/index.html" />
-    <entry file="file://$PROJECT_DIR$/home-site-map.xml" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -554,13 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/img/glintunggogreen.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -604,18 +1058,6 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/core/backend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-624" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/core/frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2647">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/dispatch.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -644,13 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/tpl/blocks/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -671,41 +1106,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/setting.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/pengguna.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="497" column="52" selection-start-line="497" selection-start-column="52" selection-end-line="497" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="30" column="10" lean-forward="true" selection-start-line="30" selection-start-column="10" selection-end-line="31" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout/mainSingle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -716,38 +1120,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout/_sidebar.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="281">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/appartikel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="-629">
           <caret line="2" column="9" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/profil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/core/backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-610" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/pengguna.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1853">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/setting.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout/_header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="782">
+          <caret line="49" column="25" selection-start-line="39" selection-start-column="20" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout/_sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/pencarian.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tpl/m_artikel/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="99" column="65" selection-start-line="99" selection-start-column="65" selection-end-line="99" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tpl/m_artikel/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1069" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/core/frontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="-1134">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout/mainSingle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="87" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
         </state>
       </provider>
     </entry>
