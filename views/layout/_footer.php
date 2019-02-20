@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12 footer-item footer-about">
                 <div class="title-wrap">
-                    <h3 class="title-inline" style="margin-top:0px;">Glintung Go Green</h3>
+                    <h3 class="title-inline" style="margin-top:0px;">Pendakian Arjuno</h3>
                 </div>
                 <p class="text-about">
                     <?= $setting->deskripsi ?>
@@ -16,7 +16,7 @@
                 <ul class="category-footer">
                     <?php
                     $sql = new LandaDb();
-                    $select = $sql->findAll("select * from m_kategori where id in (4,5,6,7,8,9)");
+                    $select = $sql->findAll("select * from m_kategori where id in (5,14)");
                     foreach ($select as $val) {
                         echo '<li><a href="' . url('c/' . $val->alias) . '" class="btn btn-default">' . $val->name . '</a></li>';
                     }

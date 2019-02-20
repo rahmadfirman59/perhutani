@@ -57,7 +57,9 @@
                         <div class="icon-image">
 
                             <?php
-                            $a = str_replace("http://", "https://", get_first_image($vals->content, 'medium'));
+//                            $a = str_replace("http://", "https://", get_first_image($vals->content, 'medium'));
+//                            echo $a;
+                            $a = get_first_image($vals->content, 'medium');
                             echo $a;
                             ?>
                         </div>
@@ -92,8 +94,10 @@
                                     <div class="blog-feature-warp">
                                         <a href="<?= url('d/' . $val->alias) ?>">
                                             <?php
-                                            $a = str_replace("http", "https", get_first_image($val->content, 'medium'));
-                                            echo $a;
+//                                            $a = str_replace("http", "https", get_first_image($val->content, 'medium'));
+//                                            echo $a;
+                                            echo get_first_image($val->content, 'medium');
+
                                             ?>
                                         </a>
                                     </div>
@@ -144,7 +148,8 @@
                             <div class="mobile_thumbnail" style="padding-top: 15px">
                                 <div class="mobile_img">
                                     <a href="<?= url($val->alias) ?>">
-                                        <?= str_replace("http://", "https://", get_first_image($val->content, 'small')) ?>
+
+                                        <?= get_first_image($val->content, 'small') ?>
                                     </a>
                                 </div>
                                 <div class="mobile_detail">
@@ -272,7 +277,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                         <div class="second-title">
-                            <h3 class="subtitle color-red-3 underline">MITRA GLINTUNG GO GREEN</h3>
+                            <h3 class="subtitle color-red-3 underline">MITRA PENDAKIAN ARJUNO</h3>
                             <!--                    <h2>What is happening now</h2>-->
                             <!--<p class="color-grey">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id tor.</p>-->
                         </div>

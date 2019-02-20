@@ -41,7 +41,7 @@
                         <div class="main-page">
                          <section id="subheader" class="sub-header-border" style="padding-bottom: 0px;padding-top: 0px;">
                             <div class="sub-header-warp">
-                                <h1 class="title-subheader"><?=(isset($title) && !empty($title)) ? $title : 'Glintung Go Green'?></h1>
+                                <h1 class="title-subheader"><?=(isset($title) && !empty($title)) ? $title : 'Pendakian Arjuno'?></h1>
                                 <ol class="breadcrumb">
                                  <?php
 

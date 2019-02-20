@@ -3,8 +3,10 @@
         <div class="detail-pic">
             
             <?php 
-                $a = str_replace("http", "https", get_first_image($profil->content, 'big'));
-                echo $a;
+//                $a = str_replace("http", "https", get_first_image($profil->content, 'big'));
+//                echo $a;
+            $a = get_first_image($profil->content, 'big');
+            echo $a;
             ?>
         </div>
         <div style="margin-top: 25px;">

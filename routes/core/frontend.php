@@ -2,12 +2,12 @@
 
 get('/index', function () {
     $sql     = new LandaDb();
-    $sql2     = new LandaDb();
+
     $welcome = $sql->find("select * from artikel where m_kategori_id = 1 and publish = 1");
     $sejarah = $sql->find("select * from artikel where m_kategori_id = 3 and publish = 1");
     $visimisi = $sql->findAll("select * from artikel where m_kategori_id = 11 and publish = 1  limit 4");
     $terbaru = $sql->findAll("select artikel.*, m_kategori.name as kategori, m_user.nama as user from artikel left join m_user on m_user.id = artikel.created_user_id left join m_kategori on m_kategori.id = artikel.m_kategori_id where m_kategori_id in (4,5,7,8,9) and publish = 1 order by artikel.date DESC limit 4");
-    $populer = $sql->findAll("select * from artikel where m_kategori_id in (4,5,7,8,9) and publish = 1 order by hits DESC limit 8");
+    $populer = $sql->findAll("select * from artikel where m_kategori_id in (5) and publish = 1 order by hits DESC limit 8");
     $fasilitas = $sql->findAll("select * from artikel where m_kategori_id = 12");
     $pelatihan = $sql->findAll("select * from artikel where m_kategori_id = 13 limit 3");
 
@@ -30,7 +30,7 @@ get('/profil.html', function () {
     $sql    = new LandaDb();
     $profil = $sql->find("select * from artikel where m_kategori_id = 3 and publish = 1");
 
-    $title      = 'Profil Glintung Go Green';
+    $title      = 'Profil Pendakian Arjuno';
     $breadcrumb = array(
         $title => "#",
     );
@@ -38,7 +38,7 @@ get('/profil.html', function () {
         'profil'     => $profil,
         'title'      => $title,
         'breadcrumb' => $breadcrumb,
-        '_title'     => 'Profil Glintung Go Green',
+        '_title'     => 'Profil Pendakian Arjuno',
         '_deskripsi' => 'Gerakan 3G dimulai dengan kegiatan sederhana, yaitu penghijauan lingkungan yang diluncurkan pada bulan Pebruari 2012. Gerakan ini sekaligus mendukung program Pemerintah Kota Malang dalam melakukan gerakan penghijauan Malang Ijo Royo-royo.',
         '_keyword'=>config('blog.title'),
         'setting' => getSetting()
@@ -83,7 +83,8 @@ get('/c/:alias.html', function ($alias) {
     $list   = $get->offset($offset)->limit($limit)->findAll();
 
     foreach ($list as $key => $val){
-        $val->content = str_replace("http", "https", $val->content);
+//        $val->content = str_replace("http", "https", $val->content);
+        $val->content = str_replace("http", "http", $val->content);
     }
 
     $title      = ucfirst($alias);
@@ -96,9 +97,9 @@ get('/c/:alias.html', function ($alias) {
         'count'      => $count,
         'list'       => $list,
         'kategori'   => $alias,
-        '_title'     => $title . ' Glintung Go Green',
+        '_title'     => $title . ' Pendakian Arjuno',
         '_deskripsi' => $title . '.'.config('blog.description'),
-        '_keyword'   => $title . ' Glintung Go Green',
+        '_keyword'   => $title . ' Pendakian Arjuno',
         'breadcrumb' => $breadcrumb,
         'setting' => getSetting()
     ], 'main');
