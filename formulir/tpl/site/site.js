@@ -16,48 +16,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
     /**GET DOKUMEN SELESAI*/
 
 //    data sekolah mulai------------------
-    Data.get(Control_link + '/getSekolah/' + $stateParams.sekolah_id).then(function (data) {
-        $scope.cek404 = data.data;
-        if (data.data == false) {
-            $state.go('site.404');
-        } else {
-            $scope.getSekolah = data.data;
-            $scope.form.jenis_sekolah = data.data.jenis_sekolah;
-            if (data.data.jenis_sekolah == 'Pondok Putri' || data.data.jenis_sekolah == 'SMP') {
-                $scope.is_asalSekolah = false;
-            } else if (data.data.jenis_sekolah == 'Pondok Putra' || data.data.id == 4 || data.data.id == 8) {
-                $scope.is_nilai = false;
-                $scope.form.modeNilai = '0';
-                $scope.form.pilihan = 'Sekolah + Pondok';
-            } else {
-                $scope.is_asalSekolah = true;
-                $scope.form.statusSekolah = 'SMP Al Azhar';
-                $scope.form.asal_sekolah = $scope.form.statusSekolah;
-            }
-        }
-    });
-    Data.get(Control_link + '/getGelombang/' + $stateParams.sekolah_id).then(function (data) {
-        if ($scope.cek404 == false) {
 
-        } else if (data.data == false && $scope.getSekolah != false) {
-            $scope.modalBackdrop();
-        } else {
-            $scope.getGelombang = data.data;
-            $scope.form.gelombang = data.data.gelombang;
-            $scope.form.gelombang_id = data.data.id;
-        }
-    });
-    $scope.sekolah = function (isi) {
-        $scope.form.asal_sekolah = isi;
-    }
-
-    $scope.cekSekolah = function (id) {
-        if (id == 0) {
-            $scope.form.asal_sekolah = '';
-        } else {
-            $scope.form.asal_sekolah = 'SMP Al Azhar';
-        }
-    }
 //    data sekolah selesai-----------------
 
 //    data alamat mulai--------------------
@@ -102,15 +61,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
         }
     }
 
-    $scope.alamat = function () {
-        if ($scope.form.kewarganegaraan == 'Warga Negara Asing') {
-            $scope.form.alamat = $scope.form.alamatt;
-            $scope.form.alamat_orang_tua = $scope.form.alamatt;
-        } else {
-            $scope.form.alamat = $scope.form.alamatt + ', Kec. ' + $scope.form.kecamatan.nama + ', ' + $scope.form.kota.kota + ', Prov. ' + $scope.form.kota.provinsi;
-            $scope.form.alamat_orang_tua = $scope.form.alamatt + ', Kec. ' + $scope.form.kecamatan.nama + ', ' + $scope.form.kota.kota + ', Prov. ' + $scope.form.kota.provinsi;
-        }
-    }
+
 
     $scope.cekAlamat = function (id) {
         if (id == '0') {
@@ -143,8 +94,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
 
 
     $scope.selesai = function (form) {
-        console.log(form)
-//console.log(form.kota_lahir.kota);
+
         $scope.uploader.uploadAll();
         $scope.data = {};
         if (form.jenis_sekolah == 'Pondok Putra') {
@@ -275,12 +225,50 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
             })
         });
     }
+    $scope.tambahAnggota = function() {
+        console.log('tambah detali');
+        var newDet = {
+            nama: '',
+        }
+        $scope.listAnggota.unshift(newDet);
+    };
+    $scope.hapusAnggota = function(paramindex) {
+        if (confirm("Apa anda yakin akan MENGHAPUS item ini? ")) {
+            var comArr = eval($scope.listAnggota);
+            if (comArr.length > 1) {
+                $scope.listAnggota.splice(paramindex, 1);
+            } else {
+                alert("Something gone wrong");
+            }
+        }
+    };
+    $scope.listAnggota = [{
+        no_ijazah: ''
+    }];
+
+    $scope.save = function (form,detail) {
+
+        var url = 'form/create';
+        Data.post(url, form).then(function (result) {
+            if (result.status == 0) {
+                toaster.pop('error', "Terjadi Kesalahan", result.errors);
+            } else {
+                $modalInstance.close(result.data);
+                $state.go('site.detail', {id: result.data.no});
+            }
+        });
+    };
 
 //    kalender
     $scope.open1 = function ($event) {
         $event.preventDefault();
         $event.stopPropagation();
         $scope.opened1 = true;
+    };
+    $scope.open2 = function ($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.opened2 = true;
     };
     //============================GAMBAR===========================//
     var uploader = $scope.uploader = new FileUploader({
