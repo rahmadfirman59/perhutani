@@ -20,7 +20,7 @@ angular.module('app').run(
 
                 //$locationProvider.html5Mode(true)
 
-                $urlRouterProvider.otherwise('/site/404');
+                $urlRouterProvider.otherwise('/site/pendaftaran');
                 $stateProvider.state('site', {
                     abstract: true,
                     templateUrl: 'tpl/app.html'

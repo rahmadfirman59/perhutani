@@ -2,10 +2,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
     var Control_link = 'form';
     $scope.form = {};
     $scope.form.kewarganegaraan = 'Warga Negara Indonesia';
-    $scope.form.cekWali = '1';
-    $scope.form.cekAlamat = '1';
-    $scope.form.modeNilai = '1';
-    $scope.form.tanggal_lahir = new Date();
+
     $scope.is_formDaftar = true;
     $scope.is_success = false;
     $scope.is_nilai = true;
@@ -230,7 +227,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
         var newDet = {
             nama: '',
         }
-        $scope.listAnggota.unshift(newDet);
+        $scope.listAnggota.push(newDet);
     };
     $scope.hapusAnggota = function(paramindex) {
         if (confirm("Apa anda yakin akan MENGHAPUS item ini? ")) {
@@ -249,7 +246,12 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
     $scope.save = function (form,detail) {
 
         var url = 'form/create';
-        Data.post(url, form).then(function (result) {
+        var data = {
+            form:form,
+            anggota:detail
+        }
+        console.log(url)
+        Data.post(url, data).then(function (result) {
             if (result.status == 0) {
                 toaster.pop('error', "Terjadi Kesalahan", result.errors);
             } else {

@@ -226,8 +226,6 @@
                     <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                         <div class="second-title">
                             <h3 class="subtitle color-red-3 underline">PENGHARGAAN YANG DIRAIH</h3>
-                            <!--                    <h2>What is happening now</h2>-->
-                            <!--<p class="color-grey">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id tor.</p>-->
                         </div>
                     </div>
                 </div>
@@ -237,6 +235,8 @@
                         <?php
                         $directory = "app/img/penghargaan";
                         $images = glob($directory . "/*.{jpg,png}", GLOB_BRACE);
+
+
 
 
                         foreach ($images as $key => $val) {
