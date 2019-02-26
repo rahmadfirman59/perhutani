@@ -104,6 +104,16 @@ angular.module('app')
                                             }]
                                     }
                                 })
+                                .state('master.pendaki', {
+                                    url: '/pendaki',
+                                    templateUrl: 'tpl/m_pendaki/index.html',
+                                    resolve: {
+                                        deps: ['$ocLazyLoad',
+                                            function ($ocLazyLoad) {
+                                                return $ocLazyLoad.load('tpl/m_pendaki/index.js');
+                                            }]
+                                    }
+                                })
                                 .state('master.setting', {
                                     url: '/setting',
                                     templateUrl: 'tpl/m_setting/index.html',
