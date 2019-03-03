@@ -42,13 +42,16 @@ post('/site/login', function () {
             ->andWhere("=", "password", sha1($params['password']))
             ->find();
 
+//    print_r($model);
+//    exit();
+
     if (!empty($model)) {
         $_SESSION['user']['id'] = $model->id;
         $_SESSION['user']['username'] = $model->username;
         $_SESSION['user']['nama'] = $model->nama;
         $_SESSION['user']['email'] = $model->email;
         $_SESSION['user']['roles_id'] = $model->roles_id;
-        $_SESSION['user']['akses'] = $model->akses;
+        $_SESSION['user']['akses'] = json_decode($model->akses);
 
         echo json_encode(array('status' => 1, 'data' => array_filter($_SESSION)), JSON_PRETTY_PRINT);
     } else {

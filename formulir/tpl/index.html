@@ -1,8 +1,8 @@
 <div ng-controller="frontendCtrl">
     <!--<nav class="navbar navbar-default" style="background-color: #fff">-->
-        <!--<div class="container-fluid text-center">-->
-            <!--<img src="img/logo/logo_ppdb.png" width="300px" style="padding: 10px 0px;">-->
-        <!--</div>-->
+    <!--<div class="container-fluid text-center">-->
+    <!--<img src="img/logo/logo_ppdb.png" width="300px" style="padding: 10px 0px;">-->
+    <!--</div>-->
     <!--</nav>-->
 
     <div id="formDaftar" ng-show="is_formDaftar">
@@ -12,15 +12,14 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="panel panel-primary">
 
-                          <div class="panel-footer text-right">
+                        <div class="panel-footer text-right">
                             <a href="http://localhost/perhutani" class="btn btn-default">
-                               <i class="fa fa-fw fa-mail-forward m-r-xs"></i> Kembali ke Halaman Utama
+                                <i class="fa fa-fw fa-mail-forward m-r-xs"></i> Kembali ke Halaman Utama
                             </a>
-                          </div>
+                        </div>
 
                     </div>
                 </div>
-
 
 
                 <div class="col-md-8 col-md-offset-2" style="margin-top: 10px;">
@@ -30,62 +29,87 @@
                                 Diisi Oleh Ketua Rombongan <b>{{getSekolah.nama}}</b>
                             </div>
                             <div class="panel-body">
-                                <div class="form-group" ng-class="{ 'has-error' : landaform.nama.$invalid && !landaform.nama.$pristine }">
+                                <div class="form-group"
+                                     ng-class="{ 'has-error' : landaform.nama.$invalid && !landaform.nama.$pristine }">
                                     <label class="col-sm-3 control-label">Nama</label>
                                     <div class="col-md-9">
-                                        <input type="text" name="nama" class="form-control" ng-model="form.nama" ng-minlength="2" ng-maxlength="100">
-                                        <p ng-show="landaform.nama.$error.minlength" class="help-block">Nama Terlalu Pendek.</p>
-                                        <p ng-show="landaform.nama.$error.maxlength" class="help-block">Nama Terlalu Panjang.</p>
+                                        <input type="text" name="nama" class="form-control" ng-model="form.nama"
+                                               ng-minlength="2" ng-maxlength="100">
+                                        <p ng-show="landaform.nama.$error.minlength" class="help-block">Nama Terlalu
+                                            Pendek.</p>
+                                        <p ng-show="landaform.nama.$error.maxlength" class="help-block">Nama Terlalu
+                                            Panjang.</p>
                                     </div>
                                 </div>
-                                <div class="form-group" ng-class="{ 'has-error' : landaform.no_identitas.$invalid && !landaform.no_identitas.$pristine }">
+                                <div class="form-group"
+                                     ng-class="{ 'has-error' : landaform.no_identitas.$invalid && !landaform.no_identitas.$pristine }">
                                     <label class="col-sm-3 control-label">No Identitas</label>
                                     <div class="col-md-9">
-                                        <input type="text" name="no_identitas" class="form-control" ng-model="form.no_identitas" ng-minlength="2" ng-maxlength="100">
-                                        <p ng-show="landaform.no_identitas.$error.minlength" class="help-block">No Identitas Terlalu Pendek.</p>
-                                        <p ng-show="landaform.no_identitas.$error.maxlength" class="help-block">No Identitas Terlalu Panjang.</p>
+                                        <input type="text" name="no_identitas" class="form-control"
+                                               ng-model="form.no_identitas" ng-minlength="2" ng-maxlength="100">
+                                        <p ng-show="landaform.no_identitas.$error.minlength" class="help-block">No
+                                            Identitas Terlalu Pendek.</p>
+                                        <p ng-show="landaform.no_identitas.$error.maxlength" class="help-block">No
+                                            Identitas Terlalu Panjang.</p>
                                     </div>
                                 </div>
-                                <div class="form-group" >
+                                <div class="form-group">
                                     <label class="col-sm-3 control-label">Alamat Lengkap</label>
                                     <div class="col-md-9">
-                                        <textarea name="alamat" ng-model="form.alamat" class="form-control" rows="3" required="" ng-maxlength="225" ng-minlength="2" ></textarea>
+                                        <textarea name="alamat" ng-model="form.alamat" class="form-control" rows="3"
+                                                  required="" ng-maxlength="225" ng-minlength="2"></textarea>
 
 
                                     </div>
                                 </div>
-                                <div class="form-group" ng-class="{ 'has-error' : landaform.telepon.$invalid && !landaform.telepon.$pristine }">
+                                <div class="form-group"
+                                     ng-class="{ 'has-error' : landaform.telepon.$invalid && !landaform.telepon.$pristine }">
                                     <label class="col-sm-3 control-label">No. Hp</label>
                                     <div class="col-md-9">
-                                        <input type="text" name="telepon" class="form-control angka" ng-model="form.no_telp" ng-minlength="10" ng-maxlength="14" style="width: 150px;" required="">
-                                        <p ng-show="landaform.telepon.$error.minlength" class="help-block">No. Hp Terlalu Pendek.</p>
-                                        <p ng-show="landaform.telepon.$error.maxlength" class="help-block">No. Hp Terlalu Panjang.</p>
+                                        <input type="text" name="telepon" class="form-control angka"
+                                               ng-model="form.no_telp" ng-minlength="10" ng-maxlength="14"
+                                               style="width: 150px;" required="">
+                                        <p ng-show="landaform.telepon.$error.minlength" class="help-block">No. Hp
+                                            Terlalu Pendek.</p>
+                                        <p ng-show="landaform.telepon.$error.maxlength" class="help-block">No. Hp
+                                            Terlalu Panjang.</p>
                                     </div>
                                 </div>
-                                <div class="form-group" ng-class="{ 'has-error' : landaform.no_telp_darurat.$invalid && !landaform.no_telp_darurat.$pristine }">
+                                <div class="form-group"
+                                     ng-class="{ 'has-error' : landaform.no_telp_darurat.$invalid && !landaform.no_telp_darurat.$pristine }">
                                     <label class="col-sm-3 control-label">No. Hp Darurat </label>
                                     <div class="col-md-9">
-                                        <input type="text" name="no_telp_darurat" class="form-control angka" ng-model="form.no_telp_darurat" ng-minlength="10" ng-maxlength="14" style="width: 150px;" required="">
-                                        <p ng-show="landaform.no_telp_darurat.$error.minlength" class="help-block">No. Hp Darurat Terlalu Pendek.</p>
-                                        <p ng-show="landaform.no_telp_darurat.$error.maxlength" class="help-block">No. Hp Darurat Terlalu Panjang.</p>
+                                        <input type="text" name="no_telp_darurat" class="form-control angka"
+                                               ng-model="form.no_telp_darurat" ng-minlength="10" ng-maxlength="14"
+                                               style="width: 150px;" required="">
+                                        <p ng-show="landaform.no_telp_darurat.$error.minlength" class="help-block">No.
+                                            Hp Darurat Terlalu Pendek.</p>
+                                        <p ng-show="landaform.no_telp_darurat.$error.maxlength" class="help-block">No.
+                                            Hp Darurat Terlalu Panjang.</p>
                                     </div>
                                 </div>
-                                <div class="form-group" ng-class="{ 'has-error' : landaform.email.$invalid && !landaform.email.$pristine }">
+                                <div class="form-group"
+                                     ng-class="{ 'has-error' : landaform.email.$invalid && !landaform.email.$pristine }">
                                     <label class="col-sm-3 control-label">Email</label>
                                     <div class="col-md-7">
-                                        <input type="text" name="email" class="form-control" ng-model="form.email" ng-minlength="2" ng-maxlength="100">
-                                        <p ng-show="landaform.email.$error.minlength" class="help-block">Email Terlalu Pendek.</p>
-                                        <p ng-show="landaform.email.$error.maxlength" class="help-block">Email Terlalu Panjang.</p>
+                                        <input type="text" name="email" class="form-control" ng-model="form.email"
+                                               ng-minlength="2" ng-maxlength="100">
+                                        <p ng-show="landaform.email.$error.minlength" class="help-block">Email Terlalu
+                                            Pendek.</p>
+                                        <p ng-show="landaform.email.$error.maxlength" class="help-block">Email Terlalu
+                                            Panjang.</p>
                                     </div>
                                 </div>
-                                <div class="form-group" >
+                                <div class="form-group">
                                     <label class="col-sm-3 control-label">Tanggal Naik</label>
                                     <div class="col-sm-9">
                                         <div class="row">
                                             <div class="visible-xs" style="margin-top: 5px;"></div>
                                             <div class="col-sm-6">
-                                                <div class="input-group" >
-                                                    <input type="text"  style="height: 30px;" class="form-control" datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_naik" is-open="opened1" ng-click="open1($event);" required=""/>
+                                                <div class="input-group">
+                                                    <input type="text" style="height: 30px;" class="form-control"
+                                                           datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_naik"
+                                                           is-open="opened1" ng-click="open1($event);" required=""/>
                                                     <span class="input-group-addon">
                                                         <i class="glyphicon glyphicon-calendar"></i>
                                                     </span>
@@ -94,14 +118,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group" >
+                                <div class="form-group">
                                     <label class="col-sm-3 control-label">Tanggal Turun</label>
                                     <div class="col-sm-9">
                                         <div class="row">
                                             <div class="visible-xs" style="margin-top: 5px;"></div>
                                             <div class="col-sm-6">
-                                                <div class="input-group" >
-                                                    <input type="text"  style="height: 30px;" class="form-control" datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_turun" is-open="opened2" ng-click="open2($event);" required=""/>
+                                                <div class="input-group">
+                                                    <input type="text" style="height: 30px;" class="form-control"
+                                                           datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_turun"
+                                                           is-open="opened2" ng-click="open2($event);" required=""/>
                                                     <span class="input-group-addon">
                                                         <i class="glyphicon glyphicon-calendar"></i>
                                                     </span>
@@ -113,31 +139,38 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Kewarganegaraan</label>
                                     <div class="col-sm-9">
-                                        <div class="btn-group m-r" >
-                                            <label btn-radio="'Warga Negara Indonesia'" ng-change="cekWarga(1)" class="btn btn-default" ng-model="form.kewarganegaraan" required="" >
+                                        <div class="btn-group m-r">
+                                            <label btn-radio="'Warga Negara Indonesia'" ng-change="cekWarga(1)"
+                                                   class="btn btn-default" ng-model="form.kewarganegaraan" required="">
                                                 Warga Negara Indonesia
                                             </label>
-                                            <label btn-radio="'Warga Negara Asing'" ng-change="cekWarga(0)" class="btn btn-default" ng-model="form.kewarganegaraan" required="" >
+                                            <label btn-radio="'Warga Negara Asing'" ng-change="cekWarga(0)"
+                                                   class="btn btn-default" ng-model="form.kewarganegaraan" required="">
                                                 Warga Negara Asing
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group"">
-                                    <label class="col-sm-3 control-label">Jalur Pendakian</label>
-                                    <div class="col-md-7">
-                                        <input type="text" name="jalur" class="form-control" ng-model="form.jalur_pendakian" ng-minlength="2" ng-maxlength="100">
+                                <div class="form-group"
+                                ">
+                                <label class="col-sm-3 control-label">Jalur Pendakian</label>
+                                <div class="col-md-7">
+                                    <input type="text" name="jalur" class="form-control" ng-model="form.jalur_pendakian"
+                                           ng-minlength="2" ng-maxlength="100">
 
-                                    </div>
                                 </div>
-                                <div style="padding: 5px 0px;">
-                                    <hr style="border-top: 1px solid #dff0d8;"/>
-                                </div>
+                            </div>
+                            <div style="padding: 5px 0px;">
+                                <hr style="border-top: 1px solid #dff0d8;"/>
+                            </div>
+                            <br>
+                            <br>
                             <table class="table table-striped b-t b-light">
                                 <thead>
                                 <tr>
                                     <td ng-hide="is_view" style="padding: 0px; width: 5px;">
-                                        <button class="btn btn-success" ng-click="tambahAnggota()" ng-disabled="is_view">
+                                        <button class="btn btn-success" ng-click="tambahAnggota()"
+                                                ng-disabled="is_view">
                                             <i class="glyphicon glyphicon-plus">
                                             </i>
                                         </button>
@@ -157,7 +190,8 @@
                                 <tbody>
                                 <tr ng-repeat="data in listAnggota">
                                     <td ng-hide="is_view" style="padding: 0px; width: 5px;">
-                                        <button class="btn btn-danger" ng-click="hapusAnggota($index, detail.id)" ng-disabled="is_view">
+                                        <button class="btn btn-danger" ng-click="hapusAnggota($index, detail.id)"
+                                                ng-disabled="is_view">
                                             <i class="glyphicon glyphicon-remove">
                                             </i>
                                         </button>
@@ -171,33 +205,34 @@
                                         </input>
                                     </td>
                                     <td style="text-align: center;">
-                                        <input class="form-control" ng-disabled="is_view" ng-model="data.no_telp_darurat">
+                                        <input class="form-control" ng-disabled="is_view"
+                                               ng-model="data.no_telp_darurat">
                                         </input>
                                     </td>
                                 </tr>
                                 </tbody>
                             </table>
-                                </div>
-                                <br/>
-                            </div>
-                            <div class="panel-footer text-right">
-                                <a href="http://localhost/perhutani/" class="btn btn-default">
-                                    <i class="fa fa-fw fa-mail-forward m-r-xs"></i> Kembali ke Halaman Utama
-                                </a>
-                                <button type="submit" class="btn btn-success" ng-disabled="landaform.$invalid" ng-click="save(form,listAnggota)">Daftar Sekarang</button>
-
-                            </div>
-
                         </div>
-
-                    </form>
+                        <br/>
+                </div>
+                <div class="panel-footer text-right">
+                    <a href="http://localhost/perhutani/" class="btn btn-default">
+                        <i class="fa fa-fw fa-mail-forward m-r-xs"></i> Kembali ke Halaman Utama
+                    </a>
+                    <button type="submit" class="btn btn-success" ng-disabled="landaform.$invalid"
+                            ng-click="save(form,listAnggota)">Daftar Sekarang
+                    </button>
 
                 </div>
+
             </div>
+
+            </form>
+
         </div>
     </div>
-
-
+</div>
+</div>
 
 
 </div>

@@ -114,6 +114,16 @@ angular.module('app')
                                             }]
                                     }
                                 })
+                                .state('master.roles', {
+                                    url: '/roles',
+                                    templateUrl: 'tpl/m_roles/index.html',
+                                    resolve: {
+                                        deps: ['$ocLazyLoad',
+                                            function ($ocLazyLoad) {
+                                                return $ocLazyLoad.load('tpl/m_roles/roles.js');
+                                            }]
+                                    }
+                                })
                                 .state('master.setting', {
                                     url: '/setting',
                                     templateUrl: 'tpl/m_setting/index.html',

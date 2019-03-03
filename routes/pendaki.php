@@ -1,62 +1,28 @@
 <?php
 
-get('/appartikel/kategori', function() {
+get('/pendaki/view/:id', function($id) {
     check_access(array('login' => true));
-
     $sql = new LandaDb();
-    $models = $sql->findAll("select * from m_kategori");
+    $models = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
     echo json_encode(array('status' => 1, 'kategori' => (array) $models));
 });
 
-del('/appartikel/delete/:id', function($id) {
-    check_access(array('login' => true));
 
+
+
+post('/pendaki/setujui', function() {
+
+
+    check_access(array('admin' => true));
+    $params = json_decode(file_get_contents("php://input"), true);
     $sql = new LandaDb();
-    $sql->delete('artikel', array('id' => $id));
-    echo json_encode(array('status' => 1));
+    
+    $model = $sql->update('m_pendaki', $params, array('id' => $params['id']));
+
+    echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
+
 });
 
-post('/appartikel/update/:id', function($id) {
-    check_access(array('login' => true));
-
-    $params = json_decode(file_get_contents("php://input"), true);
-    $params['date'] = !empty($params['date']) ? date("Y-m-d H:i:s", strtotime($params['date'])) : date("Y-m-d H:i:s", strtotime($params['date']));
-
-    if (cek_artikel($params) === true) {
-        $sql = new LandaDb();
-        $params['alias'] = urlParsing($params['title']);
-        $model = $sql->update('artikel', $params, array('id' => $id));
-
-        if ($model) {
-            echo json_encode(array('status' => 1, 'data' => (array) $model), JSON_PRETTY_PRINT);
-        } else {
-            echo json_encode(array('status' => 0, 'error_code' => 400, 'errors' => 'Data gagal disimpan'), JSON_PRETTY_PRINT);
-        }
-    } else {
-        echo json_encode(array('status' => 0, 'error_code' => 400, 'errors' => cek_artikel($params)), JSON_PRETTY_PRINT);
-    }
-});
-
-post('/appartikel/create', function() {
-    check_access(array('login' => true));
-
-    $params = json_decode(file_get_contents("php://input"), true);
-    $params['date'] = empty($params['date']) ? $params['date'] : date("Y-m-d", strtotime($params['date']));
-
-    if (cek_artikel($params) === true) {
-        $sql = new LandaDb();
-        $params['alias'] = urlParsing($params['title']);
-        $model = $sql->insert('artikel', $params);
-
-        if ($model) {
-            echo json_encode(array('status' => 1, 'data' => (array) $model), JSON_PRETTY_PRINT);
-        } else {
-            echo json_encode(array('status' => 0, 'error_code' => 400, 'errors' => 'Data gagal disimpan'), JSON_PRETTY_PRINT);
-        }
-    } else {
-        echo json_encode(array('status' => 0, 'error_code' => 400, 'errors' => cek_artikel($params)), JSON_PRETTY_PRINT);
-    }
-});
 get('/pendaki/index', function () {
     check_access(array('login' => true));
 
@@ -96,6 +62,8 @@ get('/pendaki/index', function () {
     }
 
     $model = $sql->findAll();
+
+
 
     $totalItem = $sql->count();
     $sql->clearQuery();
