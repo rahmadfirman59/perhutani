@@ -31,12 +31,19 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
         });
     }
     $scope.tambahAnggota = function() {
-
         var newDet = {
             nama: '',
         }
         $scope.listAnggota.push(newDet);
     };
+    $scope.tambahLogistik = function() {
+        var newDet = {
+            nama: '',
+        }
+        $scope.listLogistik.push(newDet);
+    };
+
+
     $scope.hapusAnggota = function(paramindex) {
         if (confirm("Apa anda yakin akan MENGHAPUS item ini? ")) {
             var comArr = eval($scope.listAnggota);
@@ -47,16 +54,33 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
             }
         }
     };
+    $scope.hapusLogistik = function(paramindex) {
+        if (confirm("Apa anda yakin akan MENGHAPUS item ini? ")) {
+            var comArr = eval($scope.listLogistik);
+            if (comArr.length > 1) {
+                $scope.listLogistik.splice(paramindex, 1);
+            } else {
+                alert("Something gone wrong");
+            }
+        }
+    };
     $scope.listAnggota = [{
-        no_ijazah: ''
+        nama: ''
+    }];
+    $scope.listLogistik = [{
+        nama: ''
     }];
 
-    $scope.save = function (form,detail) {
+    $scope.save = function (form,detail,perlengkapan,logistik) {
+
+        console.log(logistik)
 
         var url = 'form/create';
         var data = {
             form:form,
-            anggota:detail
+            anggota:detail,
+            perlengkapan:perlengkapan,
+            logistik:logistik
         }
         // console.log(data);
 

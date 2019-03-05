@@ -2,13 +2,13 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
     //init data
     var tableStateRef;
 
+
+
     $scope.displayed = [];
     $scope.form = {};
     $scope.is_edit = false;
     $scope.is_view = false;
-    Data.get('appartikel/kategori').then(function (data) {
-        $scope.kategories = data.kategori;
-    });
+
 
     $scope.open1 = function ($event) {
         $event.preventDefault();
@@ -45,7 +45,7 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
         $scope.formtitle = "Form Tambah Data";
         $scope.form = {};
         $scope.form.date = new Date();
-        $scope.form.publish = '1';
+        // $scope.form.publish = '1';
     };
 
     $scope.update = function (form) {
@@ -53,6 +53,9 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
         $scope.is_view = false;
         $scope.formtitle = "Edit Data : " + form.title;
         $scope.form = form;
+        Data.get('pendaki/view/'+form.id).then(function (data) {
+            $scope.listAnggota = data.kategori;
+        });
     };
 
     $scope.view = function (form) {
@@ -60,6 +63,9 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
         $scope.is_view = true;
         $scope.formtitle = "Lihat Data : " + form.title;
         $scope.form = form;
+        Data.get('pendaki/view/'+form.id).then(function (data) {
+            $scope.listAnggota = data.kategori;
+        });
     };
 
     $scope.save = function (form) {
@@ -88,5 +94,25 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
             });
         }
     };
+
+    $scope.setujui = function (row) {
+        console.log(row);
+        if (confirm("Apa Anda Yakin Akan Menyetujui Data Ini?")) {
+          row.is_aprove = 1;
+          Data.post('pendaki/setujui', row).then(function (result) {
+            $scope.is_edit = false;
+            $scope.is_view = false;
+          });
+        }
+
+    };
+
+    // $scope.setujui = function (row) {
+    //     if (confirm("Apa anda yakin akan MENYETUJUI DATA INI  ?")) {
+    //         Data.delete('pendaki/delete/' + row.id).then(function (result) {
+    //             $scope.displayed.splice($scope.displayed.indexOf(row), 1);
+    //         });
+    //     }
+    // };
 
 });
