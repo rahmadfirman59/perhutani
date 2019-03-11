@@ -62,6 +62,11 @@ get('/pendaki/index', function () {
     }
 
     $model = $sql->findAll();
+    
+//    foreach ($model as $key => $value){
+//        $model[$key] = (array) $value;
+//        $model[$key]['tgl_naik'] = date("d M ",$value->tgl_naik);
+//    }
 
 
 

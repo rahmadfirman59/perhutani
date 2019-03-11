@@ -73,7 +73,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
 
     $scope.save = function (form,detail,perlengkapan,logistik) {
 
-        console.log(logistik)
+      
 
         var url = 'form/create';
         var data = {
@@ -92,6 +92,10 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
                 $scope.form = '';
                 $scope.listAnggota = [{
                     no_ijazah: ''
+                }];
+                $scope.perlengkapan = '';
+                 $scope.listLogistik = [{
+                    nama: ''
                 }];
 
             }
