@@ -59,12 +59,16 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
     };
 
     $scope.view = function (form) {
+        console.log(form);
         $scope.is_edit = true;
         $scope.is_view = true;
         $scope.formtitle = "Lihat Data : " + form.title;
         $scope.form = form;
         Data.get('pendaki/view/'+form.id).then(function (data) {
-            $scope.listAnggota = data.kategori;
+            $scope.listAnggota = data.anggota;
+            $scope.perlengkapan = data.perlengkapan;
+            $scope.listLogistik = data.logistik;
+            
         });
     };
 
@@ -96,7 +100,7 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
     };
 
     $scope.setujui = function (row) {
-        console.log(row);
+        
         if (confirm("Apa Anda Yakin Akan Menyetujui Data Ini?")) {
           row.is_aprove = 1;
           Data.post('pendaki/setujui', row).then(function (result) {

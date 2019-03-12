@@ -4,7 +4,10 @@ get('/pendaki/view/:id', function($id) {
     check_access(array('login' => true));
     $sql = new LandaDb();
     $models = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
-    echo json_encode(array('status' => 1, 'kategori' => (array) $models));
+    $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
+    $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
+    
+    echo json_encode(array('status' => 1, 'anggota' => (array) $models,'perlengkapan'=>$perlengkapan,'logistik'=>$logistik));
 });
 
 

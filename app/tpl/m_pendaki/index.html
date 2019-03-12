@@ -89,7 +89,7 @@
 
             <!--FORM-->
 
-            <div class="wrapper-sm" ng-show="is_edit">
+<!--            <div class="wrapper-sm" ng-show="is_edit">
                 <form name="landaform">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
@@ -97,7 +97,7 @@
                         </div>
                         <div class="panel-body">
                             <div align="left">
-                                <!-- <button type="submit" class="btn btn-default" ng-click="cancel()"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button> -->
+                                 <button type="submit" class="btn btn-default" ng-click="cancel()"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button> 
                                 <button type="submit" class="btn btn-primary"   ng-click="save(form)" ng-show="form.is_aprove == 1" ><i class="glyphicon glyphicon-save"></i>&nbsp;Simpan Perubahan</button>
                             </div>
                             <div align="right">
@@ -258,111 +258,365 @@
                         </div>
                         <div class="panel-body">
                             <h1>III. Perlengkapan</h1>
+                            <div class="form-horizontal">
                             <div class="form-group" ng-class="{ 'has-error' : landaform.nama.$invalid && !landaform.nama.$pristine }">
-                                <label class="col-sm-3 control-label">Nama</label>
-                                <div class="col-md-9">
-                                    <input  type="text" name="nama" class="form-control" ng-model="form.nama" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-                                    <p ng-show="landaform.nama.$error.minlength" class="help-block">Nama Terlalu Pendek.</p>
-                                    <p ng-show="landaform.nama.$error.maxlength" class="help-block">Nama Terlalu Panjang.</p>
+                                <label class="col-sm-3 control-label">Tenda</label>
+                                <div class="col-md-2">
+                                    <input  type="text" name="nama" class="form-control" ng-model="perlengkapan.tenda" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
                                 </div>
                             </div>
+                                <br>    
                             <div class="form-group" ng-class="{ 'has-error' : landaform.no_identitas.$invalid && !landaform.no_identitas.$pristine }">
-                                <label class="col-sm-3 control-label">No Identitas</label>
-                                <div class="col-md-9">
-                                    <input type="text" name="no_identitas" class="form-control" ng-model="form.no_identitas" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-                                    <p ng-show="landaform.no_identitas.$error.minlength" class="help-block">No Identitas Terlalu Pendek.</p>
-                                    <p ng-show="landaform.no_identitas.$error.maxlength" class="help-block">No Identitas Terlalu Panjang.</p>
+                                <label class="col-sm-3 control-label">Sleeping Bags/Kantong Tidur</label>
+                                <div class="col-md-2">
+                                    <input type="text" name="no_identitas" class="form-control" ng-model="perlengkapan.kantung_tidur" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
                                 </div>
                             </div>
-                            <div class="form-group" >
-                                <label class="col-sm-3 control-label">Alamat Lengkap</label>
-                                <div class="col-md-9">
-                                    <textarea name="alamat" ng-model="form.alamat" class="form-control" rows="3" required="" ng-maxlength="225" ng-minlength="2" ng-disabled="is_view"></textarea>
-
-
-                                </div>
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.telepon.$invalid && !landaform.telepon.$pristine }">
-                                <label class="col-sm-3 control-label">No. Hp</label>
-                                <div class="col-md-9">
-                                    <input type="text" name="telepon" class="form-control angka" ng-model="form.no_telp" ng-minlength="10" ng-maxlength="14" style="width: 150px;" required="" ng-disabled="is_view">
-                                    <p ng-show="landaform.telepon.$error.minlength" class="help-block">No. Hp Terlalu Pendek.</p>
-                                    <p ng-show="landaform.telepon.$error.maxlength" class="help-block">No. Hp Terlalu Panjang.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.no_telp_darurat.$invalid && !landaform.no_telp_darurat.$pristine }">
-                                <label class="col-sm-3 control-label">No. Hp Darurat </label>
-                                <div class="col-md-9">
-                                    <input type="text" name="no_telp_darurat" class="form-control angka" ng-model="form.no_telp_darurat" ng-minlength="10" ng-maxlength="14" style="width: 150px;" required="" ng-disabled="is_view">
-                                    <p ng-show="landaform.no_telp_darurat.$error.minlength" class="help-block">No. Hp Darurat Terlalu Pendek.</p>
-                                    <p ng-show="landaform.no_telp_darurat.$error.maxlength" class="help-block">No. Hp Darurat Terlalu Panjang.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.email.$invalid && !landaform.email.$pristine }">
-                                <label class="col-sm-3 control-label">Email</label>
-                                <div class="col-md-7">
-                                    <input type="text" name="email" class="form-control" ng-model="form.email" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-                                    <p ng-show="landaform.email.$error.minlength" class="help-block">Email Terlalu Pendek.</p>
-                                    <p ng-show="landaform.email.$error.maxlength" class="help-block">Email Terlalu Panjang.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" >
-                                <label class="col-sm-3 control-label">Tanggal Naik</label>
-                                <div class="col-sm-9">
-                                    <div class="row">
-                                        <div class="visible-xs" style="margin-top: 5px;"></div>
-                                        <div class="col-sm-6">
-                                            <div class="input-group" >
-                                                <input type="text"  style="height: 30px;" class="form-control" datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_naik" is-open="opened1" ng-click="open1($event);" required="" ng-disabled="is_view"/>
-                                                <span class="input-group-addon">
-                                                    <i class="glyphicon glyphicon-calendar"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group" >
-                                <label class="col-sm-3 control-label">Tanggal Turun</label>
-                                <div class="col-sm-9">
-                                    <div class="row">
-                                        <div class="visible-xs" style="margin-top: 5px;"></div>
-                                        <div class="col-sm-6">
-                                            <div class="input-group" >
-                                                <input type="text"  style="height: 30px;" class="form-control" datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_turun" is-open="opened2" ng-click="open2($event);" required="" ng-disabled="is_view"/>
-                                                <span class="input-group-addon">
-                                                    <i class="glyphicon glyphicon-calendar"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Kewarganegaraan</label>
-                                <div class="col-sm-9">
-                                    <div class="btn-group m-r" >
-                                        <label btn-radio="'Warga Negara Indonesia'" ng-change="cekWarga(1)" class="btn btn-default" ng-model="form.kewarganegaraan" required=""  ng-disabled="is_view">
-                                            Warga Negara Indonesia
-                                        </label>
-                                        <label btn-radio="'Warga Negara Asing'" ng-change="cekWarga(0)" class="btn btn-default" ng-model="form.kewarganegaraan" required="" ng-disabled="is_view" >
-                                            Warga Negara Asing
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Jalur Pendakian</label>
-                                <div class="col-md-7">
-                                    <input type="text" name="jalur" class="form-control" ng-model="form.jalur_pendakian" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-
-                                </div>
                             </div>
                         </div>
                       
                     </div>
                     
+            </div>-->
+            <div id="formDaftar" ng-show="is_edit">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-12" style="margin-top: 10px;">
+                    <form name="landaform" class="form-horizontal">
+                        <div class="panel panel-success">
+                             
+                            
+                            <div class="panel-heading" style="background-color: #009f61;color: #fff">
+                                Diisi Oleh Ketua Rombongan
+                            </div>
+                            <div align="left">
+                                 <!--<button type="submit" class="btn btn-default" ng-click="cancel()"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>--> 
+                                <button type="submit" class="btn btn-primary"   ng-click="save(form)"  ><i class="glyphicon glyphicon-save"></i>&nbsp;Kirim Email Surat Persetujuan</button>
+                            </div>
+                            <div align="right">
+                                <button type="submit" class="btn btn-default" ng-click="cancel()"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+                                <!--<button type="submit" class="btn btn-primary" ng-hide="is_view"  ng-click="save(form)"><i class="glyphicon glyphicon-save"></i>&nbsp;Simpan Perubahan</button>-->
+                            </div>
+                            <div class="panel-body">
+                                <h1>I. Ketua Regu</h1>
+                               <div class="form-group">
+                                    <label class="col-sm-3 control-label">Nama</label>
+                                    <div class="col-md-9">
+                                        <input type="text" name="no_identitas" class="form-control"
+                                               ng-model="form.nama" ng-disabled="is_view" ng-minlength="2" ng-maxlength="100">
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">No Identitas</label>
+                                    <div class="col-md-9">
+                                        <input type="text" name="no_identitas" class="form-control"
+                                               ng-model="form.no_identitas" ng-disabled="is_view" ng-minlength="2" ng-maxlength="100">
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Alamat Lengkap</label>
+                                    <div class="col-md-9">
+                                        <textarea name="alamat" ng-model="form.alamat" ng-disabled="is_view" class="form-control" rows="3"
+                                                  required="" ng-maxlength="225" ng-minlength="2"></textarea>
+
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">No. Hp</label>
+                                    <div class="col-md-9">
+                                        <input type="text" name="telepon" class="form-control angka"
+                                               ng-model="form.no_telp" ng-disabled="is_view" ng-minlength="10" ng-maxlength="14"
+                                               style="width: 150px;" required="">
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">No. Hp Darurat 1 </label>
+                                    <div class="col-md-9">
+                                        <input type="text" name="no_telp_darurat1" class="form-control angka"
+                                               ng-model="form.no_telp_darurat1" ng-disabled="is_view" ng-minlength="10" ng-maxlength="14"
+                                               style="width: 150px;" required="">
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">No. Hp Darurat 2 </label>
+                                    <div class="col-md-9">
+                                        <input type="text" name="no_telp_darurat2" class="form-control angka"
+                                               ng-model="form.no_telp_darurat2" ng-disabled="is_view" ng-minlength="10" ng-maxlength="14"
+                                               style="width: 150px;" required="">
+                                       
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Email</label>
+                                    <div class="col-md-7">
+                                        <input type="text" name="email" class="form-control" ng-model="form.email" ng-disabled="is_view"
+                                               ng-minlength="2" ng-maxlength="100">
+                                       
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Tanggal Naik</label>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="visible-xs" style="margin-top: 5px;"></div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <input type="text" style="height: 30px;" class="form-control"
+                                                           datepicker-popup="dd MMMM yyyy" ng-model="form.tgl_naik" ng-disabled="is_view"
+                                                           is-open="opened1" ng-click="open1($event);" required=""/>
+                                                   
+                                                    <span class="input-group-addon">
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Tanggal Turun</label>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="visible-xs" style="margin-top: 5px;"></div>
+                                            <div class="col-sm-6">
+                                                <div class="input-group">
+                                                    <input type="text" style="height: 30px;" class="form-control"
+                                                           datepicker-popup="dd MMMM yyyy" ng-model="form.tgl_turun" ng-disabled="is_view"
+                                                           is-open="opened2" ng-click="open2($event);" required=""/>
+                                                    <span class="input-group-addon">
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Kewarganegaraan</label>
+                                    <div class="col-sm-9">
+                                        <div class="btn-group m-r">
+                                            <label btn-radio="'Warga Negara Indonesia'" ng-change="cekWarga(1)"
+                                                   class="btn btn-default" ng-model="form.kewarganegaraan" required="">
+                                                Warga Negara Indonesia
+                                            </label>
+                                            <label btn-radio="'Warga Negara Asing'" ng-change="cekWarga(0)"
+                                                   class="btn btn-default" ng-model="form.kewarganegaraan" required="">
+                                                Warga Negara Asing
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Jalur Pendakian</label>
+                                    <div class="col-md-5">
+                                        <!--<div class="btn-group m-r">-->
+                                        <select class="form-control" ng-model="form.jalur_pendakian" ng-disabled="is_view" >
+                                            <option value="jalur1">jalur1i</option>
+                                            <option value="jalur2">jalur2</option>
+                                            <option value="jalur3">jalur3</option>
+                                            <option value="jalur4">jalur4</option>
+                                        </select>
+                                        <!--</div>-->
+
+                                    </div>
+                                </div>
+                                <div style="padding: 5px 0px;">
+                                    <hr style="border-top: 1px solid #dff0d8;"/>
+                                </div>
+                                <br>
+                                <br>
+                                <h1>II. Anggota</h1>
+                                <table class="table table-striped b-t b-light">
+                                    <thead>
+                                        <tr>
+                                            <td ng-hide="is_view" style="padding: 0px; width: 5px;">
+                                                <button class="btn btn-success" ng-click="tambahAnggota()"
+                                                        ng-disabled="is_view">
+                                                    <i class="glyphicon glyphicon-plus">
+                                                    </i>
+                                                </button>
+                                            </td>
+                                            <th style="text-align: center; font-weight: bold;">
+                                                Nama
+                                            </th>
+                                            <th style="text-align: center; font-weight: bold;">
+                                                No Identitas
+                                            </th>
+                                            <th style="text-align: center; font-weight: bold;">
+                                                Jenis Kelamin
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="data in listAnggota">
+                                            <td ng-hide="is_view" style="padding: 0px; width: 5px;">
+                                                <button class="btn btn-danger" ng-click="hapusAnggota($index, detail.id)"
+                                                        ng-disabled="is_view">
+                                                    <i class="glyphicon glyphicon-remove">
+                                                    </i>
+                                                </button>
+                                            </td>
+                                            <td style="text-align: center;">
+                                                <input class="form-control" ng-disabled="is_view" ng-model="data.nama">
+                                                </input>
+                                            </td>
+                                            <td style="text-align: center;">
+                                                <input class="form-control" ng-disabled="is_view" ng-model="data.no_identitas">
+                                                </input>
+                                            </td>
+                                            <td style="text-align: center;">
+                                                <div class="btn-group m-r">
+                                                    <label btn-radio="'Laki-Laki'" ng-change="cekWarga(1)" ng-disabled="is_view"
+                                                           class="btn btn-default" ng-model="data.kelamin" required="">
+                                                        Laki-Laki
+                                                    </label>
+                                                    <label btn-radio="'Perempuan'" ng-change="cekWarga(0)" ng-disabled="is_view"
+                                                           class="btn btn-default" ng-model="data.kelamin" required="">
+                                                        Perempuan
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br/>
+                        </div>
+                        <div class="panel panel-success">
+
+                            <div class="panel-body">
+                                <h1>III. Perlengkapan</h1>
+                                <div class="form-group">
+
+                                    <label class="col-sm-3 control-label">Tenda</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" ng-model="perlengkapan.tenda" ng-disabled="is_view"
+                                               ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Sleeping Bags/Kantong Tidur</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control"
+                                               ng-model="perlengkapan.kantung_tidur" ng-disabled="is_view"  ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Peralatan Masak + Bahan Bakar</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control"
+                                               ng-model="perlengkapan.masak_bakar" ng-disabled="is_view"  ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Ponco / Jas Hujan</label>
+                                    <div class="col-md-3">
+                                        <input type="text"  class="form-control"
+                                               ng-model="perlengkapan.ponco" ng-disabled="is_view"  ng-maxlength="100">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Senter, Alat Penerangan</label>
+                                    <div class="col-md-3">
+                                        <input type="text"  class="form-control"
+                                               ng-model="perlengkapan.penerangan" ng-disabled="is_view" ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Obat-obatan pribadi dan P3K</label>
+                                    <div class="col-md-3">
+                                        <input type="text"  class="form-control"
+                                               ng-model="perlengkapan.p3k" ng-disabled="is_view" ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Matras</label>
+                                    <div class="col-md-3">
+                                        <input type="text"  class="form-control"
+                                               ng-model="perlengkapan.matras" ng-disabled="is_view"  ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Matras</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control"
+                                               ng-model="perlengkapan.sampah" ng-disabled="is_view"  ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Jaket</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control"
+                                               ng-model="perlengkapan.jaket" ng-disabled="is_view"  ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div style="padding: 5px 0px;">
+                                    <hr style="border-top: 1px solid #dff0d8;"/>
+                                </div>
+                                <br>
+                                <br>
+                                <h1>IV.Logistik</h1>
+                                <table class="table table-striped b-t b-light">
+                                    <thead>
+                                        <tr>
+                                            <td ng-hide="is_view" style="padding: 0px; width: 5px;">
+                                                <button class="btn btn-success" ng-click="tambahLogistik()"
+                                                        ng-disabled="is_view">
+                                                    <i class="glyphicon glyphicon-plus">
+                                                    </i>
+                                                </button>
+                                            </td>
+                                            <th style="text-align: center; font-weight: bold;">
+                                                Minuman dan Makanan
+                                            </th>
+                                            <th style="text-align: center; font-weight: bold;">
+                                                Jumlah
+                                            </th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="logistik in listLogistik">
+                                            <td ng-hide="is_view" style="padding: 0px; width: 5px;">
+                                                <button class="btn btn-danger" ng-click="hapusLogistik($index, detail.id)"
+                                                        ng-disabled="is_view">
+                                                    <i class="glyphicon glyphicon-remove">
+                                                    </i>
+                                                </button>
+                                            </td>
+                                            <td style="text-align: center;">
+                                                <input class="form-control" ng-disabled="is_view" ng-model="logistik.nama">
+                                                </input>
+                                            </td>
+                                            <td style="text-align: center;">
+                                                <input class="form-control" ng-disabled="is_view" ng-model="logistik.jumlah">
+                                                </input>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br/>
+                        </div>
+                        
+
+
+                </div>
+
+                </form>
+
             </div>
+        </div>
+    </div>
             
         </div>
     </div>
