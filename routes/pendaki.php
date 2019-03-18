@@ -25,6 +25,28 @@ post('/pendaki/setujui', function() {
     echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
 
 });
+post('/pendaki/print', function() {
+
+
+    check_access(array('admin' => true));
+    $params = json_decode(file_get_contents("php://input"), true);
+
+    $phpWord = new \PhpOffice\PhpWord\PhpWord();
+    $templateProcessor = new TemplateProcessor('resources/Sample_07_TemplateCloneRow.docx');
+    $templateProcessor->setValue('Name', 'John Doe');
+    $templateProcessor->setValue(array('City', 'Street'), array('Detroit', '12th Street'));
+
+
+    print_r("ok");
+    exit();
+
+    $sql = new LandaDb();
+    
+    $model = $sql->update('m_pendaki', $params, array('id' => $params['id']));
+
+    echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
+
+});
 
 get('/pendaki/index', function () {
     check_access(array('login' => true));

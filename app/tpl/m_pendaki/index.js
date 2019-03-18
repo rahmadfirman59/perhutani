@@ -111,12 +111,10 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
 
     };
 
-    // $scope.setujui = function (row) {
-    //     if (confirm("Apa anda yakin akan MENYETUJUI DATA INI  ?")) {
-    //         Data.delete('pendaki/delete/' + row.id).then(function (result) {
-    //             $scope.displayed.splice($scope.displayed.indexOf(row), 1);
-    //         });
-    //     }
-    // };
-
+    $scope.sendmail = function(id){
+        Data.post('pendaki/print', id).then(function (result) {
+            $scope.is_edit = false;
+            $scope.is_view = false;
+          });
+    }
 });
