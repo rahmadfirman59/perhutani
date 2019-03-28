@@ -27,24 +27,47 @@ post('/pendaki/setujui', function() {
 });
 post('/pendaki/print', function() {
 
-
-    check_access(array('admin' => true));
     $params = json_decode(file_get_contents("php://input"), true);
+    $id = $params;
+    $sql = new LandaDb();
 
-    $phpWord = new \PhpOffice\PhpWord\PhpWord();
-    $templateProcessor = new TemplateProcessor('resources/Sample_07_TemplateCloneRow.docx');
-    $templateProcessor->setValue('Name', 'John Doe');
-    $templateProcessor->setValue(array('City', 'Street'), array('Detroit', '12th Street'));
+
+
+    $model = $sql->find("select * from m_pendaki where id = {$id}");
+    $anggota = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
+    $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
+    $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
+
+    $jml_anggota = count($anggota) + 1;
+    $awal = date("j M Y",$model->tgl_naik);
+    $akhir = date("j M Y",$model->tgl_turun);
+
+    $timeDiff = abs($model->tgl_turun - $model->tgl_naik);
+    $numberDays = $timeDiff/86400;
+    $numberDays = intval($numberDays);
+
+   
+    // echo json_encode($model);exit();
+
+    $templateProcessor = new \PhpOffice\PhpWord\TemplateProcessor('format/format.docx');
+    $templateProcessor->setValue('nama', $model->nama);
+    // $templateProcessor->setValue('alamat',substr($model->alamat,0,65));
+    $templateProcessor->setValue('alamat',$model->alamat);
+    $templateProcessor->setValue('kewarganegaraan',$model->kewarganegaraan);
+    $templateProcessor->setValue('anggota',$jml_anggota);
+    $templateProcessor->setValue('awal',$awal);
+    $templateProcessor->setValue('akhir',$akhir);
+    $templateProcessor->setValue('hari',$numberDays);
+
+    $templateProcessor->saveAs('izin.docx');
 
 
     print_r("ok");
     exit();
 
-    $sql = new LandaDb();
-    
-    $model = $sql->update('m_pendaki', $params, array('id' => $params['id']));
 
-    echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
+
+    
 
 });
 
