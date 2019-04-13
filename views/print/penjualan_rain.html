@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<style type="text/css">
+    
+    table{display: table-cell;}
+    h1{
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+    td{
+        font-size: 11px;
+        font-family: "Times New Roman", Georgia, Serif;
+        text-align: justify;
+
+    }
+    .border th{
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        line-height: 16px;
+    }
+    .border td{
+        /*margin-top: 5px; */
+        /*border-top: 1px solid #000;*/
+    }
+   .borders th{
+         border-bottom: 1px solid #000;
+    }
+    /*.footer table{
+        border-collapse: collapse;
+    }
+    .footer table, .footer td{
+        border: 1px solid black;
+    }*/
+    .footer td{
+        padding: 10px;
+    }
+     .footer .text-2x{
+        font-weight: 500;
+        
+
+        vertical-align: top;
+    }
+    .footer .text-3x{
+        text-align: left;
+         font-size: 12px; 
+        
+    }
+    .footer .text-1x{
+
+        font-weight: 400;
+       
+        vertical-align: bottom;
+    }
+     .footer .text{
+        text-align: left;
+        font-size: 12px;      
+        vertical-align: bottom;
+    }
+    
+    tr{
+        padding-bottom: 18px;
+    }
+    li{
+        text-align: justify;
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    hr{
+        color: red;
+        background-color: red;
+    }
+</style>
+<table style="width: 100%;">
+    <tr >
+        <td>
+            {% if model.setting.logo_print %}
+            <img src="{{baseUrl}}/../img/print/{{model.setting.logo_print}}" style="height: 70px">
+            {% endif %}
+        </td>
+        <td >
+            
+            <h1 style="text-align: center;font-size: 35px;font-weight: bold;font-family: sans-serif;text-align: right;text-transform: uppercase;color: #ddd;letter-spacing: 3px;vertical-align: top;">INVOICE</h1>
+        </td>
+    </tr>
+    <tr >
+        <td colspan="2" style="border-bottom: 1px solid #ddd;">
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+    </tr>
+
+    <tr>
+        <td style="width: 50%;">
+            <table>
+               <tr>
+                    <td style="text-align: left; width: 25%">Invoice No.  </td>
+                    <td> :&nbsp;{{model.kode}}</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; width: 25%">Date  </td>
+                    <td> :&nbsp;{{model.tanggal| date('d F Y')}}</td>
+                </tr>
+                 <tr>
+                    <td style="text-align: left; width: 25%">Due Date  </td>
+                    <td style="text-align: left;"> :&nbsp;{{model.jatuh_tempo| date('d F Y')}}</td>
+                </tr>
+            </table>
+        </td>
+        <td style="width: 50%">
+            <table>
+                
+                <tr>
+                    <td style="text-align: right">To : </td>
+                    <td style="text-align: left;">{{model.nama_pelanggan}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="text-align: left;">{{model.alamat}}</td>
+                </tr>
+                <tr>
+                     <td style="text-align: right">Attention : </td>
+                    <td style="text-align: left;">{{model.contact_person}}</td>
+                </tr>
+               
+                <!--<tr>-->
+                    <!--<td style="font-weight: bold"><br/><br/>Kepada Yth : Bapak/Ibu</td>-->
+                <!--</tr>-->
+
+                <!--<tr>-->
+                    <!--<td ><br/><br/>{{model.alamat}}</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td>{{model.no_tlp}}</td>-->
+                <!--</tr>-->
+            </table>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<table style="" id="detail">
+    <tr class="border">
+        <th style="text-align: center;font-size: small">DESCRIPTION</th>
+        <!--<th style="text-align: right">Diskon</th>-->
+        <th style="text-align: right;font-size: small">UNIT PRICE</th>
+    </tr>
+
+    {% for key, val in model.detail %}
+    <tr  class="border">
+        <td style="font-size: 12px;width: 80%; text-align: left;" >{{val.deskripsi | raw}}             
+        </td>
+
+        <!--<td style="text-align: right;">{{val.diskon| number_format}}</td>-->
+        <td style="text-align: right;font-size: 12px; width:20%">
+            {% if val.subharga != 0%}
+            Rp. {{val.subharga| number_format}}
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+    <tr class="borders">
+        <th colspan="5" style="text-align: center;width: 100%" >
+            <!-- <span style="font-size: small">Payments can be paid to BCA (6140407451) A/n Yulianto Frandi</span> -->
+        </th>
+    </tr>
+
+</table>
+<br>
+<table>
+    <tr>
+        <td style="width: 60%;text-align: left;font-size: 12px"><br><br>Please make check payable to {{model.setting.nama}}<br>Thank You for using {{model.setting.nama}}
+        </td>
+        
+        <td style="width: 40%">
+            <table style="padding: 3px 0px">
+                
+                <tr>
+                    
+                    <td style="text-align: right">TOTAL : </td>
+                    <td style="text-align: right"> Rp. {{model.total | number_format}}</td>
+                </tr>
+                <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+                <tr>
+                    <td style="text-align: right;">PAID :</td>
+                    <td style="text-align: right">
+                        Rp. {{model.cash | number_format}}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;font-weight: bold">TOTAL DUE :</td>
+                    <td style="text-align: right;font-weight: bold">
+                        Rp. {{model.piutang | number_format}}
+                        <!--Rp. {{model.total_ | number_format}}-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+
+</table>
+
+<div class="footer">
+    <br>
+<table>
+    <tr >
+        <td colspan="2" style="border-bottom: 1px solid #ddd;">
+
+        </td>
+    </tr>
+    <br>
+    <tr>
+        <td width="130">
+            Prepared By
+            <br>
+            <br>
+            <br>
+            <br>
+            <br/>
+            {{model.nama}}
+        </td>
+        <td width="235" style="text-align: left;">Payment details<br><br><br>{{model.data_cabang.payment_detail |raw}}
+        </td>
+        <td>Question? Contact us<br><br>{{model.data_cabang.alamat | raw}}<br/>
+            Email : {{model.data_cabang.email}}<br/>
+            Telp : {{model.data_cabang.no_tlp}}
+        </td>
+
+    </tr>
+
+</table>
+</div>

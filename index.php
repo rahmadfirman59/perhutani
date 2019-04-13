@@ -8,6 +8,7 @@ ini_set("display_errors", 1);
 
 require 'vendor/autoload.php';
 
+
 /* --- System --- */
 require 'lib/database.php';
 require 'lib/user.php';
@@ -17,6 +18,7 @@ require 'lib/validasi.php';
 
 /* --- Library --- */
 require 'lib/validator.php';
+// require 'lib/dependencies.php';
 require 'lib/simple_html_dom.php';
 
 config('source', 'config.ini');

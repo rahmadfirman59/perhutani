@@ -19,7 +19,8 @@
         "phpmailer/phpmailer": "~5.2",
         "tecnickcom/tcpdf": "^6.2",
         "picqer/php-barcode-generator": "^0.3.0",
-        "phpoffice/phpword": "^0.16.0"
+        "phpoffice/phpword": "^0.16.0",
+        "dompdf/dompdf": "^0.8.3"
     },
     "autoload": {
         "psr-4": {
