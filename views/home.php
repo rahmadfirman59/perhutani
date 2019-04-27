@@ -3,7 +3,7 @@
         <ol class="carousel-indicators">
             <?php
             $directory = "app/img/slider";
-            $images = glob($directory . "/*.{jpg,png}", GLOB_BRACE);
+            $images = glob($directory . "/*.{jpg,jpeg,png}", GLOB_BRACE);
             $first = true;
             foreach ($images as $key => $img) {
                 $active = '';
@@ -48,7 +48,7 @@
         <div class="row">
             <div class="iconbox-set-1-warp" style="margin-top: 10px">
                 <div class="col-md-12 text-center des-text">
-                    <h3 class="text-cap text-center page-header">Visi Misi Pendakian Arjuno</h3>
+                    <h3 class="text-cap text-center page-header">Program dan Aktifitas</h3>
                 </div>
                 <?php
                 foreach ($visimisi as $vals) {
@@ -57,8 +57,8 @@
                         <div class="icon-image">
 
                             <?php
-//                            $a = str_replace("http://", "https://", get_first_image($vals->content, 'medium'));
-//                            echo $a;
+                           // $a = str_replace("http://", "", get_first_image($vals->content, 'medium'));
+                           // echo $a;
                             $a = get_first_image($vals->content, 'medium');
                             echo $a;
                             ?>
@@ -180,7 +180,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <div class="second-title">
-                    <h3 class="subtitle color-red-3 underline" style="color: #fff">BENTUK KUNJUNGAN</h3>
+                    <h3 class="subtitle color-red-3 underline" style="color: #fff">PESONA WISATA</h3>
                     <!--                    <h2>What is happening now</h2>-->
                     <!--<p class="color-grey">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id tor.</p>-->
                 </div>
@@ -189,6 +189,9 @@
 
         <div class="row">
             <?php
+
+            // $jumlah = count($pelatihan);
+
             foreach ($pelatihan as $val) {
                 $g = get_first_image($val->content, 'big');
                 ?>
@@ -216,6 +219,7 @@
             }
             ?>
         </div>
+      
     </div>
 </div>
 <section class="iconbox" >

@@ -7,7 +7,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="sub-header-warp">
-                                    <h3 class="title-subheader">Foto Glintung Go Green</h3>
+                                    <h3 class="title-subheader">SOP pendakian gunung arjuna</h3>
                                     <ol class="breadcrumb">
                                         <li><a href="<?= site_url() ?>">Home</a></li>
                                         <li>Foto</li>
@@ -32,7 +32,9 @@
                                                 <a href="<?= url('g/' . $val->alias) ?>">
 
                                                     <?php
-                                                    $a = str_replace("http", "https", get_first_image($val->content, 'mdium'));
+                                                    // $a = str_replace("http", "https", get_first_image($val->content, 'mdium'));
+                                                    // echo $a;
+                                                    $a = get_first_image($val->content, 'mdium');
                                                     echo $a;
                                                     ?>
                                                 </a>

@@ -9,7 +9,7 @@ get('/index', function () {
     $terbaru = $sql->findAll("select artikel.*, m_kategori.name as kategori, m_user.nama as user from artikel left join m_user on m_user.id = artikel.created_user_id left join m_kategori on m_kategori.id = artikel.m_kategori_id where m_kategori_id in (4,5,7,8,9) and publish = 1 order by artikel.date DESC limit 4");
     $populer = $sql->findAll("select * from artikel where m_kategori_id in (5) and publish = 1 order by hits DESC limit 8");
     $fasilitas = $sql->findAll("select * from artikel where m_kategori_id = 12");
-    $pelatihan = $sql->findAll("select * from artikel where m_kategori_id = 13 limit 3");
+    $pelatihan = $sql->findAll("select * from artikel where m_kategori_id = 13 AND publish = 1 limit 9");
 
 
     render('home', ['welcome' => $welcome,
@@ -39,7 +39,26 @@ get('/profil.html', function () {
         'title'      => $title,
         'breadcrumb' => $breadcrumb,
         '_title'     => 'Profil Pendakian Arjuno',
-        '_deskripsi' => 'Gerakan 3G dimulai dengan kegiatan sederhana, yaitu penghijauan lingkungan yang diluncurkan pada bulan Pebruari 2012. Gerakan ini sekaligus mendukung program Pemerintah Kota Malang dalam melakukan gerakan penghijauan Malang Ijo Royo-royo.',
+        '_deskripsi' => '',
+        '_keyword'=>config('blog.title'),
+        'setting' => getSetting()
+    ], 'main');
+});
+
+get('/sop.html', function () {
+    $sql    = new LandaDb();
+    $profil = $sql->find("select * from artikel where m_kategori_id = 17 and publish = 1");
+
+    $title      = 'SOP Pendakian Arjuna Welirang';
+    $breadcrumb = array(
+        $title => "#",
+    );
+    render('sop', [
+        'profil'     => $profil,
+        'title'      => $title,
+        'breadcrumb' => $breadcrumb,
+        '_title'     => 'Profil Pendakian Arjuno',
+        '_deskripsi' => '',
         '_keyword'=>config('blog.title'),
         'setting' => getSetting()
     ], 'main');
@@ -149,9 +168,9 @@ get('/kontak.html', function () {
 
 get('/gallery.html', function () {
     $sql  = new LandaDb();
-    $foto = $sql->findAll("select * from artikel where m_kategori_id=6 and publish=1");
+    $foto = $sql->findAll("select * from artikel where m_kategori_id=17 and publish=1");
 
-    $title      = 'Gallery Glintung Go Green';
+    $title      = 'SOP Pendakian Arjuna Welirang';
     $breadcrumb = array(
         $title => "#",
     );

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12 footer-item footer-about">
                 <div class="title-wrap">
-                    <h3 class="title-inline" style="margin-top:0px;">Pendakian Arjuno</h3>
+                    <h3 class="title-inline" style="margin-top:0px;">Sistem Monitoring Pendakian Arjuna Welirang</h3>
                 </div>
                 <p class="text-about">
                     <?= $setting->deskripsi ?>

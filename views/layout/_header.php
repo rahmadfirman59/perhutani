@@ -15,7 +15,7 @@
 <header class="header" id="page-header">
     <div class="header-inner">
         <div class="logo">
-            <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/logo.png"></a>
+            <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/logo.png"><img src="<?=site_url()?>app/img/system/hasil.png"></a>
         </div>
         <div class="logo-sm">
             <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/Logo-3G.jpg"></a>
@@ -30,9 +30,9 @@
                 <li>
                     <a href="<?= url('profil') ?>" class="dark-text">Profil</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="<?= url('c/berita') ?>" class="dark-text">Berita</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="<?= url('c/pengumuman') ?>" class="dark-text">Pengumuman</a>
                 </li>
@@ -49,10 +49,18 @@
 <!--                    </ul>-->
 <!--                </li>-->
                 <li>
-                    <a href="<?= site_url().'formulir' ?>" class="dark-text">KUNJUNGAN</a>
+                    <a href="<?= site_url().'formulir' ?>" class="dark-text">Registrasi Pendakian</a>
                 </li>
-
+                <!-- <li>
+                    <a href="<?= site_url().'gallery' ?>" class="dark-text">SOP PENDAKIAN</a>
+                </li> -->
                 <li>
+                    <a href="<?= url('sop') ?>" class="dark-text">SOP PENDAKIAN</a>
+                </li>
+                <!-- <li>
+                    <a href="<?= site_url().'c/gallery' ?>" class="dark-text">JALUR PENDAKIAN </a>
+                </li> -->
+                <!-- <li>
                     <a href="#" class="btn-search-navi color-theme border-color-theme bg-hover-theme">
                         <i class="glyphicon glyphicon-search search" aria-hidden="true"></i>
                     </a>
@@ -63,10 +71,8 @@
                             </div>
                         </form>
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
 </header>
-
-

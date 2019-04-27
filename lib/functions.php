@@ -10,6 +10,61 @@ function getSetting()
     return $setting;
 }
 
+function generateKarcis()
+{
+    // $db = new Cahkampung\Landadb(Db());
+    $db = new LandaDb();
+    $cekKode = $db->select('*')
+        ->from("m_pendaki_anggota")
+        ->where("!=", "karcis", "")
+        ->orderBy('karcis DESC')
+        ->find();
+
+
+
+    if ($cekKode) {
+        $kode_terakhir = $cekKode->karcis;
+    } else {
+        $kode_terakhir = 0;
+    }
+    //
+    // print_r($kode_terakhir);
+    // exit();
+
+    $kodePenjualan = (substr($kode_terakhir, -1) + 1);
+    $kode = substr('00000' . $kodePenjualan, strlen($kodePenjualan));
+    $kode = 'PDK' .date("n"). date("y") . "/" . $kode;
+
+    return $kode;
+}
+function generateKode()
+{
+    // $db = new Cahkampung\Landadb(Db());
+    $db = new LandaDb();
+    $cekKode = $db->select('*')
+        ->from("m_pendaki")
+        ->where("!=", "register", "")
+        ->orderBy('register DESC')
+        ->find();
+
+
+
+    if ($cekKode) {
+        $kode_terakhir = $cekKode->register;
+    } else {
+        $kode_terakhir = 0;
+    }
+    //
+    // print_r($kode_terakhir);
+    // exit();
+
+    $kodePenjualan = (substr($kode_terakhir, -1) + 1);
+    $kode = substr('00000' . $kodePenjualan, strlen($kodePenjualan));
+    $kode = 'REG'."/" .date("n")."/". date("y") . "/" . $kode;
+
+    return $kode;
+}
+
 function facebook_connect()
 {
     return array('appId' => '825402027535189', 'secret' => '4540ca279550c32c25e168b7e3e0a1a9');

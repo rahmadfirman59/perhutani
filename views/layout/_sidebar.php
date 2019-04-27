@@ -3,7 +3,7 @@
         <h3>Kategori</h3>
         <?php
         $sql = new LandaDb();
-        $kategori = $sql->findAll("SELECT m_kategori.name as kategori, m_kategori.alias, count(artikel.id) as total FROM m_kategori left join artikel ON artikel.m_kategori_id = m_kategori.id WHERE m_kategori.id in (5,14) group by m_kategori.id");
+        $kategori = $sql->findAll("SELECT m_kategori.name as kategori, m_kategori.alias, count(artikel.id) as total FROM m_kategori left join artikel ON artikel.m_kategori_id = m_kategori.id WHERE m_kategori.id in (14) group by m_kategori.id");
         ?>
         <ul class="category">
             <?php

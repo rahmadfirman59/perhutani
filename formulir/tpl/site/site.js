@@ -73,7 +73,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
 
     $scope.save = function (form,detail,perlengkapan,logistik) {
 
-      
+
 
         var url = 'form/create';
         var data = {
@@ -91,7 +91,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
                 toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
                 $scope.form = '';
                 $scope.listAnggota = [{
-                    no_ijazah: ''
+                    // no_ijazah: ''
                 }];
                 $scope.perlengkapan = '';
                  $scope.listLogistik = [{

@@ -13,6 +13,7 @@ get('/pendaki/view/:id', function($id) {
 
 
 
+
 post('/pendaki/setujui', function() {
 
 
@@ -25,18 +26,20 @@ post('/pendaki/setujui', function() {
     echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
 
 });
+
 post('/pendaki/print', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
     $id = $params;
     $sql = new LandaDb();
 
-
-
+    $kode = generateKode();
     $model = $sql->find("select * from m_pendaki where id = {$id}");
     $anggota = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
     $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
     $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
+
+
 
     $jml_anggota = count($anggota) + 1;
     $awal = date("j M Y",$model->tgl_naik);
@@ -57,16 +60,8 @@ post('/pendaki/print', function() {
     $html = ob_get_contents();
     ob_get_clean();
     $dompdf->loadHtml($html);
-
-
-
-    // $dompdf->load_html($page);
     $dompdf->render();
-
-    $dompdf->stream("hello.pdf");
-
-
-
+    $dompdf->stream("Webslesson", array("Attachment"=>0));
 
 });
 

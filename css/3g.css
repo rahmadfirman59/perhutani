@@ -174,10 +174,11 @@ blockquote.quote-1 {
 }
 
 .logo img {
-    width: 100%;
-    max-width: 315px;
-    margin-top: 5px;
+    width: 15%;
+    max-width: 200px;
+    margin-top: 0px;
 }
+
 
 .logo-sm img {
     width: 75px
@@ -1365,7 +1366,10 @@ h4 {
 
 @media screen and (max-width: 500px) {
     .logo img {
-        width: 100%
+        /* width: 100% */
+        width: 12%;
+
+        margin-left: 11px;
     }
 
     .detail-pic {
