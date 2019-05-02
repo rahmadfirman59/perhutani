@@ -38,9 +38,6 @@ post('/pendaki/print', function() {
     $anggota = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
     $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
     $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
-
-
-
     $jml_anggota = count($anggota) + 1;
     $awal = date("j M Y",$model->tgl_naik);
     $akhir = date("j M Y",$model->tgl_turun);
@@ -105,13 +102,11 @@ get('/pendaki/index', function () {
 
     $model = $sql->findAll();
 
-//    foreach ($model as $key => $value){
-//        $model[$key] = (array) $value;
-//        $model[$key]['tgl_naik'] = date("d M ",$value->tgl_naik);
-//    }
-
-
-
+   foreach ($model as $key => $value){
+       $model[$key] = (array) $value;
+       $model[$key]['tgl_naik'] = date("d M Y",$value->tgl_naik);
+       $model[$key]['tgl_turun'] = date("d M Y",$value->tgl_turun);
+   }
     $totalItem = $sql->count();
     $sql->clearQuery();
 

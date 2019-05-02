@@ -64,11 +64,12 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
         $scope.is_view = true;
         $scope.formtitle = "Lihat Data : " + form.title;
         $scope.form = form;
+        $scope.register = form.register;
         Data.get('pendaki/view/'+form.id).then(function (data) {
             $scope.listAnggota = data.anggota;
             $scope.perlengkapan = data.perlengkapan;
             $scope.listLogistik = data.logistik;
-            
+
         });
     };
 
@@ -100,7 +101,7 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
     };
 
     $scope.setujui = function (row) {
-        
+
         if (confirm("Apa Anda Yakin Akan Menyetujui Data Ini?")) {
           row.is_aprove = 1;
           Data.post('pendaki/setujui', row).then(function (result) {

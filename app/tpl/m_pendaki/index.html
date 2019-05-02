@@ -58,7 +58,7 @@
                             </thead>
                             <tbody ng-show="!isLoading">
                                 <tr ng-if="!displayed">
-                                    <td colspan="7" style="text-align: center">Tidak ada artikel</td>
+                                    <td colspan="7" style="text-align: center">Tidak ada data</td>
                                 </tr>
                                 <tr ng-repeat="row in displayed" ng-dblclick="view(row)" ng-if="displayed">
                                     <td>{{row.nama}}</td>
@@ -74,9 +74,11 @@
                                     </td>
                                     <td>
                                         <div class="btn-group pull-right" role="group" style="margin-top: -3px;">
-                                            <button type="button" class="btn btn-success glyphicon glyphicon-check"
+                                            <!-- <button type="button" class="btn btn-success glyphicon glyphicon-check"
                                                 ng-click="setujui(row)" ng-show="user.akses.aproval_pendaki"
-                                                ng-hide="row.is_aprove == 1"></button>
+                                                ng-hide="row.is_approve == 1"></button> -->
+                                            <button type="button" class="btn btn-success glyphicon glyphicon-search"
+                                                    ng-click="view(row);"></button>
                                             <!--<button type="button" class="btn btn-info glyphicon glyphicon-pencil" ng-click="update(row)"></button>-->
                                             <button type="button" class="btn btn-danger glyphicon glyphicon-trash"
                                                 ng-click="delete(row);"></button>
@@ -95,197 +97,7 @@
                 </div>
             </div>
 
-            <!--FORM-->
 
-            <!--            <div class="wrapper-sm" ng-show="is_edit">
-                <form name="landaform">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            {{formtitle}}
-                        </div>
-                        <div class="panel-body">
-                            <div align="left">
-                                 <button type="submit" class="btn btn-default" ng-click="cancel()"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
-                                <button type="submit" class="btn btn-primary"   ng-click="save(form)" ng-show="form.is_aprove == 1" ><i class="glyphicon glyphicon-save"></i>&nbsp;Simpan Perubahan</button>
-                            </div>
-                            <div align="right">
-                                <button type="submit" class="btn btn-default" ng-click="cancel()"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
-                                <button type="submit" class="btn btn-primary" ng-hide="is_view"  ng-click="save(form)"><i class="glyphicon glyphicon-save"></i>&nbsp;Simpan Perubahan</button>
-                            </div>
-                            <br>
-                            <br>
-                             <h1>I. Ketua Regu</h1>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.nama.$invalid && !landaform.nama.$pristine }">
-                                <label class="col-sm-3 control-label">Nama</label>
-                                <div class="col-md-9">
-                                    <input  type="text" name="nama" class="form-control" ng-model="form.nama" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-                                    <p ng-show="landaform.nama.$error.minlength" class="help-block">Nama Terlalu Pendek.</p>
-                                    <p ng-show="landaform.nama.$error.maxlength" class="help-block">Nama Terlalu Panjang.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.no_identitas.$invalid && !landaform.no_identitas.$pristine }">
-                                <label class="col-sm-3 control-label">No Identitas</label>
-                                <div class="col-md-9">
-                                    <input type="text" name="no_identitas" class="form-control" ng-model="form.no_identitas" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-                                    <p ng-show="landaform.no_identitas.$error.minlength" class="help-block">No Identitas Terlalu Pendek.</p>
-                                    <p ng-show="landaform.no_identitas.$error.maxlength" class="help-block">No Identitas Terlalu Panjang.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" >
-                                <label class="col-sm-3 control-label">Alamat Lengkap</label>
-                                <div class="col-md-9">
-                                    <textarea name="alamat" ng-model="form.alamat" class="form-control" rows="3" required="" ng-maxlength="225" ng-minlength="2" ng-disabled="is_view"></textarea>
-
-
-                                </div>
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.telepon.$invalid && !landaform.telepon.$pristine }">
-                                <label class="col-sm-3 control-label">No. Hp</label>
-                                <div class="col-md-9">
-                                    <input type="text" name="telepon" class="form-control angka" ng-model="form.no_telp" ng-minlength="10" ng-maxlength="14" style="width: 150px;" required="" ng-disabled="is_view">
-                                    <p ng-show="landaform.telepon.$error.minlength" class="help-block">No. Hp Terlalu Pendek.</p>
-                                    <p ng-show="landaform.telepon.$error.maxlength" class="help-block">No. Hp Terlalu Panjang.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.no_telp_darurat.$invalid && !landaform.no_telp_darurat.$pristine }">
-                                <label class="col-sm-3 control-label">No. Hp Darurat </label>
-                                <div class="col-md-9">
-                                    <input type="text" name="no_telp_darurat" class="form-control angka" ng-model="form.no_telp_darurat" ng-minlength="10" ng-maxlength="14" style="width: 150px;" required="" ng-disabled="is_view">
-                                    <p ng-show="landaform.no_telp_darurat.$error.minlength" class="help-block">No. Hp Darurat Terlalu Pendek.</p>
-                                    <p ng-show="landaform.no_telp_darurat.$error.maxlength" class="help-block">No. Hp Darurat Terlalu Panjang.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.email.$invalid && !landaform.email.$pristine }">
-                                <label class="col-sm-3 control-label">Email</label>
-                                <div class="col-md-7">
-                                    <input type="text" name="email" class="form-control" ng-model="form.email" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-                                    <p ng-show="landaform.email.$error.minlength" class="help-block">Email Terlalu Pendek.</p>
-                                    <p ng-show="landaform.email.$error.maxlength" class="help-block">Email Terlalu Panjang.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" >
-                                <label class="col-sm-3 control-label">Tanggal Naik</label>
-                                <div class="col-sm-9">
-                                    <div class="row">
-                                        <div class="visible-xs" style="margin-top: 5px;"></div>
-                                        <div class="col-sm-6">
-                                            <div class="input-group" >
-                                                <input type="text"  style="height: 30px;" class="form-control" datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_naik" is-open="opened1" ng-click="open1($event);" required="" ng-disabled="is_view"/>
-                                                <span class="input-group-addon">
-                                                    <i class="glyphicon glyphicon-calendar"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group" >
-                                <label class="col-sm-3 control-label">Tanggal Turun</label>
-                                <div class="col-sm-9">
-                                    <div class="row">
-                                        <div class="visible-xs" style="margin-top: 5px;"></div>
-                                        <div class="col-sm-6">
-                                            <div class="input-group" >
-                                                <input type="text"  style="height: 30px;" class="form-control" datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_turun" is-open="opened2" ng-click="open2($event);" required="" ng-disabled="is_view"/>
-                                                <span class="input-group-addon">
-                                                    <i class="glyphicon glyphicon-calendar"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Kewarganegaraan</label>
-                                <div class="col-sm-9">
-                                    <div class="btn-group m-r" >
-                                        <label btn-radio="'Warga Negara Indonesia'" ng-change="cekWarga(1)" class="btn btn-default" ng-model="form.kewarganegaraan" required=""  ng-disabled="is_view">
-                                            Warga Negara Indonesia
-                                        </label>
-                                        <label btn-radio="'Warga Negara Asing'" ng-change="cekWarga(0)" class="btn btn-default" ng-model="form.kewarganegaraan" required="" ng-disabled="is_view" >
-                                            Warga Negara Asing
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Jalur Pendakian</label>
-                                <div class="col-md-7">
-                                    <input type="text" name="jalur" class="form-control" ng-model="form.jalur_pendakian" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="panel-body">
-                            <h1>II. Anggota</h1>
-                            <table class="table table-striped b-t b-light">
-                                <thead>
-                                    <tr>
-                                        <td ng-hide="is_view" style="padding: 0px; width: 5px;">
-                                            <button class="btn btn-success" ng-click="tambahAnggota()" ng-disabled="is_view">
-                                                <i class="glyphicon glyphicon-plus">
-                                                </i>
-                                            </button>
-                                        </td>
-                                        <th style="text-align: center; font-weight: bold;">
-                                            Nama
-                                        </th>
-                                        <th style="text-align: center; font-weight: bold;">
-                                            No Identitas
-                                        </th>
-                                        <th style="text-align: center; font-weight: bold;">
-                                            No Telepon Darurat
-                                        </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="data in listAnggota">
-                                        <td ng-hide="is_view" style="padding: 0px; width: 5px;">
-                                            <button class="btn btn-danger" ng-click="hapusAnggota($index, detail.id)" ng-disabled="is_view">
-                                                <i class="glyphicon glyphicon-remove">
-                                                </i>
-                                            </button>
-                                        </td>
-                                        <td style="text-align: center;">
-                                            <input class="form-control" ng-disabled="is_view" ng-model="data.nama">
-                                            </input>
-                                        </td>
-                                        <td style="text-align: center;">
-                                            <input class="form-control" ng-disabled="is_view" ng-model="data.no_identitas">
-                                            </input>
-                                        </td>
-                                        <td style="text-align: center;">
-                                            <input class="form-control" ng-disabled="is_view" ng-model="data.no_telp_darurat">
-                                            </input>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="panel-body">
-                            <h1>III. Perlengkapan</h1>
-                            <div class="form-horizontal">
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.nama.$invalid && !landaform.nama.$pristine }">
-                                <label class="col-sm-3 control-label">Tenda</label>
-                                <div class="col-md-2">
-                                    <input  type="text" name="nama" class="form-control" ng-model="perlengkapan.tenda" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-                                </div>
-                            </div>
-                                <br>
-                            <div class="form-group" ng-class="{ 'has-error' : landaform.no_identitas.$invalid && !landaform.no_identitas.$pristine }">
-                                <label class="col-sm-3 control-label">Sleeping Bags/Kantong Tidur</label>
-                                <div class="col-md-2">
-                                    <input type="text" name="no_identitas" class="form-control" ng-model="perlengkapan.kantung_tidur" ng-minlength="2" ng-maxlength="100" ng-disabled="is_view">
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-            </div>-->
             <div id="formDaftar" ng-show="is_edit">
                 <div class="container-fluid">
                     <div class="row" style="margin-top: 20px;">
@@ -295,13 +107,13 @@
 
 
                                     <div class="panel-heading" style="background-color: #009f61;color: #fff">
-                                        Diisi Oleh Ketua Rombongan
+                                        {{register}}
                                     </div>
-                                    <div align="left">
+                                    <!-- <div align="left">
                                         <button type="submit" class="btn btn-primary" ng-click="sendmail(form.id)"><i
                                                 class="glyphicon glyphicon-save"></i>&nbsp;Kirim Email Surat
                                             Persetujuan</button>
-                                    </div>
+                                    </div> -->
 
 
                                     <div align="right">
@@ -643,12 +455,28 @@
                                     </div>
                                     <br />
                                 </div>
+                                <div class="panel-footer" style="margin-top: 20px;">
+                                    <div align="center">
+                                        <button type="submit" class="btn btn-primary" ng-click="sendmail(form.id)"><i
+                                                class="glyphicon glyphicon-envelope"></i>&nbsp;Setujui
+                                        </button>
+                                        <button type="submit" class="btn btn-success" ng-click="naik(form)"><i
+                                                class="glyphicon glyphicon-upload"></i>&nbsp;Pendaki Naik
+                                        </button>
+                                        <button type="submit" class="btn btn-warning" ng-click="turun(form)"><i
+                                                class="glyphicon glyphicon-download"></i>&nbsp;Pendaki Turun
+                                        </button>
+                                        <button type="submit" class="btn btn-danger" ng-click="tolak(form)"><i
+                                                class="glyphicon glyphicon-remove"></i>&nbsp;Tolak
+                                        </button>
+                                    </div>
+                                </div>
 
 
 
                         </div>
 
-                        </form>
+                        <!-- </form> -->
 
                     </div>
                 </div>

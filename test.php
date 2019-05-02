@@ -7,7 +7,7 @@
 </head>
 
 <!-- <body background="app/img/jatim.png"> -->
-<body>
+<body >
     <table style="margin-top:0px; width: 100%">
         <tr>
             <td style="text-align: center;">
@@ -333,9 +333,44 @@
         No. Register
         </td>
         <td>
-          ...........................
+          <?= $model->register ?>
         </td>
       </tr>
+    </table>
+    <br />
+    <h5>I DAFTAR NAMA PENDAKI</h1>
+    <table border="1">
+      <tr>
+        <th>
+          Nama
+        </th>
+        <th>
+        Alamat dan Nomor Tlp/HP yang dapat dihubungi
+        </th>
+        <th>
+         L / P
+        </th>
+        <th>
+        Keterangan Kesehatan
+        </th>
+      </tr>
+      <?php foreach ($anggota as $ang): ?>
+        <tr>
+          <td>
+           <?= $ang->nama?>
+          </td>
+          <td>
+            <?= $ang->no_identitas?>
+          </td>
+          <td>
+            <?= $ang->kelamin?>
+          </td>
+          <td>
+
+          </td>
+        </tr>
+      <?php endforeach; ?>
+
     </table>
 
 
