@@ -338,14 +338,17 @@
       </tr>
     </table>
     <br />
-    <h5>I DAFTAR NAMA PENDAKI</h1>
-    <table border="1">
+    <p style="width: 100%;margin-left: 20px;font-weight: bold;font-size:12px;">I. DAFTAR NAMA PENDAKI</p>
+    <table border="1" style="width: 100%;margin-left: 20px;font-size:12px;">
       <tr>
+        <th>
+          No.
+        </th>
         <th>
           Nama
         </th>
         <th>
-        Alamat dan Nomor Tlp/HP yang dapat dihubungi
+        No Identitas
         </th>
         <th>
          L / P
@@ -354,8 +357,11 @@
         Keterangan Kesehatan
         </th>
       </tr>
-      <?php foreach ($anggota as $ang): ?>
+      <?php foreach ($anggota as $key => $ang): ?>
         <tr>
+          <td>
+           <?= $key + 1?>
+          </td>
           <td>
            <?= $ang->nama?>
           </td>
@@ -371,6 +377,173 @@
         </tr>
       <?php endforeach; ?>
 
+    </table>
+    <br />
+    <p style="width: 100%;margin-left: 20px;font-weight: bold;font-size:12px;">II. Nama, Alamat  dan Nomor Telepon/HP yang dapat dihubungi dalam keadaan Darurat </p>
+    <table border="1" style="width: 100%;margin-left: 20px;font-size:12px;">
+      <tr>
+        <th>
+          No.
+        </th>
+        <th>
+          Nama
+        </th>
+        <th>
+        Nomor Tlp/HP yang dapat dihubungi
+        </th>
+        <th>
+        Alamat
+        </th>
+        <th>
+        Hubungan Keluarga
+        </th>
+      </tr>
+      <?php foreach ($darurat as $key => $dar): ?>
+        <tr>
+          <td>
+           <?= $key + 1?>
+          </td>
+          <td>
+           <?= $dar->nama?>
+          </td>
+          <td>
+            <?= $dar->no_hp?>
+          </td>
+          <td>
+            <?= $dar->alamat?>
+          </td>
+          <td>
+              <?= $dar->hubungan?>
+          </td>
+        </tr>
+      <?php endforeach; ?>
+    </table>
+    <br />
+    <p style="width: 100%;margin-left: 20px;font-weight: bold;font-size:12px;">III. DAFTAR PERLENGKAPAN DAN LOGISTIK YANG DIBAWA  </p>
+
+    <table border="1"  style=" float:left;width:45%; margin-left: 20px;font-size:12px;">
+    <tbody>
+      <tr>
+        <th > Peralatan Standart</th>
+        <th> Jumlah (Satuan)</th>
+      </tr>
+    <tr>
+      <td> Tenda</td>
+      <td> <?= $perlengkapan->tenda?></td>
+    </tr>
+    <tr>
+      <td> Sleeping Bag/Kantong Tidur</td>
+      <td> <?= $perlengkapan->kantung_tidur?></td>
+    </tr>
+    <tr>
+      <td> Peralatan Masak+Bahan Bakar</td>
+      <td> <?= $perlengkapan->masak_bakar?></td>
+    </tr>
+    <tr>
+      <td> Ponco / Jas Hujan</td>
+      <td> <?= $perlengkapan->ponco?></td>
+    </tr>
+    <tr>
+      <td> Senter, Alat Penerangan (sejenisnya)</td>
+      <td> <?= $perlengkapan->penerangan?></td>
+    </tr>
+    <tr>
+      <td> Obat-obatan pribadi dan P3K</td>
+      <td> <?= $perlengkapan->p3k?></td>
+    </tr>
+    <tr>
+      <td> Matras/alas tidur (sejenisnya)</td>
+      <td> <?= $perlengkapan->matras?></td>
+    </tr>
+    <tr>
+      <td>Kantong sampah</td>
+      <td> <?= $perlengkapan->sampah?></td>
+    </tr>
+    <tr>
+      <td> Jaket</td>
+      <td> <?= $perlengkapan->jaket?></td>
+    </tr>
+    </tbody>
+    </table>
+    <table border="0"  style=" float:left;width:2%;">
+    <tbody>
+    </tbody>
+    </table>
+
+    <table border="1"  style=" float:left;width:45%;margin-left: 20px;font-size:12px;">
+    <tbody>
+      <tr>
+        <th > Makanan dan Minuman (Logistik)</th>
+        <th> Jumlah (Satuan)</th>
+      </tr>
+      <?php foreach ($logistik as $log) :?>
+        <tr>
+         <td><?= $log->nama?></td>
+         <td><?= $log->jumlah?></td>
+       </tr>
+      <?php endforeach ?>
+    </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <table style="width: 100%;margin-left: 20px;font-size:12px;">
+      <tr>
+        <td style="text-align:center;">
+          <b>Telah di Cek oleh :</b>
+        </td>
+        <td>
+          &nbsp;
+        </td>
+        <td style="text-align:center;">
+          <b><?= date("d M Y") ?></b>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:center;">
+          Petugas Pos Pendakian Tahura R. SOERJO
+        </td>
+        <td>
+          &nbsp;
+        </td>
+        <td style="text-align:center;">
+        Penerima/Pemegang Surat Ijin,
+        </td>
+      </tr>
+      <tr>
+        <td>
+          &nbsp;
+        </td>
+        <td>
+          &nbsp;
+        </td>
+        <td>
+          &nbsp;
+        </td>
+      </tr>
+
+      <tr>
+        <td style="text-align:center;">
+          ............
+        </td>
+        <td>
+          &nbsp;
+        </td>
+        <td style="text-align:center;">
+          <?= $model->nama;?>
+        </td>
+      </tr>
     </table>
 
 

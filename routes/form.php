@@ -9,7 +9,8 @@ post('/form/create', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
 
-
+    // print_r($params);
+    // exit();
 
     $awal = strtotime($params['form']['tanggal_naik']);
     $akhir = strtotime($params['form']['tanggal_turun']);
@@ -27,23 +28,20 @@ post('/form/create', function() {
     $anggota  = $params['anggota'];
     $perlengkapan = $params['perlengkapan'];
     $logistik = $params['logistik'];
-
+    $darurat = $params['darurat'];
     $params['form']['register'] = generateKode();
-
     $model = $sql->insert("m_pendaki",$params['form']);
     $perlengkapan['m_pendaki_id'] = $model->id;
-
-
     $model2 = $sql->insert("m_pendaki_perlengkapan",$perlengkapan);
 
-    $ketua['nama'] = $params['form']['nama'];
-    $ketua['no_identitas'] = $params['form']['no_identitas'];
-    $ketua['kelamin'] = "Laki-Laki";
-    array_unshift($anggota,$ketua);
+    // $ketua['nama'] = $params['form']['nama'];
+    // $ketua['no_identitas'] = $params['form']['no_identitas'];
+    // $ketua['kelamin'] = "Laki-Laki";
+    // array_unshift($anggota,$ketua);
 
 
     foreach ($anggota as $value){
-        $value['karcis'] = generateKarcis();
+        // $value['karcis'] = generateKarcis();
         $value['m_pendaki_id'] = $model->id;
         $detail = $sql->insert("m_pendaki_anggota",$value);
     }
@@ -54,7 +52,11 @@ post('/form/create', function() {
 
     }
 
-
+    foreach ($darurat as $val) {
+      // code...
+      $val['m_pendaki_id'] = $model->id;
+      $detail3 = $sql->insert("m_pendaki_darurat",$val);
+    }
 
     if($model){
         echo json_encode(array('status' => 1, 'data' => (array) $model), JSON_PRETTY_PRINT);

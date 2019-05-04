@@ -6,8 +6,9 @@ get('/pendaki/view/:id', function($id) {
     $models = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
     $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
     $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
+    $darurat = $sql->findAll("select * from m_pendaki_darurat where m_pendaki_id = {$id}");
 
-    echo json_encode(array('status' => 1, 'anggota' => (array) $models,'perlengkapan'=>$perlengkapan,'logistik'=>$logistik));
+    echo json_encode(array('status' => 1, 'anggota' => (array) $models,'perlengkapan'=>$perlengkapan,'logistik'=>$logistik,'darurat'=>$darurat));
 });
 
 
@@ -20,9 +21,7 @@ post('/pendaki/setujui', function() {
     check_access(array('admin' => true));
     $params = json_decode(file_get_contents("php://input"), true);
     $sql = new LandaDb();
-
     $model = $sql->update('m_pendaki', $params, array('id' => $params['id']));
-
     echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
 
 });
@@ -35,9 +34,15 @@ post('/pendaki/print', function() {
 
     $kode = generateKode();
     $model = $sql->find("select * from m_pendaki where id = {$id}");
+
     $anggota = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
     $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
     $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
+
+    // print_r($perlengkapan);
+    // exit();
+
+    $darurat = $sql->findAll("select * from m_pendaki_darurat where m_pendaki_id = {$id}");
     $jml_anggota = count($anggota) + 1;
     $awal = date("j M Y",$model->tgl_naik);
     $akhir = date("j M Y",$model->tgl_turun);
@@ -45,13 +50,8 @@ post('/pendaki/print', function() {
     $timeDiff = abs($model->tgl_turun - $model->tgl_naik);
     $numberDays = $timeDiff/86400;
     $numberDays = intval($numberDays);
-
-
-
-
     $dompdf = new \Dompdf\Dompdf();
     // $page = file_get_contents('test.php');
-
     ob_start();
     require('test.php');
     $html = ob_get_contents();

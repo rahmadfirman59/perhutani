@@ -42,6 +42,15 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
         }
         $scope.listLogistik.push(newDet);
     };
+    // $scope.tambahDarurat= function() {
+    //     var newDet = {
+    //         nama: '',
+    //     }
+    //     $scope.listDarurat.push(newDet);
+    // };
+
+
+
 
 
     $scope.hapusAnggota = function(paramindex) {
@@ -70,20 +79,24 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
     $scope.listLogistik = [{
         nama: ''
     }];
+    $scope.listDarurat = [{
+        nama: ''
+    },{
+        nama: ''
+    }
 
-    $scope.save = function (form,detail,perlengkapan,logistik) {
+  ];
 
-
-
+    $scope.save = function (form,detail,perlengkapan,logistik,darurat) {
         var url = 'form/create';
         var data = {
             form:form,
             anggota:detail,
             perlengkapan:perlengkapan,
-            logistik:logistik
+            logistik:logistik,
+            darurat:darurat
         }
-        // console.log(data);
-
+        console.log(data);
         Data.post(url, data).then(function (result) {
             if (result.status == 0) {
                 toaster.pop('error', "Terjadi Kesalahan", result.errors);

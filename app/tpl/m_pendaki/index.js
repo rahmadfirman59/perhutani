@@ -59,7 +59,7 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
     };
 
     $scope.view = function (form) {
-        console.log(form);
+
         $scope.is_edit = true;
         $scope.is_view = true;
         $scope.formtitle = "Lihat Data : " + form.title;
@@ -69,6 +69,7 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
             $scope.listAnggota = data.anggota;
             $scope.perlengkapan = data.perlengkapan;
             $scope.listLogistik = data.logistik;
+            $scope.listDarurat = data.darurat;
 
         });
     };

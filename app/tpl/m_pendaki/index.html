@@ -66,8 +66,10 @@
                                     <td>{{row.email}}</td>
                                     <td>{{row.no_telp}}</td>
                                     <td>{{row.no_telp}}</td>
-                                    <td>{{row.tgl_naik * 1000| date:'dd-MM-yyyy '}}</td>
-                                    <td>{{row.tgl_turun * 1000| date:'dd-MM-yyyy  '}}</td>
+                                    <!-- <td>{{row.tgl_naik * 1000| date:'dd-MM-yyyy '}}</td>
+                                    <td>{{row.tgl_turun * 1000| date:'dd-MM-yyyy  '}}</td> -->
+                                    <td>{{row.tgl_naik }}</td>
+                                    <td>{{row.tgl_turun }}</td>
                                     <td ng-if="row.is_aprove == '0'"><span class="label label-danger">Pending</span>
                                     </td>
                                     <td ng-if="row.is_aprove == '1'"><span class="label label-success">Disetujui</span>
@@ -251,12 +253,14 @@
                                             <label class="col-sm-3 control-label">Jalur Pendakian</label>
                                             <div class="col-md-5">
                                                 <!--<div class="btn-group m-r">-->
-                                                <select class="form-control" ng-model="form.jalur_pendakian"
-                                                    ng-disabled="is_view">
-                                                    <option value="jalur1">jalur1i</option>
-                                                    <option value="jalur2">jalur2</option>
-                                                    <option value="jalur3">jalur3</option>
-                                                    <option value="jalur4">jalur4</option>
+                                                <select class="form-control" ng-model="form.jalur_pendakian" ng-disabled="is_view" >
+                                                    <option value="Sumber Brantas">Sumber Brantas</option>
+                                                    <option value="Lawang">Lawang</option>
+                                                    <option value="Tambaksari">Tambaksair</option>
+                                                    <option value="Tretes">Tretes</option>
+                                                    <option value="Kaliandra">Kaliandra</option>
+                                                    <option value="Watujengger">Watujengger</option>
+                                                    <option value="Gunung Pundak">Gunung Pundak</option>
                                                 </select>
                                                 <!--</div>-->
 
@@ -267,6 +271,59 @@
                                         </div>
                                         <br>
                                         <br>
+                                        <h1>II. Kontak Darurat</h1>
+                                        <table class="table table-striped b-t b-light">
+                                            <thead>
+                                                <tr>
+                                                    <!-- <td ng-hide="is_view" style="padding: 0px; width: 5px;">
+                                                        <button class="btn btn-success" ng-click="tambahAnggota()"
+                                                                ng-disabled="is_view">
+                                                            <i class="glyphicon glyphicon-plus">
+                                                            </i>
+                                                        </button>
+                                                    </td> -->
+                                                    <th style="text-align: center; font-weight: bold;">
+                                                        Nama
+                                                    </th>
+                                                    <th style="text-align: center; font-weight: bold;">
+                                                        No HP
+                                                    </th>
+                                                    <th style="text-align: center; font-weight: bold;">
+                                                        Alamat
+                                                    </th>
+
+                                                    <th style="text-align: center; font-weight: bold;">
+                                                        Hubungan Keluarga
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="darurat in listDarurat">
+
+                                                    <td style="text-align: center;">
+                                                        <input class="form-control" ng-disabled="is_view" ng-model="darurat.nama">
+                                                        </input>
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                        <input class="form-control" ng-disabled="is_view" ng-model="darurat.no_hp">
+                                                        </input>
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                        <input class="form-control" ng-disabled="is_view" ng-model="darurat.alamat">
+                                                        </input>
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                      <select class="form-control" ng-model="darurat.hubungan" ng-disabled="is_view" >
+                                                          <option value="Orang Tua">Orang Tua</option>
+                                                          <option value="Teman">Teman</option>
+                                                          <option value="Saudara">Saudara</option>
+
+                                                      </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                         <h1>II. Anggota</h1>
                                         <table class="table table-striped b-t b-light">
                                             <thead>
