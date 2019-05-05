@@ -3,9 +3,7 @@
 <html>
 <head>
   <title>PDF Create</title>
-
 </head>
-
 <!-- <body background="app/img/jatim.png"> -->
 <body >
     <table style="margin-top:0px; width: 100%">
@@ -49,6 +47,7 @@
                 <br/>
             </td>
             <td>
+              
             </td>
         </tr>
     </table>
