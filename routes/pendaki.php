@@ -31,56 +31,93 @@ post('/pendaki/print', function() {
     $params = json_decode(file_get_contents("php://input"), true);
     $id = $params;
     $sql = new LandaDb();
+    $mail = new PHPMailer(true);
+
+
+    try {
+    //Server settings
+    $mail->SMTPDebug = 2;                                       // Enable verbose debug output
+    $mail->isSMTP();                                            // Set mailer to use SMTP
+    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'ahmadgopurr59@gmail.com';                     // SMTP username
+    $mail->Password   = 'm4db4LL12345';                               // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom('ahmadgopurr59@gmail.com', 'Mailer');
+    $mail->addAddress('rahmadfirmansyah59@gmail.com', 'Joe User');     // Add a recipient
+    $mail->addAddress('ellen@example.com');               // Name is optional
+    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC('cc@example.com');
+    $mail->addBCC('bcc@example.com');
+
+    // // Attachments
+    // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+    exit();
+
 
     $kode = generateKode();
     $model = $sql->find("select * from m_pendaki where id = {$id}");
-
     $anggota = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
     $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
     $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
-
-
     $darurat = $sql->findAll("select * from m_pendaki_darurat where m_pendaki_id = {$id}");
     $jml_anggota = count($anggota) + 1;
     $awal = date("j M Y",$model->tgl_naik);
     $akhir = date("j M Y",$model->tgl_turun);
-
     $timeDiff = abs($model->tgl_turun - $model->tgl_naik);
     $numberDays = $timeDiff/86400;
     $numberDays = intval($numberDays);
     $dompdf = new \Dompdf\Dompdf();
-    $qrCode = new Endroid\QrCode\QrCode('Life is too short to be generating QR codes');
+    $qrCode = new Endroid\QrCode\QrCode($model->register);
     $qrCode->setSize(300);
-
+    // print_r(__DIR__.'..');
+    // exit();
     // Set advanced options
+    $folder = "temp/";
     $qrCode->setWriterByName('png');
     $qrCode->setMargin(10);
     $qrCode->setEncoding('UTF-8');
-    // $qrCode->setErrorCorrectionLevel(new Endroid\QrCode\ErrorCorrectionLevel(ErrorCorrectionLevel::HIGH));
     $qrCode->setForegroundColor(['r' => 0, 'g' => 0, 'b' => 0, 'a' => 0]);
     $qrCode->setBackgroundColor(['r' => 255, 'g' => 255, 'b' => 255, 'a' => 0]);
-    // $qrCode->setLabel('Scan the code', 16, __DIR__.'/../assets/fonts/noto_sans.otf', LabelAlignment::CENTER);
-    // $qrCode->setLogoPath(__DIR__.'/../assets/images/symfony.png');
     $qrCode->setLogoSize(150, 200);
     $qrCode->setRoundBlockSize(true);
     $qrCode->setValidateResult(false);
     $qrCode->setWriterOptions(['exclude_xml_declaration' => true]);
     // Directly output the QR code
     header('Content-Type: '.$qrCode->getContentType());
-    echo $qrCode->writeString();
-    // Save it to a file
-    $qrCode->writeFile(__DIR__.'/.png');
-    // Create a response object
-    $response = new QrCodeResponse($qrCode);
-
-    // $page = file_get_contents('test.php');
+    // $qrCode->writeFile($folder.$model->id.'.png');
+    $qrCode->writeFile($folder.$model->id.'.png');
     ob_start();
     require('test.php');
     $html = ob_get_contents();
     ob_get_clean();
     $dompdf->loadHtml($html);
     $dompdf->render();
-    $dompdf->stream("Webslesson", array("Attachment"=>0));
+    $output = $dompdf->output();
+    // $dompdf->stream("Webslesson", array("Attachment"=>0));
+    file_put_contents('temp/'.$model->id.'.pdf', $output);
+
+
+
+
+
+
 
 });
 

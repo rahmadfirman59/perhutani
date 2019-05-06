@@ -47,7 +47,7 @@
                 <br/>
             </td>
             <td>
-              
+                <img src="temp/<?= $model->id ?>.png" width="50" height="80" />
             </td>
         </tr>
     </table>
