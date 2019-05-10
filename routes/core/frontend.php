@@ -138,7 +138,31 @@ get('/d/:alias.html', function ($alias) {
 
     render('detail', [
         'artikel'    => $article,
-        '_title'     => $title . ' | Glintung Go Green',
+        '_title'     => $title . ' | TAHURA R SOERJO',
+        '_deskripsi' => $article->description,
+        '_keyword'   => $article->keyword,
+        'title' => $title,
+        'breadcrumb' => $breadcrumb,
+        'detailBlog' => true,
+        'setting' => getSetting()
+    ], 'main');
+});
+
+get('/jalur/:alias.html', function ($alias) {
+    $sql     = new LandaDb();
+    $article = $sql->find("select artikel.*, m_user.nama as user, m_kategori.alias as kategori_alias, m_kategori.name as kategori from artikel left join m_kategori on m_kategori.id = artikel.m_kategori_id left join m_user on m_user.id = artikel.created_user_id where artikel.alias = '" . $alias . "' and artikel.publish = 1");
+
+    // addHits($article->id);
+
+    $title      = $article->title;
+    $breadcrumb = array(
+        $article->kategori => url('jalur/' . $article->kategori_alias),
+        $article->title    => "#",
+    );
+
+    render('detail', [
+        'artikel'    => $article,
+        '_title'     => $title . ' | TAHURA R SOERJO',
         '_deskripsi' => $article->description,
         '_keyword'   => $article->keyword,
         'title' => $title,

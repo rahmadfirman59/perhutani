@@ -34,7 +34,6 @@
 <!--    <div class="se-pre-con"></div>-->
         <div id="page" class="boxed">
             <?php echo partial('layout/header', array('setting' => $setting)) ?>
-
             <section class="iconbox main-content">
                 <div class="container">
                     <div class="row">

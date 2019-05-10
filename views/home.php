@@ -44,24 +44,24 @@
 </section>
 <section class="iconbox">
     <div class="container">
-
         <div class="row">
             <div class="iconbox-set-1-warp" style="margin-top: 10px">
                 <div class="col-md-12 text-center des-text">
-                    <h3 class="text-cap text-center page-header">Program dan Aktifitas</h3>
+                    <h3 class="text-cap text-center page-header">Jalur Resmi Pendakian</h3>
                 </div>
                 <?php
                 foreach ($visimisi as $vals) {
                     ?>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 visi">
                         <div class="icon-image">
+                          <a href="<?= url('jalur/' . $vals->alias) ?>">
 
                             <?php
-                           // $a = str_replace("http://", "", get_first_image($vals->content, 'medium'));
-                           // echo $a;
+
                             $a = get_first_image($vals->content, 'medium');
                             echo $a;
                             ?>
+                          </a>
                         </div>
                         <div class="iconbox iconbox-set-1">
                             <h4 class="text-up"><?= $vals->title ?>
@@ -82,7 +82,7 @@
     <div class="container">
         <div class="row" style="margin-top: 50px">
             <div class='col-md-8 col-sm-8 col-xs-12' style="margin-bottom: 20px;">
-                <h3 class="text-cap title-header hr">Berita Terbaru</h3>
+                <h3 class="text-cap title-header hr">Kabar Tahura</h3>
                 <div id="list-blog" class="list-blog-warp">
                     <div class="row">
                         <?php
@@ -219,7 +219,7 @@
             }
             ?>
         </div>
-      
+
     </div>
 </div>
 <section class="iconbox" >

@@ -8,28 +8,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
 
 
 
-    $scope.modalBackdrop = function () {
-        Data.get(Control_link + '/getSemuaDataGelombang/' + $stateParams.sekolah_id).then(function (data) {
-            var modalInstance = $modal.open({
-                templateUrl: 'tpl/site/modalBackdrop.html',
-                controller: 'modalBackdropCtrl',
-                size: 'md',
-                backdrop: 'static',
-                resolve: {
-                    form: function () {
-                        return data.data;
-                    }
-                }
-            });
-            modalInstance.result.then(function (result) {
-//                $scope.isiData = result;
-//                $scope.is_formDaftar = false;
-//                $scope.is_success = true;
-            }, function () {
-
-            })
-        });
-    }
+    
     $scope.tambahAnggota = function() {
         var newDet = {
             nama: '',

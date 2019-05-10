@@ -143,7 +143,18 @@ angular.module('app')
                                                 return $ocLazyLoad.load('tpl/m_user/pengguna.js');
                                             }]
                                     }
+                                })
+                                .state('master.laporan', {
+                                    url: '/laporan',
+                                    templateUrl: 'tpl/laporan/index.html',
+                                    resolve: {
+                                        deps: ['$ocLazyLoad',
+                                            function ($ocLazyLoad) {
+                                                return $ocLazyLoad.load('tpl/laporan/index.js');
+                                            }]
+                                    }
                                 });
+
                     }
                 ]
                 );

@@ -11,10 +11,6 @@ get('/pendaki/view/:id', function($id) {
     echo json_encode(array('status' => 1, 'anggota' => (array) $models,'perlengkapan'=>$perlengkapan,'logistik'=>$logistik,'darurat'=>$darurat));
 });
 
-
-
-
-
 post('/pendaki/setujui', function() {
 
 
@@ -25,7 +21,6 @@ post('/pendaki/setujui', function() {
     echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
 
 });
-
 post('/pendaki/print', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
@@ -34,41 +29,7 @@ post('/pendaki/print', function() {
     $mail = new PHPMailer(true);
 
 
-    try {
-    //Server settings
-    $mail->SMTPDebug = 2;                                       // Enable verbose debug output
-    $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'ahmadgopurr59@gmail.com';                     // SMTP username
-    $mail->Password   = 'm4db4LL12345';                               // SMTP password
-    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
 
-    //Recipients
-    $mail->setFrom('ahmadgopurr59@gmail.com', 'Mailer');
-    $mail->addAddress('rahmadfirmansyah59@gmail.com', 'Joe User');     // Add a recipient
-    $mail->addAddress('ellen@example.com');               // Name is optional
-    $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addCC('cc@example.com');
-    $mail->addBCC('bcc@example.com');
-
-    // // Attachments
-    // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-
-    // Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-    $mail->send();
-    echo 'Message has been sent';
-    } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
-    exit();
 
 
     $kode = generateKode();
@@ -86,9 +47,6 @@ post('/pendaki/print', function() {
     $dompdf = new \Dompdf\Dompdf();
     $qrCode = new Endroid\QrCode\QrCode($model->register);
     $qrCode->setSize(300);
-    // print_r(__DIR__.'..');
-    // exit();
-    // Set advanced options
     $folder = "temp/";
     $qrCode->setWriterByName('png');
     $qrCode->setMargin(10);
@@ -101,7 +59,6 @@ post('/pendaki/print', function() {
     $qrCode->setWriterOptions(['exclude_xml_declaration' => true]);
     // Directly output the QR code
     header('Content-Type: '.$qrCode->getContentType());
-    // $qrCode->writeFile($folder.$model->id.'.png');
     $qrCode->writeFile($folder.$model->id.'.png');
     ob_start();
     require('test.php');
@@ -112,6 +69,48 @@ post('/pendaki/print', function() {
     $output = $dompdf->output();
     // $dompdf->stream("Webslesson", array("Attachment"=>0));
     file_put_contents('temp/'.$model->id.'.pdf', $output);
+
+    try {
+    //Server settings
+    $mail->SMTPDebug = 2;                                       // Enable verbose debug output
+    $mail->isSMTP();                                            // Set mailer to use SMTP
+    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'ahmadgopurr59@gmail.com';                     // SMTP username
+    $mail->Password   = 'm4db4LL12345';                               // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom('ahmadgopurr59@gmail.com', 'TAHURA R SOERJO');
+    $mail->addAddress('jibunwahyudi@gmail.com', 'Dear Pendaki');     // Add a recipient
+    // $mail->addAddress('ellen@example.com');               // Name is optional
+    // $mail->addReplyTo('info@example.com', 'Information');
+    // $mail->addCC('cc@example.com');
+    // $mail->addBCC('bcc@example.com');
+
+
+
+    // // Attachments
+    $mail->addAttachment('/var/www/html/perhutani/temp/'.$model->id.'.pdf');         // Add attachments
+
+
+    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'SURAT IJIN KHUSUS PENDAKIAN GUNUNG DI KAWASAN TAHURA R. SOERJO ';
+    $mail->Body    = 'Hai Sobat gunung, Data mu telah diverifikasi dan disetujui oleh tim kami
+                      <br>
+                      Berikut Kami cantumkan surat izin pendakian yang nanti harus kamu bawa saat melakukan pendakian
+                        ';
+    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
 
 
 

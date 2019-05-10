@@ -1,6 +1,6 @@
 <div ng-controller="approlesCtrl">
     <div class="title-head">
-        <h1>Daftar Pendaki Masuk</h1>
+        <h1>Master Hak Akses</h1>
     </div>
     <div class="container-fluid">
         <div class="panel panel-default">
@@ -180,6 +180,15 @@
                                                 <i>
                                                 </i>
                                                 File Manager
+                                                </input>
+                                            </label>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <label class="i-checks">
+                                                <input ng-disabled="is_view" ng-model="form.akses.master_laporan" type="checkbox">
+                                                <i>
+                                                </i>
+                                                Laporan
                                                 </input>
                                             </label>
                                         </div>

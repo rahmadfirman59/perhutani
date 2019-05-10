@@ -6,7 +6,7 @@
         <div style="margin-top: 25px;">
             <?= rmImg($artikel->content) ?>
         </div>
-        <div class="row share-article">
+        <!-- <div class="row share-article">
             <p><b>Bagikan artikel ini di :</b></p>
             <div class="sosmed-kanan">
                 <a class="share fb" href="http://www.facebook.com/sharer.php?u=<?= url('d/' . $artikel->alias) ?>"
@@ -27,7 +27,7 @@
                     <span class=""> Google Plus</span>
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="blog-footer-2 border-color-theme">
         <ul>
@@ -91,8 +91,8 @@
         ?>
     </div>
 </div>
-<div class="comment">
+<!-- <div class="comment">
     <h3 class="text-cap">Komentar</h3>
     <hr>
     <div class="fb-comments" data-href="<?= url('d/' . $artikel->alias) ?>" dat-width="100%" data-numposts="5"></div>
-</div>
+</div> -->
