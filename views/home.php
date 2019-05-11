@@ -77,6 +77,75 @@
     </div>
 </section>
 
+<div class="main-wraper padd-60">
+    <div class="container">
+        <div class="rowfasilitas">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <div class="second-title">
+                    <h3 class="subtitle color-red-3 underline">HIGHLIGHTS</h3>
+                    <!--                    <h2>Akomodasi dan Servis</h2>-->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="<?= url('d/' . $fasilitas[0]->alias) ?>">
+                    <?php
+
+                    // $g1 = get_first_image($fasilitas[0]->content, 'big');
+                    // $ga1 = get_images($g1);
+                    // $gab1 = $ga1[0];
+                    ?>
+                    <div class="tour-block tour-block-s-6 radius-5 underline-block hover-blue overlay background-block"
+                         style="background-image:url(<?= $gab1 ?>);">
+                        <div class="tour-layer delay-1"></div>
+<!--                        <img class="center-image" alt="10 edited3" style="display: none;">-->
+
+
+                        <div class="tour-caption">
+                            <div class="vertical-align">
+                                <!-- <h4></h4> -->
+                                <!-- <h3 class="underline hover-it"></h3>
+                                <p class="color-white-light">TES</p> -->
+                                <iframe width="500" height="500" src="https://www.youtube.com/embed/YOzdgAEtads" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="<?= url('d/' . $fasilitas[0]->alias) ?>">
+                    <?php
+
+                    // $g1 = get_first_image($fasilitas[0]->content, 'big');
+                    // $ga1 = get_images($g1);
+                    // $gab1 = $ga1[0];
+                    ?>
+                    <div class="tour-block tour-block-s-6 radius-5 underline-block hover-blue overlay background-block"
+                         style="background-image:url(<?= $gab1 ?>);">
+                        <div class="tour-layer delay-1"></div>
+<!--                        <img class="center-image" alt="10 edited3" style="display: none;">-->
+
+
+                        <div class="tour-caption">
+                            <div class="vertical-align">
+                                <!-- <h4></h4> -->
+                                <!-- <h3 class="underline hover-it"></h3>
+                                <p class="color-white-light">TES</p> -->
+                                <iframe width="500" height="500" src="https://www.youtube.com/embed/YOzdgAEtads" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
 
 <section class="iconbox no-padding-bottom">
     <div class="container">

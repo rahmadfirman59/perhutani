@@ -83,20 +83,8 @@ post('/pendaki/print', function() {
 
     //Recipients
     $mail->setFrom('ahmadgopurr59@gmail.com', 'TAHURA R SOERJO');
-    $mail->addAddress('jibunwahyudi@gmail.com', 'Dear Pendaki');     // Add a recipient
-    // $mail->addAddress('ellen@example.com');               // Name is optional
-    // $mail->addReplyTo('info@example.com', 'Information');
-    // $mail->addCC('cc@example.com');
-    // $mail->addBCC('bcc@example.com');
-
-
-
-    // // Attachments
+    $mail->addAddress('jibunwahyudi@gmail.com', 'Dear Pendaki');
     $mail->addAttachment('/var/www/html/perhutani/temp/'.$model->id.'.pdf');         // Add attachments
-
-
-    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'SURAT IJIN KHUSUS PENDAKIAN GUNUNG DI KAWASAN TAHURA R. SOERJO ';
