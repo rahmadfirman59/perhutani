@@ -16,11 +16,14 @@ app.controller('laporanCtrl', function ($scope, Data, toaster) {
 
     $scope.save = function (form) {
         Data.post('laporan/view', form).then(function (result) {
-            // if (result.status == 0) {
-            //     toaster.pop('error', "Terjadi Kesalahan", result.errors);
-            // } else {
-            //     toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
-            // }
+            if (result.status == 0) {
+                toaster.pop('error', "Terjadi Kesalahan", result.errors);
+            } else {
+                console.log(result);
+                $scope.hasil = result.data;
+                $is_tampil = true;
+                // toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
+            }
         });
     };
 });

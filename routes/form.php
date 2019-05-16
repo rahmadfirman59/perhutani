@@ -57,7 +57,7 @@ post('/form/create', function() {
       $val['m_pendaki_id'] = $model->id;
       $detail3 = $sql->insert("m_pendaki_darurat",$val);
     }
-
+    
     if($model){
         echo json_encode(array('status' => 1, 'data' => (array) $model), JSON_PRETTY_PRINT);
     }else{

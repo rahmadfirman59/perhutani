@@ -15,11 +15,11 @@
                     <div collapse="isCollapsed" class="panel-body collapse" style="height: 0px;">
                         <div class="form-horizontal">
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">Judul</label>
+                                <label class="col-sm-2 control-label">Nama</label>
                                 <div class="col-sm-4">
-                                    <input st-search="m_roles.nama" class="form-control"/>
+                                    <input st-search="m_roles.name" class="form-control"/>
                                 </div>
-                                <label class="col-sm-2 control-label">Kategori</label>
+                                <!-- <label class="col-sm-2 control-label">Kategori</label> -->
                                 <!--<div class="col-sm-4">-->
                                     <!--<select class="form-control" ng-disabled="is_view" st-search="m_kategori.id">-->
                                         <!--<option value="">-Pilih Kategori-</option>-->
@@ -120,7 +120,7 @@
                                             <!--<i>-->
                                             <!--</i>-->
                                             Data Master
-                                            </input>
+
                                         </label>
                                     </div>
 
@@ -132,7 +132,7 @@
                                                 <i>
                                                 </i>
                                                 Hak Akses
-                                                </input>
+
                                             </label>
                                         </div>
                                         <div class="list-group-item">
@@ -141,7 +141,7 @@
                                                 <i>
                                                 </i>
                                                 User
-                                                </input>
+
                                             </label>
                                         </div>
                                         <div class="list-group-item">
@@ -150,7 +150,7 @@
                                                 <i>
                                                 </i>
                                                 Artikel
-                                                </input>
+
                                             </label>
                                         </div>
                                         <div class="list-group-item">
@@ -159,7 +159,7 @@
                                                 <i>
                                                 </i>
                                                 Pendaki Masuk
-                                                </input>
+
                                             </label>
                                         </div>
 
@@ -170,7 +170,7 @@
                                                 <i>
                                                 </i>
                                                 Informari Kontak
-                                                </input>
+
                                             </label>
                                         </div>
 
@@ -180,7 +180,7 @@
                                                 <i>
                                                 </i>
                                                 File Manager
-                                                </input>
+
                                             </label>
                                         </div>
                                         <div class="list-group-item">
@@ -189,7 +189,7 @@
                                                 <i>
                                                 </i>
                                                 Laporan
-                                                </input>
+
                                             </label>
                                         </div>
 
@@ -210,14 +210,18 @@
                                                 <i>
                                                 </i>
                                                 Approve Pendaki
-                                                </input>
                                             </label>
                                         </div>
-
-
-
-
-
+                                    </div>
+                                    <div class="list-group bg-white">
+                                        <div class="list-group-item">
+                                            <label class="i-checks">
+                                                <input ng-disabled="is_view" ng-model="form.akses.pos_pendaki" type="checkbox">
+                                                <i>
+                                                </i>
+                                                Pos Pendaki
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

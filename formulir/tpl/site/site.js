@@ -8,7 +8,7 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
 
 
 
-    
+
     $scope.tambahAnggota = function() {
         var newDet = {
             nama: '',
@@ -75,8 +75,9 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
             logistik:logistik,
             darurat:darurat
         }
-        console.log(data);
+
         Data.post(url, data).then(function (result) {
+            console.log(result);
             if (result.status == 0) {
                 toaster.pop('error', "Terjadi Kesalahan", result.errors);
             } else {

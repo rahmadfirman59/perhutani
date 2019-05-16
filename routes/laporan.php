@@ -9,15 +9,25 @@ post('/laporan/view', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
 
+
+
     $awal = strtotime($params['tanggal_awal']);
     $akhir = strtotime($params['tanggal_akhir']);
     $awals = date("Y-m-d ",$awal);
     $akhirs = date("Y-m-d ",$akhir);
-    $model = $sql->select("*")
-                ->from("m_pendaki")
-                ->where(">","created",$awals)
-                ->andWhere("<","created",$akhirs)
-                ->log();
+
+    $sql->select("*")
+        ->from("m_pendaki")
+        ->customWhere("created >= '$awals' AND created   <= '$akhirs'");
+
+
+    if (isset($params['jalur'])) {
+      $sql->andWhere("=","jalur_pendakian",$params['jalur']);
+    }
+    $model = $sql->findAll();
+
+    
+
     if($model){
         echo json_encode(array('status' => 1, 'data' => (array) $model), JSON_PRETTY_PRINT);
     }else{

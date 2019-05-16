@@ -42,6 +42,7 @@
         </a>
     </div>
 </section>
+
 <section class="iconbox">
     <div class="container">
         <div class="row">
@@ -76,7 +77,31 @@
         </div>
     </div>
 </section>
+<section class="about-us " id="aboutus" style="margin-top: 50px">
+    <div class="container"> <!-- SECTION HEADER -->
+        <div class="section-header" style="padding-bottom: 30px"><h2 class="white-text">Sipanmorang</h2>
+            <div class="white-text section-legend">Profil Sipanmorang</div>
+        </div><!-- / END SECTION HEADER --> <!-- 3 COLUMNS OF ABOUT US-->
+        <div class="row"> <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
+            <div class="col-lg-12 col-md-12 column zerif_about_us_center text_and_skills"
+                 data-scrollreveal="enter bottom after 0s over 1s" data-sr-init="true" data-sr-complete="true"
+                 style="margin-bottom: 0px">
+                <p style="text-align: justify">
+                    <?= cuplikan($sejarah->content, 1253) ?>
+                </p>
+            </div>
+            <div class="col-lg-12 col-md-12 column zerif_about_us_center text_and_skills"
+                 data-scrollreveal="enter bottom after 0s over 1s" data-sr-init="true" data-sr-complete="true"
+                 style="margin-bottom: 50px">
+                <iframe width="100%" height="400px" src="<?= $setting->iframe_youtube ?>" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+            </div>
+
+            <!-- / END SKILLS COLUMN-->
+        </div> <!-- / END 3 COLUMNS OF ABOUT US--> <!-- CLIENTS -->
+    </div> <!-- / END CONTAINER -->
+</section>
 <div class="main-wraper padd-60">
     <div class="container">
         <div class="rowfasilitas">
@@ -87,65 +112,109 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-md-6">
-                <a href="<?= url('d/' . $fasilitas[0]->alias) ?>">
-                    <?php
 
-                    // $g1 = get_first_image($fasilitas[0]->content, 'big');
-                    // $ga1 = get_images($g1);
-                    // $gab1 = $ga1[0];
-                    ?>
-                    <div class="tour-block tour-block-s-6 radius-5 underline-block hover-blue overlay background-block"
-                         style="background-image:url(<?= $gab1 ?>);">
-                        <div class="tour-layer delay-1"></div>
-<!--                        <img class="center-image" alt="10 edited3" style="display: none;">-->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <?php
+                        // $g5 = get_first_image($fasilitas[4]->content, 'big');
+                        // $ga5 = get_images($g5);
+                        // $gab5 = $ga5[0];
+                        ?>
+                        <a href="<?= url('d/' . $fasilitas[4]->alias) ?>">
+                            <div class="tour-block tour-block-s-2 radius-5 underline-block hover-blue overlay background-block"
+                                 style="background-image:url(<?= str_replace('http://','https://', $gab5) ?>);">
+                                <div class="tour-layer delay-1"></div>
+<!--                                <img class="center-image" src="assets/Uploads/Lagoon.png" alt="Lagoon"-->
+<!--                                     style="display: none;">-->
+                                <div class="tour-caption">
+                                    <div class="vertical-align">
+                                        <!-- <h3 class="underline hover-it"><?= $fasilitas[4]->description ?></h3> -->
+                                        <iframe width="250" height="250" src="https://www.youtube.com/embed/9nbF4KxMTDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-                        <div class="tour-caption">
-                            <div class="vertical-align">
-                                <!-- <h4></h4> -->
-                                <!-- <h3 class="underline hover-it"></h3>
-                                <p class="color-white-light">TES</p> -->
-                                <iframe width="500" height="500" src="https://www.youtube.com/embed/YOzdgAEtads" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="<?= url('d/' . $fasilitas[0]->alias) ?>">
-                    <?php
+                    <div class="col-md-3">
+                        <?php
+                        // $g5 = get_first_image($fasilitas[4]->content, 'big');
+                        // $ga5 = get_images($g5);
+                        // $gab5 = $ga5[0];
+                        ?>
+                        <a href="<?= url('d/' . $fasilitas[4]->alias) ?>">
+                            <div class="tour-block tour-block-s-2 radius-5 underline-block hover-blue overlay background-block"
+                                 style="background-image:url(<?= str_replace('http://','https://', $gab5) ?>);">
+                                <div class="tour-layer delay-1"></div>
+<!--                                <img class="center-image" src="assets/Uploads/Lagoon.png" alt="Lagoon"-->
+<!--                                     style="display: none;">-->
+                                <div class="tour-caption">
+                                    <div class="vertical-align">
+                                        <!-- <h3 class="underline hover-it"><?= $fasilitas[4]->description ?></h3> -->
+                                        <iframe width="250" height="250" src="https://www.youtube.com/embed/Iye06m64BvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                    // $g1 = get_first_image($fasilitas[0]->content, 'big');
-                    // $ga1 = get_images($g1);
-                    // $gab1 = $ga1[0];
-                    ?>
-                    <div class="tour-block tour-block-s-6 radius-5 underline-block hover-blue overlay background-block"
-                         style="background-image:url(<?= $gab1 ?>);">
-                        <div class="tour-layer delay-1"></div>
-<!--                        <img class="center-image" alt="10 edited3" style="display: none;">-->
-
-
-                        <div class="tour-caption">
-                            <div class="vertical-align">
-                                <!-- <h4></h4> -->
-                                <!-- <h3 class="underline hover-it"></h3>
-                                <p class="color-white-light">TES</p> -->
-                                <iframe width="500" height="500" src="https://www.youtube.com/embed/YOzdgAEtads" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                    <div class="col-md-3">
+                        <?php
+                        // $g5 = get_first_image($fasilitas[4]->content, 'big');
+                        // $ga5 = get_images($g5);
+                        // $gab5 = $ga5[0];
+                        ?>
+                        <a href="<?= url('d/' . $fasilitas[4]->alias) ?>">
+                            <div class="tour-block tour-block-s-2 radius-5 underline-block hover-blue overlay background-block"
+                                 style="background-image:url(<?= str_replace('http://','https://', $gab5) ?>);">
+                                <div class="tour-layer delay-1"></div>
+<!--                                <img class="center-image" src="assets/Uploads/Lagoon.png" alt="Lagoon"-->
+<!--                                     style="display: none;">-->
+                                <div class="tour-caption">
+                                    <div class="vertical-align">
+                                        <!-- <h3 class="underline hover-it"><?= $fasilitas[4]->description ?></h3> -->
+                                        <iframe width="250" height="250" src="https://www.youtube.com/embed/sP7VA5RvtyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <?php
+                        // $g5 = get_first_image($fasilitas[4]->content, 'big');
+                        // $ga5 = get_images($g5);
+                        // $gab5 = $ga5[0];
+                        ?>
+                        <a href="<?= url('d/' . $fasilitas[4]->alias) ?>">
+                            <div class="tour-block tour-block-s-2 radius-5 underline-block hover-blue overlay background-block"
+                                 style="background-image:url(<?= str_replace('http://','https://', $gab5) ?>);">
+                                <div class="tour-layer delay-1"></div>
+<!--                                <img class="center-image" src="assets/Uploads/Lagoon.png" alt="Lagoon"-->
+<!--                                     style="display: none;">-->
+                                <div class="tour-caption">
+                                    <div class="vertical-align">
+                                        <!-- <h3 class="underline hover-it"><?= $fasilitas[4]->description ?></h3> -->
+                                        <iframe width="250" height="250" src="https://www.youtube.com/embed/D5QT7gchn3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
             </div>
-
-
         </div>
-
     </div>
 </div>
+
 
 <section class="iconbox no-padding-bottom">
     <div class="container">

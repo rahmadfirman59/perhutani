@@ -1,85 +1,129 @@
 <div ng-controller="laporanCtrl">
-    <div class="title-head">
-        <h1>Laporan Pendaki </h1>
-    </div>
-    <div class="container-fluid">
-        <div class="panel panel-default">
+  <div class="title-head">
+    <h1>Laporan Pendaki </h1>
+  </div>
+  <div class="container-fluid">
+    <div class="panel panel-default">
 
-            <!--FORM-->
+      <!--FORM-->
 
-            <div class="wrapper-sm">
-                <form name="landaform" class="form-horizontal form-validation">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <i class="glyphicon glyphicon-cog"></i> Filter Laporan Pendaki
-                        </div>
-                        <div class="panel-body">
-                            <div class="col-md-6 col-sm-12">
-                              <div class="form-group">
-                                  <label class="col-sm-4 control-label">Jalur Pendakian</label>
-                                  <div class="col-md-5">
-                                      <select class="form-control" ng-model="form.jalur" ng-disabled="is_view" >
-                                          <option value="Sumber Brantas">Sumber Brantas</option>
-                                          <option value="Lawang">Lawang</option>
-                                          <option value="Tambaksari">Tambaksair</option>
-                                          <option value="Tretes">Tretes</option>
-                                          <option value="Kaliandra">Kaliandra</option>
-                                          <option value="Watujengger">Watujengger</option>
-                                          <option value="Gunung Pundak">Gunung Pundak</option>
-                                      </select>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <div class="form-group">
-                                  <label class="col-sm-3 control-label">Tanggal Awal</label>
-                                  <div class="col-sm-9">
-                                      <div class="row">
-                                          <div class="visible-xs" style="margin-top: 5px;"></div>
-                                          <div class="col-sm-6">
-                                              <div class="input-group">
-                                                  <input type="text" style="height: 30px;" class="form-control"
-                                                         datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_awal"
-                                                         is-open="opened1" ng-click="open1($event);" required=""/>
-                                                  <span class="input-group-addon">
-                                                      <i class="glyphicon glyphicon-calendar"></i>
-                                                  </span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <label class="col-sm-3 control-label">Tanggal Akhir</label>
-                                  <div class="col-sm-9">
-                                      <div class="row">
-                                          <div class="visible-xs" style="margin-top: 5px;"></div>
-                                          <div class="col-sm-6">
-                                              <div class="input-group">
-                                                  <input type="text" style="height: 30px;" class="form-control"
-                                                         datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_akhir"
-                                                         is-open="opened2" ng-click="open2($event);" required=""/>
-                                                  <span class="input-group-addon">
-                                                      <i class="glyphicon glyphicon-calendar"></i>
-                                                  </span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="panel-footer" style="margin-top: 20px;">
-                            <div align="center">
-                                <button type="submit" class="btn btn-primary" ng-hide="is_view" ng-click="save(form)"><i
-                                        class="glyphicon glyphicon-search"></i>&nbsp;Tampilkan
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+      <div class="wrapper-sm">
+        <form name="landaform" class="form-horizontal form-validation">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <i class="glyphicon glyphicon-cog"></i> Filter Laporan Pendaki
             </div>
+            <div class="panel-body">
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label class="col-sm-4 control-label">Jalur Pendakian</label>
+                  <div class="col-md-5">
+                    <select class="form-control" ng-model="form.jalur" ng-disabled="is_view" >
+                      <option value="Sumber Brantas">Sumber Brantas</option>
+                      <option value="Lawang">Lawang</option>
+                      <option value="Tambaksari">Tambaksair</option>
+                      <option value="Tretes">Tretes</option>
+                      <option value="Kaliandra">Kaliandra</option>
+                      <option value="Watujengger">Watujengger</option>
+                      <option value="Gunung Pundak">Gunung Pundak</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Tanggal Awal</label>
+                  <div class="col-sm-9">
+                    <div class="row">
+                      <div class="visible-xs" style="margin-top: 5px;"></div>
+                      <div class="col-sm-6">
+                        <div class="input-group">
+                          <input type="text" style="height: 30px;" class="form-control"
+                          datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_awal"
+                          is-open="opened1" ng-click="open1($event);" required=""/>
+                          <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Tanggal Akhir</label>
+                  <div class="col-sm-9">
+                    <div class="row">
+                      <div class="visible-xs" style="margin-top: 5px;"></div>
+                      <div class="col-sm-6">
+                        <div class="input-group">
+                          <input type="text" style="height: 30px;" class="form-control"
+                          datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_akhir"
+                          is-open="opened2" ng-click="open2($event);" required=""/>
+                          <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="panel-footer" style="margin-top: 20px;">
+                <div align="center">
+                  <button type="submit" class="btn btn-primary" ng-hide="is_view" ng-click="save(form)"><i
+                    class="glyphicon glyphicon-search"></i>&nbsp;Tampilkan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
+        <div class="panel panel-default"   id="laporan">
+          <div class="panel-body">
+            <div class="table-responsive">
+
+              <table style="margin-top:0px; width: 100%">
+                <tr>
+                  <td>
+                    <!-- <img src="{{ logo }}" align="left" width="146" height="105"/> -->
+                  </td>
+                  <td style="text-align: center">
+                    <h2 style="margin: 0px ;text-transform: uppercase;">
+                      LAPORAN PENDAKI MASUK<br/>
+                    </h2>
+
+                    <br/>
+                  </td>
+                  <td>
+                    <!-- <img src="img/white.png" align="left" width="146" height="105"> -->
+                  </td>
+                </tr>
+              </table>
+              <table class="table  table-bordered table-striped">
+                <tr>
+                  <th style="text-align: center; width:0.1%" rowspan="2"  >No</th>
+                  <th style="text-align: center; width: 1%" rowspan="2" > Nis</th>
+                  <th style="text-align: center; width: 5%" rowspan="2"  >Nama</th>
+                  <th style="text-align: center; width: 7%; " colspan="{{jumlahmapel}}"  >Mata Pelajaran</th>
+                </tr>
+                <tr>
+                  <th style="text-align: center " ng-repeat="value in mapel">{{value.mapel}} <br><span style="font-size: 9px">{{value.jam_mulai | date:'HH:mm'}} - {{value.jam_selesai | date:'HH:mm'}}</span></th>
+                </tr>
+                <tr ng-repeat="row in dataHasil">
+                  <td class="text-center">{{$index + 1}}</td>
+                  <td>{{row.nis}}</td>
+                  <td>{{row.nama}}</td>
+                  <td  style="width: 10px;text-align: center" ng-repeat="value in row.keterangan track by $index">
+                    {{value}}
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
-</div>
+  </div>

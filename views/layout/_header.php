@@ -15,7 +15,7 @@
 <header class="header" id="page-header">
     <div class="header-inner">
         <div class="logo">
-            <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/logo.png"><img src="<?=site_url()?>app/img/system/hasil.png"></a>
+            <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/hasil.png"><img src="<?=site_url()?>app/img/system/logo.png"></a>
         </div>
         <div class="logo-sm">
             <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/Logo-3G.jpg"></a>

@@ -124,6 +124,7 @@
           </b>
         </td>
         <td>
+          <?= $jml_anggota   ?>
         </td>
       </tr>
     </table>
@@ -543,6 +544,53 @@
           <?= $model->nama;?>
         </td>
       </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table style="width: 100%;margin-left: 20px;font-size:12px;">
+      <tr>
+        <td>
+          Catatan :
+        </td>
+      </tr>
+      <tr>
+        <td>
+          1. Pendaki wajib membayar restribusi kawasan
+        </td>
+      </tr>
+      <tr>
+        <td>
+          2. Pendaki wajib melaporkan diri saat turun
+        </td>
+      </tr>
+      <tr>
+        <td>
+          3. Membawa dan menyerah kembali sampah yg di hasilkan  ke pos penjagaan
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Biaya
+        </td>
+      </tr>
+      <tr>
+        <td>
+          WNI : Rp 10,200 /orang /hari
+        </td>
+      </tr>
+      <tr>
+        <td>
+          WNA : Rp 25.200 / orang /hari
+        </td>
+      </tr>
+
     </table>
 
 

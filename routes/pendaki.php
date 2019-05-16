@@ -27,25 +27,23 @@ post('/pendaki/print', function() {
     $id = $params;
     $sql = new LandaDb();
     $mail = new PHPMailer(true);
-
-
-
-
-
     $kode = generateKode();
     $model = $sql->find("select * from m_pendaki where id = {$id}");
     $anggota = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
     $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
     $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
     $darurat = $sql->findAll("select * from m_pendaki_darurat where m_pendaki_id = {$id}");
-    $jml_anggota = count($anggota) + 1;
+    $jml_anggota = count($anggota);
     $awal = date("j M Y",$model->tgl_naik);
     $akhir = date("j M Y",$model->tgl_turun);
     $timeDiff = abs($model->tgl_turun - $model->tgl_naik);
     $numberDays = $timeDiff/86400;
     $numberDays = intval($numberDays);
+
+    $tulisan = "Nomor Register : ".$model->register."\n"."Jalur Pendakian : ".$model->jalur_pendakian;
+
     $dompdf = new \Dompdf\Dompdf();
-    $qrCode = new Endroid\QrCode\QrCode($model->register);
+    $qrCode = new Endroid\QrCode\QrCode($tulisan);
     $qrCode->setSize(300);
     $folder = "temp/";
     $qrCode->setWriterByName('png');
@@ -57,7 +55,6 @@ post('/pendaki/print', function() {
     $qrCode->setRoundBlockSize(true);
     $qrCode->setValidateResult(false);
     $qrCode->setWriterOptions(['exclude_xml_declaration' => true]);
-    // Directly output the QR code
     header('Content-Type: '.$qrCode->getContentType());
     $qrCode->writeFile($folder.$model->id.'.png');
     ob_start();
@@ -67,7 +64,8 @@ post('/pendaki/print', function() {
     $dompdf->loadHtml($html);
     $dompdf->render();
     $output = $dompdf->output();
-    // $dompdf->stream("Webslesson", array("Attachment"=>0));
+    $dompdf->stream("Webslesson", array("Attachment"=>0));
+    // exit();
     file_put_contents('temp/'.$model->id.'.pdf', $output);
 
     try {
@@ -83,7 +81,7 @@ post('/pendaki/print', function() {
 
     //Recipients
     $mail->setFrom('ahmadgopurr59@gmail.com', 'TAHURA R SOERJO');
-    $mail->addAddress('jibunwahyudi@gmail.com', 'Dear Pendaki');
+    $mail->addAddress($model->email, 'Dear Pendaki');
     $mail->addAttachment('/var/www/html/perhutani/temp/'.$model->id.'.pdf');         // Add attachments
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
@@ -93,18 +91,18 @@ post('/pendaki/print', function() {
                       Berikut Kami cantumkan surat izin pendakian yang nanti harus kamu bawa saat melakukan pendakian
                         ';
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
     $mail->send();
-    echo 'Message has been sent';
+
+    $data['is_approve'] = 1;
+    $update = $sql->update('m_pendaki', $data, array('id' => $id));
+
+    echo json_encode(array('status' => 1, 'message' => "Email Terkirim" ), JSON_PRETTY_PRINT);
+    // echo 'Message has been sent';
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo json_encode(array('status' => 0, 'error_code' => 400, 'errors' => "Email tidak terikirim"), JSON_PRETTY_PRINT);
+
     }
-
-
-
-
-
-
 
 });
 

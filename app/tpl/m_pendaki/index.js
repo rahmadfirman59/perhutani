@@ -106,8 +106,15 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
         if (confirm("Apa Anda Yakin Akan Menyetujui Data Ini?")) {
           row.is_aprove = 1;
           Data.post('pendaki/setujui', row).then(function (result) {
-            $scope.is_edit = false;
-            $scope.is_view = false;
+            if (result.status == 0) {
+                toaster.pop('error', "Terjadi Kesalahan", result.errors);
+            } else {
+                // $scope.is_edit = false;
+                $scope.callServer(tableStateRef); //reload grid ulang
+                toaster.pop('success', "Berhasil", "Email Terkirim");
+            }
+            // $scope.is_edit = false;
+            // $scope.is_view = false;
           });
         }
 
