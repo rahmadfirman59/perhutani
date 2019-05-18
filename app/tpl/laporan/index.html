@@ -19,9 +19,10 @@
                   <label class="col-sm-4 control-label">Jalur Pendakian</label>
                   <div class="col-md-5">
                     <select class="form-control" ng-model="form.jalur" ng-disabled="is_view" >
+                      <option value="">Pilih Jalur</option>
                       <option value="Sumber Brantas">Sumber Brantas</option>
                       <option value="Lawang">Lawang</option>
-                      <option value="Tambaksari">Tambaksair</option>
+                      <option value="Tambaksari">Tambaksari</option>
                       <option value="Tretes">Tretes</option>
                       <option value="Kaliandra">Kaliandra</option>
                       <option value="Watujengger">Watujengger</option>
@@ -71,6 +72,11 @@
 
               <div class="panel-footer" style="margin-top: 20px;">
                 <div align="center">
+                  <button class="btn btn-info" ng-click="print(dataHasil)">
+                    <i class="glyphicon glyphicon-print">
+                    </i>
+                    Export Excel
+                  </button>
                   <button type="submit" class="btn btn-primary" ng-hide="is_view" ng-click="save(form)"><i
                     class="glyphicon glyphicon-search"></i>&nbsp;Tampilkan
                   </button>
@@ -79,11 +85,11 @@
             </div>
           </form>
         </div>
-        <div class="panel panel-default"   id="laporan">
+        <div class="panel panel-default" ng-show="is_tampil" id="laporan">
           <div class="panel-body">
             <div class="table-responsive">
 
-              <table style="margin-top:0px; width: 100%">
+              <table class="table table-striped table-hover table-bordered" style="margin-top:0px; width: 100%" >
                 <tr>
                   <td>
                     <!-- <img src="{{ logo }}" align="left" width="146" height="105"/> -->
@@ -102,21 +108,25 @@
               </table>
               <table class="table  table-bordered table-striped">
                 <tr>
-                  <th style="text-align: center; width:0.1%" rowspan="2"  >No</th>
-                  <th style="text-align: center; width: 1%" rowspan="2" > Nis</th>
-                  <th style="text-align: center; width: 5%" rowspan="2"  >Nama</th>
-                  <th style="text-align: center; width: 7%; " colspan="{{jumlahmapel}}"  >Mata Pelajaran</th>
+                  <th style="text-align: center;"> No </th>
+                  <th style="text-align: center;"> Nama </th>
+                  <th style="text-align: center;"> Email </th>
+                  <th style="text-align: center;"> Tanggal Daftar </th>
+                  <th style="text-align: center;"> Tanggal Naik </th>
+                  <th style="text-align: center;"> Tanggal Turun </th>
+                  <th style="text-align: center;"> Jalur Pendakian </th>
+                  <th style="text-align: center;"> Anggota </th>
                 </tr>
-                <tr>
-                  <th style="text-align: center " ng-repeat="value in mapel">{{value.mapel}} <br><span style="font-size: 9px">{{value.jam_mulai | date:'HH:mm'}} - {{value.jam_selesai | date:'HH:mm'}}</span></th>
-                </tr>
+
                 <tr ng-repeat="row in dataHasil">
                   <td class="text-center">{{$index + 1}}</td>
-                  <td>{{row.nis}}</td>
                   <td>{{row.nama}}</td>
-                  <td  style="width: 10px;text-align: center" ng-repeat="value in row.keterangan track by $index">
-                    {{value}}
-                  </td>
+                  <td>{{row.email}}</td>
+                  <td>{{row.tgl_daftar}}</td>
+                  <td>{{row.tgl_naik}}</td>
+                  <td>{{row.tgl_turun}}</td>
+                  <td>{{row.jalur_pendakian}}</td>
+                  <td>{{row.jml_anggota}}</td>
                 </tr>
               </table>
             </div>

@@ -15,10 +15,12 @@
 <header class="header" id="page-header">
     <div class="header-inner">
         <div class="logo">
-            <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/hasil.png"><img src="<?=site_url()?>app/img/system/logo.png"></a>
+            <a href="<?=site_url()?>" title="<?=$setting->nama?>">
+              <img src="<?=site_url()?>app/img/system/logobaru.png">
+              <!-- <img src="<?=site_url()?>app/img/system/logo.png"></a> -->
         </div>
         <div class="logo-sm">
-            <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/Logo-3G.jpg"></a>
+            <a href="<?=site_url()?>" title="<?=$setting->nama?>"><img src="<?=site_url()?>app/img/system/tulisan.png">a</a>
         </div>
         <div id="btn-navbar">
             <button type="button" id="menu-mobile" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">

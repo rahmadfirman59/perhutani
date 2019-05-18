@@ -12,18 +12,18 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li ng-show="user.akses.master_akses">
-                    <a ui-sref="master.roles" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-file"></i> Hak Akses </a>
+                    <a ui-sref="master.roles" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-globe"></i> Hak Akses </a>
                 </li>
                 <li ng-show="user.akses.master_user">
                     <a ui-sref="master.user" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> USER </a>
                 </li>
                 <li ng-show="user.akses.master_artikel">
-                    <a ui-sref="master.artikel" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-file"></i> ARTIKEL </a>
+                    <a ui-sref="master.artikel" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-pencil"></i> ARTIKEL </a>
                 </li>
                 <li ng-show="user.akses.master_pendaki">
-                    <a ui-sref="master.pendaki" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-file"></i> PENDAKI MASUK </a>
+                    <a ui-sref="master.pendaki" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-road"></i> PENDAKI MASUK </a>
                 </li>
-                <li ng-show="user.akses.master_pendaki">
+                <li ng-show="user.akses.master_setting">
                     <a ui-sref="master.setting" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon glyphicon-phone-alt"></i> INFORMASI KONTAK </a>
                 </li>
 
@@ -31,7 +31,7 @@
                     <a ui-sref="master.filemanager" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-folder-open"></i>  FILE MANAGER </a>
                 </li>
                 <li ng-show="user.akses.master_laporan">
-                    <a ui-sref="master.laporan" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-folder-open"></i>  LAPORAN </a>
+                    <a ui-sref="master.laporan" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-list-alt"></i>  LAPORAN </a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

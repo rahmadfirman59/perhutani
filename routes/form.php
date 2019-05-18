@@ -9,8 +9,7 @@ post('/form/create', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
 
-    // print_r($params);
-    // exit();
+    
 
     $awal = strtotime($params['form']['tanggal_naik']);
     $akhir = strtotime($params['form']['tanggal_turun']);

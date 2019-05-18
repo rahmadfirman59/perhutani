@@ -13,6 +13,8 @@ app.controller('laporanCtrl', function ($scope, Data, toaster) {
         $scope.opened2 = true;
     };
 
+    $scope.is_tampil = false;
+
 
     $scope.save = function (form) {
         Data.post('laporan/view', form).then(function (result) {
@@ -20,10 +22,17 @@ app.controller('laporanCtrl', function ($scope, Data, toaster) {
                 toaster.pop('error', "Terjadi Kesalahan", result.errors);
             } else {
                 console.log(result);
-                $scope.hasil = result.data;
-                $is_tampil = true;
+                $scope.dataHasil = result.data;
+                $scope.is_tampil = true;
                 // toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
             }
         });
     };
+    $scope.print = function(data){
+
+        Data.post('laporan/print', data).then(function (result) {
+            $scope.is_edit = false;
+            $scope.is_view = false;
+          });
+    }
 });

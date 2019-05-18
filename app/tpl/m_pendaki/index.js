@@ -59,13 +59,14 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
     };
 
     $scope.view = function (form) {
-
+        console.log(form);
         $scope.is_edit = true;
         $scope.is_view = true;
         $scope.formtitle = "Lihat Data : " + form.title;
         $scope.form = form;
         $scope.register = form.register;
         Data.get('pendaki/view/'+form.id).then(function (data) {
+
             $scope.listAnggota = data.anggota;
             $scope.perlengkapan = data.perlengkapan;
             $scope.listLogistik = data.logistik;
@@ -74,19 +75,7 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
         });
     };
 
-    $scope.save = function (form) {
 
-        var url = (form.id > 0) ? 'appartikel/update/' + form.id : 'appartikel/create/';
-        Data.post(url, form).then(function (result) {
-            if (result.status == 0) {
-                toaster.pop('error', "Terjadi Kesalahan", result.errors);
-            } else {
-                $scope.is_edit = false;
-                $scope.callServer(tableStateRef); //reload grid ulang
-                toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
-            }
-        });
-    };
 
     $scope.cancel = function () {
         $scope.is_edit = false;
@@ -101,27 +90,11 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
         }
     };
 
-    $scope.setujui = function (row) {
 
-        if (confirm("Apa Anda Yakin Akan Menyetujui Data Ini?")) {
-          row.is_aprove = 1;
-          Data.post('pendaki/setujui', row).then(function (result) {
-            if (result.status == 0) {
-                toaster.pop('error', "Terjadi Kesalahan", result.errors);
-            } else {
-                // $scope.is_edit = false;
-                $scope.callServer(tableStateRef); //reload grid ulang
-                toaster.pop('success', "Berhasil", "Email Terkirim");
-            }
-            // $scope.is_edit = false;
-            // $scope.is_view = false;
-          });
-        }
 
-    };
-
-    $scope.sendmail = function(id){
-        Data.post('pendaki/print', id).then(function (result) {
+    $scope.sendmail = function(data){
+      console.log(data);
+        Data.post('pendaki/print', data).then(function (result) {
             $scope.is_edit = false;
             $scope.is_view = false;
           });

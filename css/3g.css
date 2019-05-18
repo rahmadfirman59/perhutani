@@ -174,8 +174,8 @@ blockquote.quote-1 {
 }
 
 .logo img {
-    width: 15%;
-    max-width: 200px;
+    width: 100%;
+    /* max-width: 200px; */
     margin-top: 0px;
 }
 
@@ -1366,10 +1366,10 @@ h4 {
 
 @media screen and (max-width: 500px) {
     .logo img {
-        /* width: 100% */
-        width: 12%;
+        width: 100%
+        /* width: 12%; */
 
-        margin-left: 11px;
+        /* margin-left: 11px; */
     }
 
     .detail-pic {

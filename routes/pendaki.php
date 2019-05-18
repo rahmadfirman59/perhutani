@@ -58,7 +58,7 @@ post('/pendaki/print', function() {
     header('Content-Type: '.$qrCode->getContentType());
     $qrCode->writeFile($folder.$model->id.'.png');
     ob_start();
-    require('test.php');
+    require('surat.php');
     $html = ob_get_contents();
     ob_get_clean();
     $dompdf->loadHtml($html);
