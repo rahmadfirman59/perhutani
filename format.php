@@ -13,7 +13,7 @@
         <table  style="margin-top:0px; width: 100%" >
           <tr>
             <td>
-              <!-- <img src="{{ logo }}" align="left" width="146" height="105"/> -->
+              <img src="app/img/tahura.jpg" align="left" width="50" height="80"/>
             </td>
             <td style="text-align: center">
               <h2 style="margin: 0px ;text-transform: uppercase;">

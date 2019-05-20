@@ -93,10 +93,31 @@ app.controller('appartikelCtrl', function ($scope, Data, toaster) {
 
 
     $scope.sendmail = function(data){
-      console.log(data);
+
         Data.post('pendaki/print', data).then(function (result) {
             $scope.is_edit = false;
             $scope.is_view = false;
-          });
+            // $scope.is_edit = false;
+            $scope.callServer(tableStateRef); //reload grid ulang
+            toaster.pop('success', "Berhasil", "Email Berhasil dikirim");
+        });
+    }
+    $scope.naik = function(row){
+        row.is_naik = 1;
+        Data.post('pendaki/naik', row).then(function (result){
+          // location.reload();
+          toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
+          $scope.callServer(tableStateRef); //reload grid ulang
+      });
+
+    }
+    $scope.turun = function(row){
+        row.is_turun = 1;
+        Data.post('pendaki/turun', row).then(function (result){
+          // location.reload();
+          toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
+          $scope.callServer(tableStateRef); //reload grid ulang
+      });
+
     }
 });

@@ -5,7 +5,8 @@
   <title>PDF Create</title>
 </head>
 <!-- <body background="app/img/jatim.png"> -->
-<body >
+<!-- <body background="app/img/system/gray-bg.png" style="margin-top:0px; width: 100%" > -->
+<body  style="background: url(app/img/system/gray-bg.png);background-repeat: no-repeat;80px 90px;">
     <table style="margin-top:0px; width: 100%">
         <tr>
             <td style="text-align: center;">

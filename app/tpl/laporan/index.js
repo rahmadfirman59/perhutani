@@ -23,6 +23,8 @@ app.controller('laporanCtrl', function ($scope, Data, toaster) {
             } else {
                 console.log(result);
                 $scope.dataHasil = result.data;
+                $scope.awal = result.awal;
+                $scope.akhir = result.akhir
                 $scope.is_tampil = true;
                 // toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
             }

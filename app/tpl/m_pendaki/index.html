@@ -17,19 +17,19 @@
           <div collapse="isCollapsed" class="panel-body collapse" style="height: 0px;">
             <div class="form-horizontal">
               <div class="form-group">
-                <label class="col-sm-2 control-label">Judul</label>
+                <label class="col-sm-2 control-label">Nama</label>
                 <div class="col-sm-4">
-                  <input st-search="artikel.title" class="form-control" />
+                  <input st-search="m_pendaki.nama" class="form-control" />
                 </div>
-                <label class="col-sm-2 control-label">Kategori</label>
-                <div class="col-sm-4">
+                <!-- <label class="col-sm-2 control-label">Kategori</label> -->
+                <!-- <div class="col-sm-4">
                   <select class="form-control" ng-disabled="is_view" st-search="m_kategori.id">
                     <option value="">-Pilih Kategori-</option>
                     <option ng-repeat="kat in kategories" value="{{kat.id}}">{{kat.name}}</option>
                   </select>
-                </div>
+                </div> -->
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label class="col-sm-2 control-label">Status</label>
                 <div class="col-sm-4">
                   <select class="form-control" ng-disabled="is_view" st-search="artikel.publish">
@@ -38,7 +38,7 @@
                     <option value="1">Publish</option>
                   </select>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="table-responsive">
@@ -76,9 +76,7 @@
                   </td>
                   <td>
                     <div class="btn-group pull-right" role="group" style="margin-top: -3px;">
-                      <!-- <button type="button" class="btn btn-success glyphicon glyphicon-check"
-                      ng-click="setujui(row)" ng-show="user.akses.aproval_pendaki"
-                      ng-hide="row.is_approve == 1"></button> -->
+
                       <button type="button" class="btn btn-success glyphicon glyphicon-search"
                       ng-click="view(row);"></button>
                       <!--<button type="button" class="btn btn-info glyphicon glyphicon-pencil" ng-click="update(row)"></button>-->
@@ -496,7 +494,7 @@
 </div>
 <div class="panel-footer" style="margin-top: 20px;">
   <div align="center">
-    <button type="submit" class="btn btn-primary" ng-disabled="form.is_approve == '1'" ng-click="sendmail(form.id)"><i
+    <button type="submit" class="btn btn-primary" ng-if="form.is_approve == '0' && user.akses.aproval_pendaki == true  " ng-click="sendmail(form.id)"><i
       class="glyphicon glyphicon-envelope"></i>&nbsp;Setujui
     </button>
     <button type="submit" class="btn btn-success" ng-click="naik(form)"><i
@@ -505,9 +503,9 @@
     <button type="submit" class="btn btn-warning" ng-click="turun(form)"><i
       class="glyphicon glyphicon-download"></i>&nbsp;Pendaki Turun
     </button>
-    <button type="submit" class="btn btn-danger" ng-click="tolak(form)"><i
+    <!-- <button type="submit" class="btn btn-danger" ng-click="tolak(form)"><i
       class="glyphicon glyphicon-remove"></i>&nbsp;Tolak
-    </button>
+    </button> -->
   </div>
 </div>
 

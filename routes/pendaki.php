@@ -11,16 +11,7 @@ get('/pendaki/view/:id', function($id) {
     echo json_encode(array('status' => 1, 'anggota' => (array) $models,'perlengkapan'=>$perlengkapan,'logistik'=>$logistik,'darurat'=>$darurat));
 });
 
-post('/pendaki/setujui', function() {
 
-
-    check_access(array('admin' => true));
-    $params = json_decode(file_get_contents("php://input"), true);
-    $sql = new LandaDb();
-    $model = $sql->update('m_pendaki', $params, array('id' => $params['id']));
-    echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
-
-});
 post('/pendaki/print', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
@@ -160,4 +151,43 @@ get('/pendaki/index', function () {
     } else {
         echo json_encode(array('status' => 0, 'error_code' => 400, 'errors' => ""), JSON_PRETTY_PRINT);
     }
+});
+
+
+post('/pendaki/naik', function() {
+
+
+ check_access(array('admin' => true));
+ $params = json_decode(file_get_contents("php://input"), true);
+ $sql = new LandaDb();
+
+ $awal = strtotime($params['tgl_naik']);
+ $akhir = strtotime($params['tgl_turun']);
+ $params['tgl_naik'] = $awal;
+ $params['tgl_turun'] = $akhir;
+ $model = $sql->update('m_pendaki', $params, array('id' => $params['id']));
+
+
+ echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
+
+
+});
+
+post('/pendaki/turun', function() {
+
+
+ check_access(array('admin' => true));
+ $params = json_decode(file_get_contents("php://input"), true);
+ $sql = new LandaDb();
+
+ $awal = strtotime($params['tgl_naik']);
+ $akhir = strtotime($params['tgl_turun']);
+ $params['tgl_naik'] = $awal;
+ $params['tgl_turun'] = $akhir;
+ $model = $sql->update('m_pendaki', $params, array('id' => $params['id']));
+
+
+ echo json_encode(array('status' => 1, 'data' => $model), JSON_PRETTY_PRINT);
+
+
 });

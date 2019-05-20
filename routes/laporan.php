@@ -38,8 +38,13 @@ post('/laporan/view', function() {
      $model[$key]['tgl_turun'] = date("d-m-Y",$value->tgl_turun);
      $model[$key]['tgl_daftar'] = date("d-m-Y",strtotime($value->created));
     }
+
+    $tanggal_awal = date("d m Y",$awal);
+    $tanggal_akhir = date("d m Y",$akhir);
+
+
     if($model){
-        echo json_encode(array('status' => 1, 'data' => (array) $model), JSON_PRETTY_PRINT);
+        echo json_encode(array('status' => 1, 'data' => (array) $model,'awal'=>$tanggal_awal,'akhir' => $tanggal_akhir), JSON_PRETTY_PRINT);
     }else{
         echo json_encode(array('status' => 0, 'error_code' => 400, 'errors' => 'Data tidak Ada'), JSON_PRETTY_PRINT);
     }
@@ -47,7 +52,7 @@ post('/laporan/view', function() {
 post('/laporan/print', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
-    
+
     $dompdf = new \Dompdf\Dompdf();
     ob_start();
     require('format.php');
@@ -56,6 +61,6 @@ post('/laporan/print', function() {
     $dompdf->loadHtml($html);
     $dompdf->render();
     $output = $dompdf->output();
-    $dompdf->stream("Webslesson", array("Attachment"=>0));
+    $dompdf->stream("Laporan Pendaki", array("Attachment"=>1));
 
 });
