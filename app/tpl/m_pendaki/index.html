@@ -152,6 +152,25 @@
                       </div>
                     </div>
                     <div class="form-group">
+                      <label class="col-sm-3 control-label">Provinsi</label>
+                      <div class="col-md-9">
+                        <input type="text" name="no_identitas" class="form-control"
+                        ng-model="form.provinsi" ng-disabled="is_view" ng-minlength="2"
+                        ng-maxlength="100">
+
+
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-sm-3 control-label">Kabupaten/Kota</label>
+                      <div class="col-md-9">
+                        <input type="text" name="no_identitas" class="form-control"
+                        ng-model="form.kabkot" ng-disabled="is_view" ng-minlength="2"
+                        ng-maxlength="100">
+
+                      </div>
+                  </div>
+                    <div class="form-group">
                       <label class="col-sm-3 control-label">No. Hp</label>
                       <div class="col-md-9">
                         <input type="text" name="telepon" class="form-control angka"

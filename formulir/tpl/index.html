@@ -49,6 +49,32 @@
 
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Provinsi</label>
+                                    <div class="col-md-9">
+                                        <select ng-model="form.provinsi" class="form-control" ng-change="getKabKot(form.provinsi)">
+                                            <option value="">- Pilih Provinsi -</option>
+                                            <option ng-repeat="val in provinsi" value="{{val.id}}" >
+                                                {{val.name}}
+                                            </option>
+                                        </select>
+
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Kabupaten/Kota</label>
+                                    <div class="col-md-9">
+                                        <select ng-model="form.kabkot" class="form-control" >
+                                            <option value="">- Pilih Kabupaten/Kota -</option>
+                                            <option ng-repeat="val in kabkot" value="{{val.id}}" >
+                                                {{val.name}}
+                                            </option>
+                                        </select>
+
+
+                                    </div>
+                                </div>
                                 <div class="form-group"
                                      ng-class="{ 'has-error' : landaform.telepon.$invalid && !landaform.telepon.$pristine }">
                                     <label class="col-sm-3 control-label">No. Hp</label>
@@ -184,7 +210,7 @@
                                                 </input>
                                             </td>
                                             <td style="text-align: center;">
-                                                <input class="form-control" ng-disabled="is_view" ng-model="darurat.no_hp">
+                                                <input class="form-control angka" ng-disabled="is_view" ng-model="darurat.no_hp">
                                                 </input>
                                             </td>
                                             <td style="text-align: center;">
@@ -241,7 +267,7 @@
                                                 </input>
                                             </td>
                                             <td style="text-align: center;">
-                                                <input class="form-control" ng-disabled="is_view" ng-model="data.no_identitas">
+                                                <input class="form-control angka" ng-disabled="is_view" ng-model="data.no_identitas">
                                                 </input>
                                             </td>
                                             <td style="text-align: center;">
@@ -269,28 +295,28 @@
 
                                     <label class="col-sm-3 control-label">Tenda</label>
                                     <div class="col-md-3">
-                                        <input type="text" class="form-control" ng-model="perlengkapan.tenda"
+                                        <input type="text" class="form-control angka" ng-model="perlengkapan.tenda"
                                                ng-maxlength="100">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Sleeping Bags/Kantong Tidur</label>
                                     <div class="col-md-3">
-                                        <input type="text" class="form-control"
+                                        <input type="text" class="form-control angka"
                                                ng-model="perlengkapan.kantung_tidur"  ng-maxlength="100">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Peralatan Masak + Bahan Bakar</label>
                                     <div class="col-md-3">
-                                        <input type="text" class="form-control"
+                                        <input type="text" class="form-control angka"
                                                ng-model="perlengkapan.masak_bakar"  ng-maxlength="100">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Ponco / Jas Hujan</label>
                                     <div class="col-md-3">
-                                        <input type="text"  class="form-control"
+                                        <input type="text"  class="form-control angka"
                                                ng-model="perlengkapan.ponco"  ng-maxlength="100">
                                     </div>
                                 </div>
@@ -298,35 +324,35 @@
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Senter, Alat Penerangan</label>
                                     <div class="col-md-3">
-                                        <input type="text"  class="form-control"
+                                        <input type="text"  class="form-control angka"
                                                ng-model="perlengkapan.penerangan"  ng-maxlength="100">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Obat-obatan pribadi dan P3K</label>
                                     <div class="col-md-3">
-                                        <input type="text"  class="form-control"
+                                        <input type="text"  class="form-control angka"
                                                ng-model="perlengkapan.p3k"  ng-maxlength="100">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Matras</label>
                                     <div class="col-md-3">
-                                        <input type="text"  class="form-control"
+                                        <input type="text"  class="form-control angka"
                                                ng-model="perlengkapan.matras"  ng-maxlength="100">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Kantong Sampah</label>
                                     <div class="col-md-3">
-                                        <input type="text" class="form-control"
+                                        <input type="text" class="form-control angka"
                                                ng-model="perlengkapan.sampah"  ng-maxlength="100">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3 control-label">Jaket</label>
                                     <div class="col-md-3">
-                                        <input type="text" class="form-control"
+                                        <input type="text" class="form-control angka"
                                                ng-model="perlengkapan.jaket"  ng-maxlength="100">
                                     </div>
                                 </div>
@@ -370,7 +396,7 @@
                                                 </input>
                                             </td>
                                             <td style="text-align: center;">
-                                                <input class="form-control" ng-disabled="is_view" ng-model="logistik.jumlah">
+                                                <input class="form-control angka" ng-disabled="is_view" ng-model="logistik.jumlah">
                                                 </input>
                                             </td>
 

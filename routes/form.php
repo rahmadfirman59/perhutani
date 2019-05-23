@@ -65,3 +65,18 @@ post('/form/create', function() {
 
 
 });
+
+get('/form/provinsi', function() {
+    check_access(array('login' => true));
+    $sql = new LandaDb();
+    $models = $sql->findAll("select * from provinces");
+    
+    echo json_encode(array('status' => 1, 'data' => (array) $models));
+});
+
+get('/form/kabupaten/:id', function($id) {
+    check_access(array('login' => true));
+    $sql = new LandaDb();
+    $models = $sql->findAll("select * from regencies where province_id = {$id}");
+    echo json_encode(array('status' => 1, 'data' => (array) $models));
+});

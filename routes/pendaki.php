@@ -4,6 +4,7 @@ get('/pendaki/view/:id', function($id) {
     check_access(array('login' => true));
     $sql = new LandaDb();
     $models = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
+    
     $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
     $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
     $darurat = $sql->findAll("select * from m_pendaki_darurat where m_pendaki_id = {$id}");
@@ -15,6 +16,8 @@ get('/pendaki/view/:id', function($id) {
 post('/pendaki/print', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
+
+   
     $id = $params;
     $sql = new LandaDb();
     $mail = new PHPMailer(true);
@@ -31,7 +34,11 @@ post('/pendaki/print', function() {
     $numberDays = $timeDiff/86400;
     $numberDays = intval($numberDays);
 
-    $tulisan = "Nomor Register : ".$model->register."\n"."Jalur Pendakian : ".$model->jalur_pendakian;
+    $tulisan = "Nomor Register : ".$model->register.
+                "\n".
+                "Jalur Pendakian : ".$model->jalur_pendakian.
+                "\n".
+                "Nama Ketua : " .$model->nama;
 
     $dompdf = new \Dompdf\Dompdf();
     $qrCode = new Endroid\QrCode\QrCode($tulisan);
@@ -53,11 +60,14 @@ post('/pendaki/print', function() {
     $html = ob_get_contents();
     ob_get_clean();
     $dompdf->loadHtml($html);
+    
+    $dompdf->setPaper('F4', 'potrait');
     $dompdf->render();
     $output = $dompdf->output();
-    $dompdf->stream("Webslesson", array("Attachment"=>0));
+    $dompdf->stream("Surat Pendaki", array("Attachment"=>1));
     // exit();
     file_put_contents('temp/'.$model->id.'.pdf', $output);
+    exit();
 
     try {
     //Server settings
@@ -138,9 +148,15 @@ get('/pendaki/index', function () {
     $model = $sql->findAll();
 
    foreach ($model as $key => $value){
+       $province = $sql->find("select * from provinces where id = {$value->provinsi}");
+       $kabkot = $sql->find("select * from regencies where id = {$value->kabkot}");
+    //    print_r($kabkot);
+    //    exit();
        $model[$key] = (array) $value;
        $model[$key]['tgl_naik'] = date("d M Y",$value->tgl_naik);
        $model[$key]['tgl_turun'] = date("d M Y",$value->tgl_turun);
+       $model[$key]['provinsi'] = $province->name;
+       $model[$key]['kabkot'] = $kabkot->name;
    }
     $totalItem = $sql->count();
     $sql->clearQuery();

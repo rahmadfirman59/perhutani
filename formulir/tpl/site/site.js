@@ -1,4 +1,4 @@
-app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, $stateParams, FileUploader) {
+app.controller('frontendCtrl', function ($http,$modal, $scope, Data, toaster, $state, $stateParams, FileUploader) {
   var Control_link = 'form';
   $scope.form = {};
   $scope.form.kewarganegaraan = 'Warga Negara Indonesia';
@@ -23,13 +23,21 @@ app.controller('frontendCtrl', function ($modal, $scope, Data, toaster, $state, 
     }
     $scope.listLogistik.push(newDet);
   };
-  // $scope.tambahDarurat= function() {
-  //     var newDet = {
-  //         nama: '',
-  //     }
-  //     $scope.listDarurat.push(newDet);
-  // };
+  $scope.getProvinsi = function() {
+      Data.get('form/provinsi').then(function (data) {
+        $scope.provinsi = data.data;
+        // tableState.pagination.numberOfPages = Math.ceil(data.totalItems / limit);
+    });
+  };
+  $scope.getKabKot = function(idkabkot) {
+    Data.get('form/kabupaten/'+idkabkot).then(function (data) {
 
+      $scope.kabkot = data.data;
+
+  });
+  };
+
+$scope.getProvinsi();
 
 
 

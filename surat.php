@@ -5,8 +5,8 @@
   <title>PDF Create</title>
 </head>
 <!-- <body background="app/img/jatim.png"> -->
-<!-- <body background="app/img/system/gray-bg.png" style="margin-top:0px; width: 100%" > -->
-<body  style="background: url(app/img/system/gray-bg.png);background-repeat: no-repeat;80px 90px;">
+<body >
+<!-- <body  style="background: url(app/img/system/gray-bg.png);background-repeat: no-repeat;80px 90px;"> -->
     <table style="margin-top:0px; width: 100%">
         <tr>
             <td style="text-align: center;">
@@ -48,7 +48,7 @@
                 <br/>
             </td>
             <td>
-                <img src="temp/<?= $model->id ?>.png" width="50" height="80" />
+                <img src="temp/<?= $model->id ?>.png" width="50" height="50" />
             </td>
         </tr>
     </table>
@@ -64,7 +64,7 @@
     <p style="font-size: 12px; text-align: center; padding: 1px;">
             Nomor Karcis : .......................s/d...........................
         <br />
-            Nomor Register ..................... Tanggal.....................
+            Nomor Register : <?php echo $model->register?> Tanggal <?php echo date("d m Y")?>
     </p>
 
     <table style="width: 100%;  font-size:12px;">
@@ -258,7 +258,7 @@
           &nbsp;
         </td>
         <td style="text-align:center;">
-          <b>Petugas Pos Pendakian</b>
+          <b>Petugas Pos Pendakian <?= $model->jalur_pendakian?> </b>
         </td>
       </tr>
       <tr>
@@ -272,7 +272,7 @@
           &nbsp;
         </td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>
           &nbsp;
         </td>
@@ -282,7 +282,7 @@
         <td>
           &nbsp;
         </td>
-      </tr>
+      </tr> -->
 
       <tr>
         <td style="text-align:center;">
@@ -320,23 +320,32 @@
       </tr>
     </table>
     <br />
-    <table style="width: 100%;margin-left: 20px;font-size:12px;">
-      <tr>
+    <table  style="width: 100%;margin-left: 20px;font-size:12px;">
+      <tr style="vertical-align:top;">
         <td>
           Lampiran
         </td>
         <td>
           Surat Ijin Khusus Pendakian Gunung Di Kawasan Tahura R. SOERJO
         </td>
+        <td rowspan="3">
+        <img src="temp/<?= $model->id ?>.png" width="50" height="50" />
+        </td>
       </tr>
-      <tr>
+      
+      <tr style="vertical-align:top;">
         <td>
         No. Register
         </td>
         <td>
           <?= $model->register ?>
         </td>
+        <!-- <td>
+          <?= $model->register ?>
+        </td> -->
       </tr>
+      
+
     </table>
     <br />
     <p style="width: 100%;margin-left: 20px;font-weight: bold;font-size:12px;">I. DAFTAR NAMA PENDAKI</p>

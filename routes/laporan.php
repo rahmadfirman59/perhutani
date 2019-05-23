@@ -27,6 +27,8 @@ post('/laporan/view', function() {
     $model = $sql->findAll();
 
     foreach ($model as $key => $value) {
+    $province = $sql->find("select * from provinces where id = {$value->provinsi}");
+    $kabkot = $sql->find("select * from regencies where id = {$value->kabkot}");
      $model[$key] = (array)$value;
 
      $ang = $sql->select("*")
@@ -37,6 +39,8 @@ post('/laporan/view', function() {
      $model[$key]['tgl_naik'] = date("d-m-Y",$value->tgl_naik);
      $model[$key]['tgl_turun'] = date("d-m-Y",$value->tgl_turun);
      $model[$key]['tgl_daftar'] = date("d-m-Y",strtotime($value->created));
+     $model[$key]['provinsi'] = $province->name;
+       $model[$key]['kabkot'] = $kabkot->name;
     }
 
     $tanggal_awal = date("d m Y",$awal);
