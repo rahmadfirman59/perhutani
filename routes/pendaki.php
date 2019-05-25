@@ -4,7 +4,7 @@ get('/pendaki/view/:id', function($id) {
     check_access(array('login' => true));
     $sql = new LandaDb();
     $models = $sql->findAll("select * from m_pendaki_anggota where m_pendaki_id = {$id}");
-    
+
     $perlengkapan = $sql->find("select * from m_pendaki_perlengkapan where m_pendaki_id = {$id}");
     $logistik = $sql->findAll("select * from m_pendaki_logistik where m_pendaki_id = {$id}");
     $darurat = $sql->findAll("select * from m_pendaki_darurat where m_pendaki_id = {$id}");
@@ -17,7 +17,9 @@ post('/pendaki/print', function() {
 
     $params = json_decode(file_get_contents("php://input"), true);
 
-   
+
+
+
     $id = $params;
     $sql = new LandaDb();
     $mail = new PHPMailer(true);
@@ -60,14 +62,14 @@ post('/pendaki/print', function() {
     $html = ob_get_contents();
     ob_get_clean();
     $dompdf->loadHtml($html);
-    
+
     $dompdf->setPaper('F4', 'potrait');
     $dompdf->render();
     $output = $dompdf->output();
     $dompdf->stream("Surat Pendaki", array("Attachment"=>1));
     // exit();
     file_put_contents('temp/'.$model->id.'.pdf', $output);
-    exit();
+    // exit();
 
     try {
     //Server settings
@@ -175,7 +177,12 @@ post('/pendaki/naik', function() {
 
  check_access(array('admin' => true));
  $params = json_decode(file_get_contents("php://input"), true);
+ unset($params['provinsi']);
+ unset($params['kabkot']);
  $sql = new LandaDb();
+
+ print_r($params);
+ exit();
 
  $awal = strtotime($params['tgl_naik']);
  $akhir = strtotime($params['tgl_turun']);
@@ -195,6 +202,11 @@ post('/pendaki/turun', function() {
  check_access(array('admin' => true));
  $params = json_decode(file_get_contents("php://input"), true);
  $sql = new LandaDb();
+ unset($params['provinsi']);
+ unset($params['kabkot']);
+
+ print_r($params);
+ exit();
 
  $awal = strtotime($params['tgl_naik']);
  $akhir = strtotime($params['tgl_turun']);

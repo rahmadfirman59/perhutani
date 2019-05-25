@@ -72,7 +72,11 @@
                   <td>{{row.tgl_turun }}</td>
                   <td ng-if="row.is_approve == 0"><span class="label label-danger">Belum Disetujui</span>
                   </td>
-                  <td ng-if="row.is_approve == 1"><span class="label label-success">Disetujui</span>
+                  <td ng-if="row.is_approve == 1 && row.is_naik == 0"><span class="label label-success">Disetujui</span>
+                  </td>
+                  <td ng-if="row.is_naik == 1 && row.is_approve == 1 &&  row.is_turun == 0"><span class="label label-success">Naik</span>
+                  </td>
+                  <td ng-if="row.is_naik == 1 && row.is_approve == 1 && row.is_turun == 1"><span class="label label-success">Turun</span>
                   </td>
                   <td>
                     <div class="btn-group pull-right" role="group" style="margin-top: -3px;">
@@ -513,13 +517,13 @@
 </div>
 <div class="panel-footer" style="margin-top: 20px;">
   <div align="center">
-    <button type="submit" class="btn btn-primary" ng-if="form.is_approve == '0' && user.akses.aproval_pendaki == true  " ng-click="sendmail(form.id)"><i
+    <button type="submit" class="btn btn-primary" ng-if="form.is_approve == '0' && user.akses.aproval_pendaki == true" ng-click="sendmail(form.id)"><i
       class="glyphicon glyphicon-envelope"></i>&nbsp;Setujui
     </button>
-    <button type="submit" class="btn btn-success" ng-click="naik(form)"><i
+    <button type="submit" class="btn btn-success" ng-if="form.is_naik == '0' && user.akses.pos_pendaki == true"  ng-click="naik(form)"><i
       class="glyphicon glyphicon-upload"></i>&nbsp;Pendaki Naik
     </button>
-    <button type="submit" class="btn btn-warning" ng-click="turun(form)"><i
+    <button type="submit" class="btn btn-warning" ng-if="form.is_turun == '0' && user.akses.pos_pendaki == true" ng-click="turun(form)"><i
       class="glyphicon glyphicon-download"></i>&nbsp;Pendaki Turun
     </button>
     <!-- <button type="submit" class="btn btn-danger" ng-click="tolak(form)"><i

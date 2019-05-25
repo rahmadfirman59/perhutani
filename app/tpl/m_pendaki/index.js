@@ -59,7 +59,7 @@ app.controller('appartikelCtrl', function ($http,$scope, Data, toaster) {
     };
 
     $scope.view = function (form) {
-        
+
         $scope.is_edit = true;
         $scope.is_view = true;
         $scope.formtitle = "Lihat Data : " + form.title;
@@ -113,7 +113,8 @@ app.controller('appartikelCtrl', function ($http,$scope, Data, toaster) {
     }
     $scope.turun = function(row){
         row.is_turun = 1;
-        Data.post('pendaki/turun', row).then(function (result){
+        console.log(row);
+        Data.post('pendaki/naik', row).then(function (result){
           // location.reload();
           toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
           $scope.callServer(tableStateRef); //reload grid ulang
