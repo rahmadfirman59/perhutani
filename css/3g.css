@@ -174,9 +174,10 @@ blockquote.quote-1 {
 }
 
 .logo img {
-    width: 100%;
-    /* max-width: 200px; */
-    margin-top: 0px;
+  width: 100%;
+   max-width: 378px;
+   margin-top: 0px;
+   max-height: 58px;
 }
 
 

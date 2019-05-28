@@ -62,9 +62,9 @@
 
     </p>
     <p style="font-size: 12px; text-align: center; padding: 1px;">
-            Nomor Karcis : .......................s/d...........................
+            Nomor Register : <?php echo $model->register?> Tanggal <?= $awal ?>
         <br />
-            Nomor Register : <?php echo $model->register?> Tanggal <?php echo date("d m Y")?>
+            Nomor Karcis : .......................s/d...........................
     </p>
 
     <table style="width: 100%;  font-size:12px;">
@@ -303,7 +303,7 @@
         <td>
           Mengetahui
           <br>
-          PENGAWAS LAPANGAN ..........................
+          KEPALA RESORT ..........................
         </td>
       </tr>
       <tr style="text-align:center;">
@@ -332,7 +332,7 @@
         <img src="temp/<?= $model->id ?>.png" width="50" height="50" />
         </td>
       </tr>
-      
+
       <tr style="vertical-align:top;">
         <td>
         No. Register
@@ -344,7 +344,7 @@
           <?= $model->register ?>
         </td> -->
       </tr>
-      
+
 
     </table>
     <br />
@@ -571,12 +571,22 @@
       </tr>
       <tr>
         <td>
-          2. Pendaki wajib melaporkan diri saat turun
+          2. Pendaki wajib melaporkan diri saat naik dan turun
         </td>
       </tr>
       <tr>
         <td>
           3. Membawa dan menyerah kembali sampah yg di hasilkan  ke pos penjagaan
+        </td>
+      </tr>
+      <tr>
+        <td>
+          4. Wajib membawa tanda pengenal asli
+        </td>
+      </tr>
+      <tr>
+        <td>
+          5. Wajib membawa Surat Keterangan Kesehatan
         </td>
       </tr>
 

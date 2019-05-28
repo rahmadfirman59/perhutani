@@ -1,4 +1,4 @@
-<div ng-controller="appartikelCtrl">
+<div ng-controller="appPendakiCtrl">
   <div class="title-head">
     <h1>Daftar Pendaki Masuk</h1>
   </div>
@@ -523,7 +523,7 @@
     <button type="submit" class="btn btn-success" ng-if="form.is_naik == '0' && user.akses.pos_pendaki == true"  ng-click="naik(form)"><i
       class="glyphicon glyphicon-upload"></i>&nbsp;Pendaki Naik
     </button>
-    <button type="submit" class="btn btn-warning" ng-if="form.is_turun == '0' && user.akses.pos_pendaki == true" ng-click="turun(form)"><i
+    <button type="submit" class="btn btn-warning" ng-if="form.is_turun == '0' && form.is_naik == '1' && user.akses.pos_pendaki == true" ng-click="turun(form)"><i
       class="glyphicon glyphicon-download"></i>&nbsp;Pendaki Turun
     </button>
     <!-- <button type="submit" class="btn btn-danger" ng-click="tolak(form)"><i

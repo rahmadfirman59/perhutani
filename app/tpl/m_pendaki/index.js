@@ -1,4 +1,4 @@
-app.controller('appartikelCtrl', function ($http,$scope, Data, toaster) {
+app.controller('appPendakiCtrl', function ($http,$scope, Data, toaster) {
     //init data
     var tableStateRef;
 
@@ -82,13 +82,7 @@ app.controller('appartikelCtrl', function ($http,$scope, Data, toaster) {
         $scope.is_view = false;
     };
 
-    $scope.delete = function (row) {
-        if (confirm("Apa anda yakin akan MENGHAPUS PERMANENT item ini ?")) {
-            Data.delete('appartikel/delete/' + row.id).then(function (result) {
-                $scope.displayed.splice($scope.displayed.indexOf(row), 1);
-            });
-        }
-    };
+
 
 
 
@@ -104,20 +98,24 @@ app.controller('appartikelCtrl', function ($http,$scope, Data, toaster) {
     }
     $scope.naik = function(row){
         row.is_naik = 1;
+
         Data.post('pendaki/naik', row).then(function (result){
+          $scope.is_edit = false;
+          $scope.is_view = false;
           // location.reload();
-          toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
           $scope.callServer(tableStateRef); //reload grid ulang
+          toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
       });
 
     }
     $scope.turun = function(row){
         row.is_turun = 1;
-        console.log(row);
-        Data.post('pendaki/naik', row).then(function (result){
+        Data.post('pendaki/turun', row).then(function (result){
+          $scope.is_edit = false;
+          $scope.is_view = false;
           // location.reload();
-          toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
           $scope.callServer(tableStateRef); //reload grid ulang
+          toaster.pop('success', "Berhasil", "Data berhasil tersimpan");
       });
 
     }

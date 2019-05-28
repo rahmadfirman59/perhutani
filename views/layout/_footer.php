@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12 footer-item footer-about">
                 <div class="title-wrap">
-                    <h3 class="title-inline" style="margin-top:0px;">Sistem Monitoring Pendakian Arjuna Welirang</h3>
+                    <h3 class="title-inline" style="margin-top:0px;">Sipenerang</h3>
                 </div>
                 <p class="text-about">
                     <?= $setting->deskripsi ?>
@@ -70,7 +70,7 @@
                         <noscript><a href="http://www.supercounters.com/hitcounter">Pengunjung Website</a></noscript>
                         <script type="text/javascript" src="//widget.supercounters.com/ssl/hit.js">
                         </script>
-                        <script type="text/javascript">sc_hit(1507357, 0, 5);</script>
+                        <script type="text/javascript">sc_hit(1543783, 0, 5);</script>
                 </div>
             </div>
             <div class="col-md-6">
