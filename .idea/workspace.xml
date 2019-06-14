@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30dccc2e-dca5-433f-935b-79b1be26a6d9" name="Default Changelist" comment="">
+    <list default="true" id="30dccc2e-dca5-433f-935b-79b1be26a6d9" name="Default Changelist" comment="tambah form perlengkapan logistik">
+      <change afterPath="$PROJECT_DIR$/tesupload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/glintunggogreen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/glintunggogreen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/article/22201907-150x150-sop.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/article/22201907-150x150-sop.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/article/22201907-350x350-sop.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/article/22201907-350x350-sop.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/article/22201907-700x700-sop.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/article/22201907-700x700-sop.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/jatim.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/jatim.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/system/asd.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/system/asd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/system/hasil.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/system/hasil.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/system/jatim.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/system/jatim.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/system/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/system/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/tahura.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/tahura.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sop.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/sop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/mitra/AQUA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/mitra/NESTLE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/mitra/TNI AD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/mitra/TNI AL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/mitra/TNI AU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/mitra/TNI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Penghargaan juara 1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Piagam-Penghargaan-Top-99-SINOVIK18082017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Screen Shot 2018-09-02 at 11.43.35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Screen Shot 2018-09-03 at 15.19.38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Screen Shot 2018-09-04 at 18.30.51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/print/surat.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tpl/m_pendaki/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/tpl/m_pendaki/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/site/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/site/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/pendaki.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/pendaki.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/qrcode/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/surat.php" beforeDir="false" afterPath="$PROJECT_DIR$/surat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/20.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/22.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/print/penjualan_rain.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +46,13 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tesupload.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -176,6 +203,15 @@
       <path value="$PROJECT_DIR$/vendor/pclzip/pclzip" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpword" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/common" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/endroid/installer" />
+      <path value="$PROJECT_DIR$/vendor/endroid/qr-code" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/khanamiryan/qrcode-detector-decoder" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -295,6 +331,7 @@
       <workItem from="1551922502208" duration="24000" />
       <workItem from="1556606464588" duration="68000" />
       <workItem from="1556689738368" duration="267000" />
+      <workItem from="1560484898929" duration="578000" />
     </task>
     <task id="LOCAL-00001" summary="after clean">
       <created>1535790208089</created>
@@ -356,7 +393,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111226000" />
+    <option name="totallyTimeSpent" value="111804000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,9 +405,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2952454" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29954615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -382,7 +419,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.33877552" />
-      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.4993895" weight="0.31132075" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.4993895" weight="0.31096563" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50061053" side_tool="true" weight="0.29153606" />
@@ -468,7 +505,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/tpl/m_artikel/index.js" />
     <entry file="file://$PROJECT_DIR$/routes/m_pendaki.php" />
     <entry file="file://$PROJECT_DIR$/routes/appartikel.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -537,16 +573,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/tpl/m_roles/roles (copy).js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tpl/m_roles/index (copy).html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="93" column="48" lean-forward="true" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tpl/m_roles/roles (copy).js" />
+    <entry file="file://$PROJECT_DIR$/app/tpl/m_roles/index (copy).html" />
     <entry file="file://$PROJECT_DIR$/app/js/config.router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-240">
@@ -714,6 +742,9 @@
           <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="31" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tesupload.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

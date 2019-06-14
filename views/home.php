@@ -79,8 +79,8 @@
 </section>
 <section class="about-us " id="aboutus" style="margin-top: 50px">
     <div class="container"> <!-- SECTION HEADER -->
-        <div class="section-header" style="padding-bottom: 30px"><h2 class="white-text">Sipanmorang</h2>
-            <div class="white-text section-legend">Profil Sipanmorang</div>
+        <div class="section-header" style="padding-bottom: 30px"><h2 class="white-text">Sipenerang</h2>
+            <div class="white-text section-legend">Profil Sipenerang</div>
         </div><!-- / END SECTION HEADER --> <!-- 3 COLUMNS OF ABOUT US-->
         <div class="row"> <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
             <div class="col-lg-12 col-md-12 column zerif_about_us_center text_and_skills"
@@ -197,7 +197,7 @@
 <!--                                     style="display: none;">-->
                                 <div class="tour-caption">
                                     <div class="vertical-align">
-                                        <!-- <h3 class="underline hover-it"><?= $fasilitas[4]->description ?></h3> -->
+                                        
                                         <iframe width="250" height="250" src="https://www.youtube.com/embed/D5QT7gchn3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                                     </div>
@@ -319,6 +319,7 @@
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <div class="second-title">
                     <h3 class="subtitle color-red-3 underline" style="color: #fff">PESONA WISATA</h3>
+
                     <!--                    <h2>What is happening now</h2>-->
                     <!--<p class="color-grey">Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id tor.</p>-->
                 </div>

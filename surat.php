@@ -87,7 +87,7 @@
     <p style="font-size: 12px; text-align: left;">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Memberikan ijin kepada :
     </p>
-    <table style="margin-left: 20px;font-size:12px;">
+    <table style="margin-left: 20px;font-size:12px;width:100%">
       <tr >
         <td>
           <b>
@@ -95,37 +95,66 @@
           </b>
         </td>
         <td>
-          <?= $model->nama ?>
+          : <?= $model->nama ?>
+        </td>
+        <td style="text-align:right;">
+          <b>
+          Kebangsaan
+        </b>
+        </td>
+        <td>
+            : <?= $model->kewarganegaraan ?>
         </td>
       </tr>
       <tr>
+        <td >
+          <b>
+            Tempat Tanggal Lahir
+          </b>
+        </td>
+        <td>
+          : <?= $model->tempat_lahir ?> , <?= tgl_indo(date("Y-m-d",$model->tgl_lahir))?>
+        </td>
+
+        <td style="text-align:right;">
+          <b>
+          Personel
+        </b>
+        </td>
+        <td>
+            : <?= $jml_anggota ?>
+        </td>
+      </tr>
+
+      <tr>
+
         <td >
           <b>
             Alamat Lengkap
           </b>
         </td>
         <td>
-          <?= $model->alamat ?>
+          : <?= $model->alamat ?>
         </td>
       </tr>
-      <tr>
-        <td >
-          <b>
-            Kebangsaan
-          </b>
-        </td>
+      <!-- <tr>
         <td>
-          <?= $model->kewarganegaraan ?>
-        </td>
-      </tr>
-      <tr>
-        <td >
           <b>
             Jumlah Personel
           </b>
         </td>
         <td>
           <?= $jml_anggota   ?>
+        </td>
+      </tr> -->
+      <tr>
+        <td >
+          <b>
+            Nomor Identitas
+          </b>
+        </td>
+        <td>
+          : <?= $model->no_identitas  ?>
         </td>
       </tr>
     </table>
@@ -261,7 +290,7 @@
           <b>Petugas Pos Pendakian <?= $model->jalur_pendakian?> </b>
         </td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>
           &nbsp;
         </td>
@@ -271,7 +300,7 @@
         <td>
           &nbsp;
         </td>
-      </tr>
+      </tr> -->
       <!-- <tr>
         <td>
           &nbsp;
@@ -319,7 +348,8 @@
         </td>
       </tr>
     </table>
-    <br />
+
+
     <table  style="width: 100%;margin-left: 20px;font-size:12px;">
       <tr style="vertical-align:top;">
         <td>
@@ -556,8 +586,7 @@
       </tr>
     </table>
     <br>
-    <br>
-    <br>
+
     <table style="width: 100%;margin-left: 20px;font-size:12px;">
       <tr>
         <td>
@@ -566,12 +595,12 @@
       </tr>
       <tr>
         <td>
-          1. Pendaki wajib membayar restribusi kawasan
+          1. Pendaki wajib membayar restribusi masuk kawasan, WNI : Rp 10,200 /orang /hari, WNA : Rp 25.200 / orang /hari
         </td>
       </tr>
       <tr>
         <td>
-          2. Pendaki wajib melaporkan diri saat naik dan turun
+          2. Pendaki wajib melaporkan diri saat naik dan setelah turun
         </td>
       </tr>
       <tr>
@@ -590,26 +619,7 @@
         </td>
       </tr>
 
-      <tr>
-        <td>
 
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Biaya
-        </td>
-      </tr>
-      <tr>
-        <td>
-          WNI : Rp 10,200 /orang /hari
-        </td>
-      </tr>
-      <tr>
-        <td>
-          WNA : Rp 25.200 / orang /hari
-        </td>
-      </tr>
 
     </table>
 

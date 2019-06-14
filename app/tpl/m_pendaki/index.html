@@ -146,6 +146,28 @@
                       </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-sm-3 control-label">Tempat Lahir</label>
+                        <div class="col-md-9">
+                            <input type="text" name="tempat_lahir" class="form-control"
+                                   ng-model="form.tempat_lahir" ng-disabled="is_view" ng-minlength="2" ng-maxlength="100">
+
+                        </div>
+                    </div>
+                    <div class="form-group"
+                         ng-class="{ 'has-error' : landaform.no_identitas.$invalid && !landaform.no_identitas.$pristine }">
+                        <label class="col-sm-3 control-label">Tanggal Lahir</label>
+                        <div class="col-md-4">
+                          <div class="input-group">
+                              <input type="text" style="height: 30px;" class="form-control"
+                                     datepicker-popup="dd MMMM yyyy" ng-model="form.tanggal_lahir"
+                                     is-open="opened3" ng-click="open3($event);" ng-disabled="is_view" required=""/>
+                              <span class="input-group-addon">
+                                  <i class="glyphicon glyphicon-calendar"></i>
+                              </span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
                       <label class="col-sm-3 control-label">Alamat Lengkap</label>
                       <div class="col-md-9">
                         <textarea name="alamat" ng-model="form.alamat" ng-disabled="is_view"
@@ -170,6 +192,24 @@
                       <div class="col-md-9">
                         <input type="text" name="no_identitas" class="form-control"
                         ng-model="form.kabkot" ng-disabled="is_view" ng-minlength="2"
+                        ng-maxlength="100">
+
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-sm-3 control-label">Kecamatan</label>
+                      <div class="col-md-9">
+                        <input type="text" name="no_identitas" class="form-control"
+                        ng-model="form.kecamatan" ng-disabled="is_view" ng-minlength="2"
+                        ng-maxlength="100">
+
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-sm-3 control-label">Desa</label>
+                      <div class="col-md-9">
+                        <input type="text" name="no_identitas" class="form-control"
+                        ng-model="form.deskel" ng-disabled="is_view" ng-minlength="2"
                         ng-maxlength="100">
 
                       </div>

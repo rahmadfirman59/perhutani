@@ -66,7 +66,7 @@ post('/pendaki/print', function() {
     // $dompdf->stream("Surat Pendaki", array("Attachment"=>0));
     // exit();
     file_put_contents('temp/'.$model->id.'.pdf', $output);
-    // exit();
+    exit();
 
     try {
     //Server settings
@@ -155,15 +155,18 @@ get('/pendaki/index', function () {
    foreach ($model as $key => $value){
        $province = $sql->find("select * from provinces where id = {$value->provinsi}");
        $kabkot = $sql->find("select * from regencies where id = {$value->kabkot}");
+       $kecamatan = $sql->find("select * from districts where id = {$value->kecamatan}");
+       $deskel = $sql->find("select * from villages where id = {$value->deskel}");
     //    print_r($kabkot);
     //    exit();
        $model[$key] = (array) $value;
-       // $model[$key]['tgl_naik'] = date("d F Y",$value->tgl_naik);
        $model[$key]['tgl_naik'] = tgl_indo(date("Y-m-d",$value->tgl_naik));
-       // $model[$key]['tgl_turun'] = date("d F Y",$value->tgl_turun);
        $model[$key]['tgl_turun'] = tgl_indo(date("Y-m-d",$value->tgl_turun));
+       $model[$key]['tanggal_lahir'] = tgl_indo(date("Y-m-d",$value->tgl_lahir));
        $model[$key]['provinsi'] = $province->name;
        $model[$key]['kabkot'] = $kabkot->name;
+       $model[$key]['kecamatan'] = $kecamatan->name;
+       $model[$key]['deskel'] = $deskel->name;
    }
     $totalItem = $sql->count();
     $sql->clearQuery();

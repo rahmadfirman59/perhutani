@@ -24,20 +24,27 @@ app.controller('frontendCtrl', function ($http,$modal, $scope, Data, toaster, $s
     $scope.listLogistik.push(newDet);
   };
   $scope.getProvinsi = function() {
-      Data.get('form/provinsi').then(function (data) {
-        $scope.provinsi = data.data;
-        // tableState.pagination.numberOfPages = Math.ceil(data.totalItems / limit);
+    Data.get('form/provinsi').then(function (data) {
+      $scope.provinsi = data.data;
     });
   };
   $scope.getKabKot = function(idkabkot) {
     Data.get('form/kabupaten/'+idkabkot).then(function (data) {
-
       $scope.kabkot = data.data;
-
-  });
+    });
+  };
+  $scope.getKecamatan = function(idkecamatan) {
+    Data.get('form/kecamatan/'+idkecamatan).then(function (data) {
+      $scope.kecamatan = data.data;
+    });
+  };
+  $scope.getDesKel = function(idDeskel) {
+    Data.get('form/deskel/'+idDeskel).then(function (data) {
+      $scope.deskel = data.data;
+    });
   };
 
-$scope.getProvinsi();
+  $scope.getProvinsi();
 
 
 
@@ -118,6 +125,11 @@ $scope.open2 = function ($event) {
   $event.preventDefault();
   $event.stopPropagation();
   $scope.opened2 = true;
+};
+$scope.open3 = function ($event) {
+  $event.preventDefault();
+  $event.stopPropagation();
+  $scope.opened3= true;
 };
 //============================GAMBAR===========================//
 var uploader = $scope.uploader = new FileUploader({
