@@ -351,10 +351,17 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">Peralatan Masak + Bahan Bakar</label>
+                                    <label class="col-sm-3 control-label">Peralatan Masak(Panci)</label>
                                     <div class="col-md-3">
                                         <input type="text" class="form-control angka"
                                                ng-model="perlengkapan.masak_bakar"  ng-maxlength="100">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Bahan Bakar</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control angka"
+                                               ng-model="perlengkapan.bahan_bakar"  ng-maxlength="100">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -465,7 +472,7 @@
                         </div>
 
                         <div class="panel-footer text-right">
-                            <a href="https://tes2.sunsal.or.id" class="btn btn-default">
+                            <a href="http://radensoerjo-sipenerang.or.id" class="btn btn-default">
                                 <i class="fa fa-fw fa-mail-forward m-r-xs"></i> Kembali ke Halaman Utama
                             </a>
                             <button type="submit" class="btn btn-success" ng-disabled="landaform.$invalid"

@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30dccc2e-dca5-433f-935b-79b1be26a6d9" name="Default Changelist" comment="tambah form perlengkapan logistik">
-      <change afterPath="$PROJECT_DIR$/tesupload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/glintunggogreen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/glintunggogreen.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="30dccc2e-dca5-433f-935b-79b1be26a6d9" name="Default Changelist" comment="commir 14 Juni 2019">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/mitra/AQUA.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/mitra/NESTLE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/mitra/TNI AD.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/mitra/TNI AL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/mitra/TNI AU.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/mitra/TNI.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Penghargaan juara 1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Piagam-Penghargaan-Top-99-SINOVIK18082017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Screen Shot 2018-09-02 at 11.43.35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Screen Shot 2018-09-03 at 15.19.38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/penghargaan/Screen Shot 2018-09-04 at 18.30.51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/print/surat.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tpl/m_pendaki/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/tpl/m_pendaki/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/article/20201907-150x150-visi1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/article/20201907-350x350-visi1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/article/visi1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tpl/m_pendaki/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/tpl/m_pendaki/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/Azzahro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/logo_ppdb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/logopondok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/sma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/smp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/logo/smpp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/500px-airportsymbol.svg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/form1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/form2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/koding5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-13-110728.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-13-115142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-15-184451.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-15-185056.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/formulir/tpl/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formulir/tpl/site/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/formulir/tpl/site/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/form.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/pendaftar/pendaftar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulir/tpl/pendaftar/pendaftar.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/pendaki.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/pendaki.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/qrcode/14.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/surat.php" beforeDir="false" afterPath="$PROJECT_DIR$/surat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/20.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/22.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/print/penjualan_rain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesupload.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +43,69 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tesupload.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/formulir/tpl/hasil/hasil.html">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/pendaki.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3660">
+              <caret line="183" column="91" selection-start-line="183" selection-start-column="91" selection-end-line="183" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/home.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/formulir/tpl/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="363" column="81" selection-start-line="363" selection-start-column="81" selection-end-line="363" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/surat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="483" column="39" selection-start-line="483" selection-start-column="39" selection-end-line="483" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/tpl/m_pendaki/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="98" column="77" selection-start-line="98" selection-start-column="77" selection-end-line="98" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/tpl/m_pendaki/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="576" column="102" selection-start-line="576" selection-start-column="102" selection-end-line="576" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/tpl/m_artikel/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1480">
+              <caret line="74" column="13" selection-start-line="68" selection-start-column="12" selection-end-line="74" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -63,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>galle</find>
       <find>konta</find>
       <find>jquery</find>
       <find>.second-title</find>
@@ -93,6 +148,7 @@
       <find>/save</find>
       <find>darura</find>
       <find>listLogistik</find>
+      <find>addAttachment</find>
     </findStrings>
     <replaceStrings>
       <replace>container</replace>
@@ -152,12 +208,13 @@
         <option value="$PROJECT_DIR$/app/tpl/blocks/header.html" />
         <option value="$PROJECT_DIR$/app/tpl/m_user/index.html" />
         <option value="$PROJECT_DIR$/routes/approles.php" />
-        <option value="$PROJECT_DIR$/app/tpl/m_pendaki/index.html" />
+        <option value="$PROJECT_DIR$/formulir/tpl/site/site.js" />
+        <option value="$PROJECT_DIR$/routes/form.php" />
         <option value="$PROJECT_DIR$/app/tpl/m_pendaki/index.js" />
         <option value="$PROJECT_DIR$/routes/pendaki.php" />
-        <option value="$PROJECT_DIR$/formulir/tpl/site/site.js" />
         <option value="$PROJECT_DIR$/formulir/tpl/index.html" />
-        <option value="$PROJECT_DIR$/routes/form.php" />
+        <option value="$PROJECT_DIR$/surat.php" />
+        <option value="$PROJECT_DIR$/app/tpl/m_pendaki/index.html" />
       </list>
     </option>
   </component>
@@ -224,7 +281,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,10 +288,57 @@
               <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
               <item name="perhutani" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="m_artikel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+              <item name="m_pendaki" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="formulir" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="formulir" type="462c0819:PsiDirectoryNode" />
+              <item name="tpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="perhutani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="perhutani" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,7 +434,11 @@
       <workItem from="1551922502208" duration="24000" />
       <workItem from="1556606464588" duration="68000" />
       <workItem from="1556689738368" duration="267000" />
-      <workItem from="1560484898929" duration="578000" />
+      <workItem from="1560484898929" duration="2423000" />
+      <workItem from="1560491705744" duration="8139000" />
+      <workItem from="1560605348599" duration="8272000" />
+      <workItem from="1560667480912" duration="1850000" />
+      <workItem from="1560675089021" duration="3571000" />
     </task>
     <task id="LOCAL-00001" summary="after clean">
       <created>1535790208089</created>
@@ -389,11 +496,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551804632993</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commir 14 Juni 2019">
+      <created>1560485553741</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560485553741</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111804000" />
+    <option name="totallyTimeSpent" value="135481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,7 +521,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29954615" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31694403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -429,7 +543,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28397873" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30862328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,7 +555,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.33877552" />
-      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.4993895" weight="0.31132075" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.4993895" weight="0.31096563" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50061053" side_tool="true" weight="0.29153606" />
@@ -491,7 +605,8 @@
     <MESSAGE value="fix setelah install" />
     <MESSAGE value="push revisi hak akses" />
     <MESSAGE value="tambah form perlengkapan logistik" />
-    <option name="LAST_COMMIT_MESSAGE" value="tambah form perlengkapan logistik" />
+    <MESSAGE value="commir 14 Juni 2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="commir 14 Juni 2019" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -505,61 +620,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/m_pendaki.php" />
-    <entry file="file://$PROJECT_DIR$/routes/appartikel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="9" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/systems/database.php" />
-    <entry file="file://$PROJECT_DIR$/config.ini" />
-    <entry file="file://$PROJECT_DIR$/app/api/index.php" />
-    <entry file="file://$PROJECT_DIR$/app/api/.env" />
-    <entry file="file://$PROJECT_DIR$/app/js/config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/data.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/config.lazyload.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tpl/m_filemanager/filemanager.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tpl/m_filemanager/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/files_manager/elfinder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/tpl/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/directives.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -622,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/tpl/m_pendaki/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="175" selection-start-line="72" selection-start-column="175" selection-end-line="72" selection-end-column="175" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/tpl/m_user/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
@@ -653,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/tpl/m_pendaki/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/files_manager/css/elfinder.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -674,13 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="103" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/pendaki.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -708,20 +747,7 @@
     <entry file="file://$PROJECT_DIR$/formulir/tpl/pencarian/pencarian.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/formulir/tpl/pendaftar/pendaftar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="116" column="58" lean-forward="true" selection-start-line="111" selection-start-column="51" selection-end-line="116" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/formulir/tpl/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5922">
-          <caret line="329" column="81" selection-start-line="329" selection-start-column="81" selection-end-line="329" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/formulir/tpl/pendaftar/pendaftar.html" />
     <entry file="file://$PROJECT_DIR$/formulir/tpl/site/site.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -743,8 +769,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tesupload.php">
+    <entry file="file://$PROJECT_DIR$/tesupload.php" />
+    <entry file="file://$PROJECT_DIR$/formulir/img/logo/Azzahro.jpg" />
+    <entry file="file://$PROJECT_DIR$/formulir/img/raport/3.png" />
+    <entry file="file://$PROJECT_DIR$/formulir/img/raport/500px-airportsymbol.svg.png" />
+    <entry file="file://$PROJECT_DIR$/formulir/img/raport/form2.png" />
+    <entry file="file://$PROJECT_DIR$/formulir/img/raport/screenshot-from-2017-03-13-110728.png" />
+    <entry file="file://$PROJECT_DIR$/formulir/tpl/blocks/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formulir/img/assets/search-icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formulir/img/bg-top.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50440">
+          <caret line="2538" column="27" selection-start-line="2538" selection-start-column="27" selection-end-line="2538" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3940">
+          <caret line="197" column="56" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/endroid/qr-code/src/QrCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="182" column="21" selection-start-line="182" selection-start-column="21" selection-end-line="182" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formulir/tpl/hasil/hasil.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/pendaki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3660">
+          <caret line="183" column="91" selection-start-line="183" selection-start-column="91" selection-end-line="183" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tpl/m_artikel/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1480">
+          <caret line="74" column="13" selection-start-line="68" selection-start-column="12" selection-end-line="74" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tpl/m_pendaki/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="98" column="77" selection-start-line="98" selection-start-column="77" selection-end-line="98" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/formulir/tpl/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="363" column="81" selection-start-line="363" selection-start-column="81" selection-end-line="363" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/surat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="483" column="39" selection-start-line="483" selection-start-column="39" selection-end-line="483" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/tpl/m_pendaki/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="576" column="102" selection-start-line="576" selection-start-column="102" selection-end-line="576" selection-end-column="102" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

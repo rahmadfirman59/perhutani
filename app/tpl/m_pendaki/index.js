@@ -92,8 +92,14 @@ app.controller('appPendakiCtrl', function ($http,$scope, Data, toaster) {
             $scope.is_edit = false;
             $scope.is_view = false;
             // $scope.is_edit = false;
-            $scope.callServer(tableStateRef); //reload grid ulang
-            toaster.pop('success', "Berhasil", "Email Berhasil dikirim");
+            if (result.status == 0) {
+                toaster.pop('error', "Terjadi Kesalahan", result.errors);
+            } else {
+                $scope.callServer(tableStateRef); //reload grid ulang
+                toaster.pop('success', "Berhasil", "Email Berhasil dikirim");
+            }
+            // $scope.callServer(tableStateRef); //reload grid ulang
+            // toaster.pop('success', "Berhasil", "Email Berhasil dikirim");
         });
     }
     $scope.naik = function(row){

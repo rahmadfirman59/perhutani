@@ -52,6 +52,9 @@
                   <!-- <th st-sort="m_user.nama" style="text-align: left">Telepon Darurat</th> -->
                   <th st-sort="m_user.nama" style="text-align: left">Tanggal Naik</th>
                   <th st-sort="m_user.nama" style="text-align: left">Tanggal Turun</th>
+                  <th st-sort="m_user.nama" style="text-align: left">Disetujui Oleh</th>
+                  <th st-sort="m_user.nama" style="text-align: left">Disetujui Naik Oleh</th>
+                  <th st-sort="m_user.nama" style="text-align: left">Disetujui Turun Oleh</th>
                   <th st-sort="status_publish" style="text-align: left">Status</th>
                   <th></th>
                 </tr>
@@ -70,6 +73,9 @@
                   <td>{{row.tgl_turun * 1000| date:'dd-MM-yyyy  '}}</td> -->
                   <td>{{row.tgl_naik }}</td>
                   <td>{{row.tgl_turun }}</td>
+                  <td>{{row.approve_by }}</td>
+                  <td>{{row.approve_naik_by }}</td>
+                  <td>{{row.approve_turun_by }}</td>
                   <td ng-if="row.is_approve == 0"><span class="label label-danger">Belum Disetujui</span>
                   </td>
                   <td ng-if="row.is_approve == 1 && row.is_naik == 0"><span class="label label-success">Disetujui</span>
@@ -451,11 +457,19 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="col-sm-3 control-label">Peralatan Masak + Bahan Bakar</label>
+      <label class="col-sm-3 control-label">Peralatan Masak</label>
       <div class="col-md-3">
         <input type="text" class="form-control"
         ng-model="perlengkapan.masak_bakar" ng-disabled="is_view"
         ng-maxlength="100">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-3 control-label">Bahan Bakar</label>
+      <div class="col-md-3">
+        <input type="text" class="form-control"
+               ng-model="perlengkapan.bahan_bakar" ng-disabled="is_view"
+               ng-maxlength="100">
       </div>
     </div>
     <div class="form-group">
@@ -560,7 +574,7 @@
     <button type="submit" class="btn btn-primary" ng-if="form.is_approve == '0' && user.akses.aproval_pendaki == true" ng-click="sendmail(form.id)"><i
       class="glyphicon glyphicon-envelope"></i>&nbsp;Setujui
     </button>
-    <button type="submit" class="btn btn-success" ng-if="form.is_naik == '0' && user.akses.pos_pendaki == true"  ng-click="naik(form)"><i
+    <button type="submit" class="btn btn-success" ng-if="form.is_approve == '1' && form.is_naik == '0' && user.akses.pos_pendaki == true"  ng-click="naik(form)"><i
       class="glyphicon glyphicon-upload"></i>&nbsp;Pendaki Naik
     </button>
     <button type="submit" class="btn btn-warning" ng-if="form.is_turun == '0' && form.is_naik == '1' && user.akses.pos_pendaki == true" ng-click="turun(form)"><i

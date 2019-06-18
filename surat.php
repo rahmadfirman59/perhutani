@@ -349,7 +349,7 @@
       </tr>
     </table>
 
-
+    <br>
     <table  style="width: 100%;margin-left: 20px;font-size:12px;">
       <tr style="vertical-align:top;">
         <td>
@@ -476,9 +476,13 @@
       <td> <?= $perlengkapan->kantung_tidur?></td>
     </tr>
     <tr>
-      <td> Peralatan Masak+Bahan Bakar</td>
+      <td> Peralatan Masak</td>
       <td> <?= $perlengkapan->masak_bakar?></td>
     </tr>
+      <tr>
+          <td> Bahan Bakar</td>
+          <td> <?= $perlengkapan->bahan_bakar?></td>
+      </tr>
     <tr>
       <td> Ponco / Jas Hujan</td>
       <td> <?= $perlengkapan->ponco?></td>
